@@ -450,23 +450,17 @@ function ArrowDownIcon() {
   return (
     <div className="relative shrink-0 size-[54px] rounded-full bg-white flex items-center justify-center shadow-[0px_1px_3px_0px_rgba(0,0,0,0.1),0px_1px_2px_-1px_rgba(0,0,0,0.1)] border border-[rgba(212,196,176,0.25)]">
       <svg
-        className="w-3.5 h-3.5 text-[#E67E5F]"
+        className="w-6 h-6 text-[#E67E5F]"
         fill="none"
-        viewBox="0 0 14 14"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth="2"
       >
+        <rect x="6" y="3" width="12" height="18" rx="6" />
         <path
-          d="M7 0.833333V12.5"
-          stroke="currentColor"
-          strokeWidth="1.66667"
+          d="M12 7v4"
+          className="animate-bounce"
           strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M12.5 6.66667L7 12.5L1.5 6.66667"
-          stroke="currentColor"
-          strokeWidth="1.66667"
-          strokeLinecap="round"
-          strokeLinejoin="round"
         />
       </svg>
     </div>
@@ -765,10 +759,8 @@ function FailingCard({
       }`}
     >
       <h4
-        className={`font-heading text-[19.2px] leading-[1.21] tracking-[0.24px] ${
-          isDark
-            ? "font-bold text-[#e7886b]"
-            : "font-normal text-foreground"
+        className={`font-heading font-bold text-[19.2px] leading-[1.21] tracking-[0.24px] ${
+          isDark ? "text-[#e7886b]" : "text-foreground"
         }`}
       >
         {title}
@@ -849,7 +841,7 @@ const testimonials: TestimonialData[] = [
 
 function TestimonialCard({ data }: { data: TestimonialData }) {
   return (
-    <div className="bg-white rounded-[24px] p-9 flex flex-col gap-9 h-full mx-2 shadow-[0px_2px_2px_0px_rgba(16,5,1,0.04),0px_3px_5px_0px_rgba(16,5,1,0.06),0px_5px_7px_0px_rgba(16,5,1,0.08),0px_7px_11px_0px_rgba(16,5,1,0.08)]">
+    <div className="bg-white rounded-[24px] p-9 flex flex-col gap-9 h-full mx-2 shadow-[0px_2px_2px_0px_rgba(16,5,1,0.04),0px_3px_5px_0px_rgba(16,5,1,0.06),0px_5px_7px_0px_rgba(16,5,1,0.08),0px_7px_11px_0px_rgba(16,5,1,0.08)] min-w-min">
       <div className="flex gap-4 items-start w-full">
         <div className="flex flex-col gap-[5px] grow">
           <p className="font-body font-bold text-[#4b3c31] text-[13.33px] tracking-[1.4px] uppercase">
@@ -957,7 +949,9 @@ export function SilentCrisisSection() {
           </div>
 
           <h2 className="font-heading font-semibold text-[40px] md:text-[48px] leading-[1.2] text-foreground tracking-[0.6px]">
-            <span className="font-medium font-[Lora]">Hospitals lose </span>
+            <span className="font-medium font-[Lora]">
+              Hospitals lose{" "}
+            </span>
             <span className="font-black text-[#d47052] font-[Lora]">
               $25B annually
             </span>
@@ -1060,7 +1054,7 @@ export function SilentCrisisSection() {
 
                 <Step
                   icon={<SentimentStressedIcon />}
-                  text="Patient is on their own"
+                  text="Patient is sent home with no nutrition support"
                   bgColor="bg-[#f2dec4]"
                   subText="Disconnect"
                   subBorderColor="#e9ac5b"
@@ -1145,8 +1139,8 @@ export function SilentCrisisSection() {
           />
           <SolutionCard
             number="03"
-            title="Data & Automation"
-            description="VozCare platform + AVA AI tracking outcomes, coordinating care, and proving ROI in real-time."
+            title="Data Integration &amp; Automation"
+            description="Nutrition Care platform + AI engagement and outcome tracking, coordinating care, and proving ROI in real-time. Direct integration with your existing EHR using industry standard protocols"
             icon={<PulseIcon />}
           />
         </div>
@@ -1190,7 +1184,7 @@ export function SilentCrisisSection() {
           />
           <BusinessCaseCard
             title="For Communities"
-            description="Jobs, local wealth-building, and tangible health equity improvements for the most vulnerable."
+            description="Jobs, and local wealth-building, through farms, kitchens and logistics."
             icon={<DiversityIcon />}
             iconBg="bg-[#d9f1ec]"
           />

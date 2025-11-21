@@ -53,6 +53,7 @@
     --font-weight-black: 900;
     --leading-tight: 1.25;
     --leading-snug: 1.375;
+    --animate-bounce: bounce 1s infinite;
     --default-transition-duration: .15s;
     --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     --default-font-family: var(--font-sans);
@@ -723,10 +724,6 @@
     height: calc(var(--spacing) * 1);
   }
 
-  .h-3\.5 {
-    height: calc(var(--spacing) * 3.5);
-  }
-
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -877,10 +874,6 @@
 
   .min-h-screen {
     min-height: 100vh;
-  }
-
-  .w-3\.5 {
-    width: calc(var(--spacing) * 3.5);
   }
 
   .w-5 {
@@ -1071,6 +1064,10 @@
     max-width: none;
   }
 
+  .min-w-min {
+    min-width: min-content;
+  }
+
   .flex-1 {
     flex: 1;
   }
@@ -1108,6 +1105,10 @@
 
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+
+  .animate-bounce {
+    animation: var(--animate-bounce);
   }
 
   .grid-cols-1 {
@@ -2306,4 +2307,16 @@ html {
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(.8, 0, 1, 1);
+    transform: translateY(-25%);
+  }
+
+  50% {
+    animation-timing-function: cubic-bezier(0, 0, .2, 1);
+    transform: none;
+  }
 }
