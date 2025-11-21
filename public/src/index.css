@@ -1403,10 +1403,6 @@
     padding-inline: calc(var(--spacing) * 6);
   }
 
-  .py-1 {
-    padding-block: calc(var(--spacing) * 1);
-  }
-
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -1423,6 +1419,14 @@
     padding-block: 54px;
   }
 
+  .pt-\[0px\] {
+    padding-top: 0;
+  }
+
+  .pr-\[0px\] {
+    padding-right: 0;
+  }
+
   .pr-\[54px\] {
     padding-right: 54px;
   }
@@ -1431,12 +1435,16 @@
     padding-bottom: calc(var(--spacing) * 4);
   }
 
+  .pb-\[0px\] {
+    padding-bottom: 0;
+  }
+
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
   }
 
-  .pl-\[26px\] {
-    padding-left: 26px;
+  .pl-\[2px\] {
+    padding-left: 2px;
   }
 
   .text-center {
