@@ -94,7 +94,6 @@ import svgPaths2 from "../../imports/svg-naza2vtcjk";
 
 import imgImage60 from "figma:asset/cf7e9725073d2b9674104950ccc5879b550cc4b7.png";
 import imgImage61 from "figma:asset/8b3384adbc6b49ce7bb9c27365b0a5def4132791.png";
-import imgImage62 from "figma:asset/1ebd12158f0b17c8f495be602003a5d020d2cec8.png";
 import imgImage63 from "figma:asset/9293c510320034d4e33ad060efbdb11a454a1e3e.png";
 import svgPaths3 from "../../imports/svg-k6myndkb6q";
 
@@ -805,14 +804,6 @@ const testimonials: TestimonialData[] = [
     image: imgImage61,
     quote:
       '"It has been a pleasure to work with Vanessa and the research team at Cena Health. She has a clear passion for promoting healthy eating and reducing diet-related chronic illnesses."',
-  },
-  {
-    org: "Hartford HealthCare",
-    name: "Greg Jones",
-    role: "Vice President, Community Health and Engagement, Hartford HealthCare Corp.",
-    image: imgImage62,
-    quote:
-      '"Improving health outcomes starts with improving access to quality foods. Our partnership with Cena Health helps us better address health inequalities."',
   },
   {
     org: "UCONN Health",
