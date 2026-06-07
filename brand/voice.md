@@ -72,6 +72,8 @@ _Use this guide to maintain consistent Cena Health voice across all Claude inter
 - Use specific metrics: "$200 PMPM," "$1.2M-$3M Series A target"
 - Frame shared savings as win-win: hospitals profit while patients improve
 
+> **Tech-accuracy flag (Phase 1 brief, 2026-06-07):** the figures above require primary-source citation per `.claude/rules/verify-time-sensitive-claims.md` before they may ship in any public-facing artifact. Phase 2 voice.md refresh will resolve or replace; until then, treat these as guidance for *internal* register only — not as approved public claims.
+
 ### Cultural Competency Language
 
 - "Culturally relevant" not "ethnic" or "diverse"
@@ -88,7 +90,7 @@ _Use this guide to maintain consistent Cena Health voice across all Claude inter
 - Favor practical solutions over complex frameworks
 - "HIPAA-compliant, FHIR-ready infrastructure" as standard requirement
 - Emphasize scalability and automation without losing clinical quality
-- Use specific tech stack when relevant: React/Next.js, Python, Firebase, Porter.st
+- Reference Cena entity docs (`Knowledge/Areas/Meta/Entities/cena-health/`) for current stack — never carry stale stack details forward in copy
 
 ### Development Preferences
 
@@ -99,10 +101,11 @@ _Use this guide to maintain consistent Cena Health voice across all Claude inter
 
 ### AI and Platform Features
 
-- "AVA voice assistant" for AI features (not "chatbot" or "virtual assistant")
-- "VozCare platform" for care coordination infrastructure
+- Do not introduce platform/agent product names ("Ava", "VozCare", "AVA voice assistant") on public-facing copy at this phase — defer to "Cena's clinical intelligence platform" or simply "the system / the substrate." Per Phase 1 brief: naming the platform prematurely invites the technical evaluator before the clinical champion has pulled the org in.
+- Patient-facing surface is **surface-primary, not chat-primary** — never lead public copy with "voice assistant" or "chatbot" framing (per `project_cena_patient_surface_primary` memory).
 - Emphasize automation that enhances (not replaces) human care
-- Frame AI as clinical decision support, not replacement
+- Frame agent capability as **clinical decision support** with **explicit human approval gates**, not autonomous action. Partner-institution clinicians retain clinical accountability during pilots (per `project_cena_accountability_model`).
+- "VozCare" is a retired internal name — must not appear on the public site.
 
 ---
 
@@ -112,7 +115,7 @@ _Use this guide to maintain consistent Cena Health voice across all Claude inter
 
 - Lead with business fundamentals, not vision statements
 - Use specific metrics and proven outcomes
-- Reference existing partnerships: UConn Health, Hartford HealthCare, TriCare East
+- Reference the academic-medical-center HIV-nutrition pilot **generically** until UConn comms approval; do not name UConn or other partner institutions on public copy without explicit comms-side sign-off per partner.
 - Include competitive analysis with concrete differentiators
 
 ### Technical Documentation
@@ -126,7 +129,7 @@ _Use this guide to maintain consistent Cena Health voice across all Claude inter
 
 - Focus on provider and payer benefits, not just patient outcomes
 - Emphasize revenue generation and cost savings
-- Use "Gentle Strength" aesthetic: professional yet warm
+- Apply current brand canon (`Lab/cena-health-brand/BRAND.md` + `_brief/brand-brief.md`) — six design principles: Clinical Warmth, Specificity Over Generality, Dignified Agency, Grounded Optimism, Organic Precision, Infrastructure Humility
 - Include cultural relevance as core feature, not afterthought
 
 ---
@@ -135,9 +138,14 @@ _Use this guide to maintain consistent Cena Health voice across all Claude inter
 
 ### Visual Style References
 
-- **Colors:** Sage green (#A8C8B8), terracotta (#C89B8C), cream/beige (#D4C4B0), navy (#2C3E50)
-- **Typography:** Inter for body/UI text, Lora for headings
-- **Aesthetic:** "Gentle Strength" - clinical credibility with warmth
+Canonical brand canon: [`Lab/cena-health-brand/BRAND.md`](../../cena-health-brand/BRAND.md). The values below are summary references; the brand repo is source of truth.
+
+- **Logo colors (locked):** Deep forest green-black `#0D322D`, medium teal `#3A8478`, lighter teal `#52A395`, sage green `#81B983`
+- **Background:** Warm off-white `#FBFAF8` (`var(--color-surface-page)`) — never `#ffffff` or `white`
+- **Interactive fill:** `color-primary` (teal-700 `#1e5149`) — clears WCAG AAA with light text
+- **Typography:** **Lora** (display/headings), **Source Sans 3** (body/UI), **Source Code Pro** (mono/numeric/code)
+- **Surfaces:** Five-step hierarchy (page → primary → secondary → teal → sage) — elevation through surface color shifts and warm borders, not shadows
+- **Aesthetic:** Credible before charismatic; warm without softness; culturally specific not decorative; systemic not heroic; direct (per `_brief/brand-brief.md` §1)
 
 ### File Creation Standards
 
@@ -153,7 +161,7 @@ _Use this guide to maintain consistent Cena Health voice across all Claude inter
 ### Code Generation
 
 ```prompt
-"Create [specific component/function] for Cena Health's VozCare platform that [specific requirement]. Prioritize HIPAA compliance, accessibility for elderly patients, and integration with our existing Firebase/React stack. Include error handling and follow our established patterns."
+"Create [specific component/function] for Cena Health's platform that [specific requirement]. Prioritize HIPAA-regulated-workflow patterns, accessibility for elderly patients, and integration with the current Cena stack (verify with `Knowledge/Areas/Meta/Entities/cena-health/` rather than assuming). Include error handling and follow our established patterns."
 ```
 
 ### Documentation Creation
@@ -165,13 +173,13 @@ _Use this guide to maintain consistent Cena Health voice across all Claude inter
 ### Investor Material Development
 
 ```prompt
-"Create [presentation/document] section covering [topic]. Lead with measurable outcomes (30% fewer hospitalizations, $200 PMPM revenue). Position as healthcare infrastructure solving the "$17B preventable costs" problem. Include competitive analysis and specific partnership references."
+"Create [presentation/document] section covering [topic]. Lead with measurable outcomes (use cited primary-source figures per `verify-time-sensitive-claims.md`; do not paraphrase stale numbers without re-citing). Position as healthcare infrastructure. Reference partner pilots generically until partner-comms sign-off."
 ```
 
 ### Brand Content
 
 ```prompt
-"Write [marketing/content] piece that maintains 'Gentle Strength' aesthetic - professional healthcare credibility with warmth. Emphasize cultural competency, dignified patient representation, and value-based care model. Avoid food delivery framing."
+"Write [marketing/content] piece that applies the six brand principles (Clinical Warmth, Specificity Over Generality, Dignified Agency, Grounded Optimism, Organic Precision, Infrastructure Humility) per `Lab/cena-health-brand/_brief/brand-brief.md`. Emphasize cultural competency, dignified patient representation, and value-based care model. Avoid food-delivery framing."
 ```
 
 ---
@@ -201,10 +209,9 @@ Before finalizing any Claude-generated content, verify:
 - "App features" → "Clinical capabilities"
 - "Growth metrics" → "Clinical outcomes"
 - "Diverse populations" → "Culturally diverse patients"
-- "AI chatbot" → "AVA voice assistant"
+- "AI chatbot" / "AI assistant" / "voice assistant" → "Cena's clinical intelligence platform" (do not name Ava on public-facing copy at this phase)
 
 ---
 
-_Last updated: November 2025_  
-_For use with Claude VS Code extensions and Claude Code_  
+_Last updated: 2026-06-07 (stale-references cleanup pass, scoped to brand-team-no-longer-aligned items per Aaron 2026-06-07; full refresh against Phase 1 positioning brief is a Phase 2 prerequisite — see [`../strategy/phase-1-positioning-brief.md`](../strategy/phase-1-positioning-brief.md) §7 Q3 and §8)_  
 _Maintain this voice across all Cena Health development work_
