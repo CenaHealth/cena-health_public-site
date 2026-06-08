@@ -66,14 +66,19 @@ What the site must accomplish on first visit, per role — the seed of Phase 2's
 
 ## 7. Open questions for Aaron-gate
 
+> **Aaron-gate resolutions, 2026-06-07:** Q1 in-progress (Slack to Vanessa sent). Q2 resolved (both headlines deploy, audience-dependent — see below). Q3 resolved (scoped stale-references cleanup landed; full refresh remains Phase 2 prerequisite). Q4 resolved (category-naming risk accepted; proceed with C-017 public claim).
+
 1. **UConn-comms hinge.** Entire frame depends on the AMC pilot being referenceable concretely enough to carry "proof" weight. Can Vanessa get a read on UConn comms timeline before Phase 2 starts? If the generic reference is blocked >6 months, frame degrades to thesis-led-with-deferred-proof and channel sequencing shifts (LinkedIn becomes channel 1, site channel 2).
+   - **Status 2026-06-07:** Aaron sent the bounded-ask Slack to Vanessa. Awaiting reply. Phase 2 IA can proceed against the generic-AMC assumption; UConn-named upgrade is a strict-superset edit if/when comms clears.
 2. **Headline pick.** Plain Language surfaced two finalists:
    - **H1:** "The clinical infrastructure your nutrition program runs on" — partner-enabling bet; champion-pulls-org-in.
    - **H4:** "Run your food-as-medicine program on infrastructure that holds up to audit" — provenance-as-posture bet; arm-the-champion.
-
-   Aaron's call on which bet to lead with.
+   - **Aaron's call 2026-06-07:** *both land, audience-dependent.* H4 fits the **business person trying to improve something without in-house staff** (≈ exec sponsor / financial steward — economic + audit frame). H1 fits the **nutrition champion making good on a program-plan dream** (≈ clinical champion — partner-enabling substrate). Both decision-roles are already in §2's map.
+   - **Phase 2 IA implication:** deploy both at different surfaces calibrated to inbound role. Homepage hero either picks the dominant inbound (likely champion-led per Demand-Gen's read) or composes a third synthesis. IA pass owns the per-surface headline assignment.
 3. **Voice.md refresh.** Existing [`Lab/cena-health-public-site/brand/voice.md`](../brand/voice.md) carries stale artifacts (VozCare naming, "Gentle Strength" aesthetic, uncited outcome statistics: $17B preventable costs / 30% hospitalization reduction / 25% ER reduction / $200 PMPM / $1.2M–$3M Series A). Per Tech Accuracy these cannot ship without primary-source citation. Approve voice.md refresh as a Phase 2 prerequisite, or defer and forbid the stale numbers in the meantime?
+   - **Aaron's call 2026-06-07:** approved scoped stale-brand-references cleanup (Cena Color v2 / Lora+Source-Sans-3 / no VozCare / no AVA-voice-assistant / no Gentle Strength / no stale tech stack / generic-AMC partner rule). **Landed 2026-06-07** in commit `3d3e562`. Uncited financial figures kept with explicit Phase-2-citation-required flag; full refresh against this brief is a Phase 2 prerequisite.
 4. **Category-naming risk tolerance.** Publishing "Clinical Intelligence Infrastructure for Food-as-Medicine" as a public category claim invites well-capitalized competitors (Foodsmart, NourishedRx, even non-FAM healthcare-AI players) to read the playbook and execute faster. Is Cena ready for what happens if a Series-C-funded competitor adopts this positioning within 90 days?
+   - **Aaron's call 2026-06-07:** risk accepted. "Fake it 'til you make it — not ready yet but we can get there together." Proceed with C-017 as the public category claim; Phase 2 voice work leans into it confidently rather than hedging.
 
 ## 8. Phase 2 scoping preview (gated on Aaron approval)
 
