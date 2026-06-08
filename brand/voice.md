@@ -315,12 +315,13 @@ Three concrete voice patterns that could rescue the absent-CTA risk. Each is hon
 - **Voice mechanics:** Names what's happening. Trusts the reader to recognize *"these people thought about the choice."* Inherits "credible before charismatic."
 - **Trade-off:** Boldest. Risk: meta-commentary on the site reading as self-conscious. Reward: matches quiet-competence register if executed at the right scale.
 
-### Voice writer's call
+### Aaron's call (2026-06-08): ship Candidate A
 
-- Candidate A is the safest and most aligned with HX-1's tone. Recommend default.
-- Candidate B is the structural fix; consider if Candidate A still feels thin after live testing.
-- Candidate C is the boldest and most on-brand for "credible before charismatic" — surface as alternative to Aaron if a confident posture is the right read.
-- Substep 2 ships with Candidate A in the default copy and Candidate C in a commented-out alternate; the final call lives with Aaron after Phase 3 implementation makes the difference visible.
+**Candidate A is canonical.** Hero subhead carries the inline link to the substrate diagram. Phase 3 implementation writes this copy as the production hero.
+
+If Candidate A still reads thin after live testing — i.e., if visitors land cold and bounce, or partner-evaluators report the absent-CTA shape as friction — re-open with Candidate B (below-fold prompt) or Candidate C (name-the-absence) as iteration candidates. The current call is to ship A, observe, and revise from evidence rather than pre-empt.
+
+Candidates B and C remain documented here as the iteration paths if A turns out to under-perform; not implementation targets for the launch site.
 
 ---
 
