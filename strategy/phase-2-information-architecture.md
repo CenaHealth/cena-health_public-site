@@ -12,28 +12,34 @@ Locks site map, decision-role surface assignments, per-page IA, and CTA architec
 
 ## 1. Site map
 
-Hub-and-spoke topology with 5 top-level surfaces. Persistent primary nav across all pages.
+Hub-and-spoke topology with **7 top-level surfaces** (revised post-Aaron-gate; original 5 plus `/your-program-on-cena` and `/for-comms` per Aaron's Q3 + Q4). Persistent primary nav across all pages.
 
 ```
 Homepage
 ├── For clinical leaders            [H1-carrying — champion-doored deep-link]
 ├── For program economics           [H4-carrying — exec-sponsor-doored deep-link]
+├── Your program on Cena            [brownfield-consolidation surface — own top-level URL per Aaron Q3]
+├── For comms / external affairs    [explicit comms-doored surface per Aaron Q4]
 ├── How the substrate works         [shared technical evaluator + legal/compliance hub]
 │   ├── Integration & data architecture     [technical evaluator deep-link]
 │   ├── Provenance & accountability         [legal/compliance deep-link, IRB liaison destination]
 │   └── Sample audit trail                  [artifact page — deep-linkable, no CTA]
-├── Your program on Cena            [brownfield-consolidation surface]
 ├── Reference program               [partner-protagonist blueprint]
 └── Proof                           [credibility surface — empty slot pattern at launch]
     └── /proof/[partner-slug]       [per-case-study leaf template, unfilled at launch]
+
+Per-contact landing template (Phase 3+ capability per Aaron Q4 — see §13):
+└── /for-[contact-or-org-slug]      [authored-per-contact; same wayfinding pattern as other targeted surfaces]
 
 Footer utility:
 └── About                           [single quiet page — what Cena is structurally]
 ```
 
-**Two surfaces deliberately absent**: site-wide search (corpus < 15 pages, adds chrome without payoff) and public Contact form (warm-intro motion only; a form invites low-signal inbound that undermines quiet-competence). About lives only in the footer.
+**Two surfaces deliberately absent**: site-wide search (corpus < 20 pages, adds chrome without payoff) and public Contact form (warm-intro motion only; a form invites low-signal inbound that undermines quiet-competence). About lives only in the footer.
 
-**Eight top-level URLs at launch.** Sub-pages bring total to 12. Sub-15 corpus.
+**Ten top-level URLs at launch** (was 8; added 2 per Aaron-gate Q3+Q4). Sub-pages bring total to 14. Per-contact landings (`/for-[slug]`) are template-shaped and authored as Cena uses the capability — not counted in launch URL count.
+
+**Nav-scale tension flagged.** ITD's original constraint was "5 top-level surfaces; more starts to feel sectioned-SaaS." At 7 nav items, the IA tests that limit. Mitigation options for Substep 2 / Phase 3: (a) split primary nav into "for X" group (clinical leaders / program economics / your program / comms) + "core" group (substrate / reference / proof); (b) keep 7-item nav with visual grouping; (c) accept the tension. **Action:** flag for Aaron review during Substep 2 if voice + visual treatment cannot rescue the 7-item shape.
 
 ---
 
@@ -64,7 +70,8 @@ Aaron's Q2 resolution: H1 and H4 deploy at role-specific surfaces; homepage hero
 | **Integration & data architecture** (sub-page) | *"Built to connect to what you already run."* | Speaks to technical-evaluator's first question. |
 | **Provenance & accountability** (sub-page) | *"Every clinical action carries its trail."* | Legal-compliance scan-mode payoff in one line. |
 | **Sample audit trail** | *"What an audit-ready record looks like."* | Artifact-as-proof; no marketing voice on the artifact page itself. |
-| **Your program on Cena** | *"Cena runs underneath what you've built, not instead of it."* | Brownfield recognition-statement. Names four canonical brownfield shapes in the subhead (grant-clinic, sponsored pilot, 1115 waiver, hospital-foundation garden) so reader sees themselves immediately. |
+| **Your program on Cena** | *"Cena runs underneath what you've built, not instead of it."* | Brownfield recognition-statement. Names four canonical brownfield shapes in the subhead (grant-clinic, sponsored pilot, 1115 waiver, hospital-foundation garden) so reader sees themselves immediately. **Standalone page** (Aaron Q3 resolution); `/for-program-economics` carries teaser-only with link here. |
+| **For comms / external affairs** | *"Cena, translated for your announcement."* | Comms-targeted; speaks to "can I co-announce this without exposure?" question (Phase 1 §2). **Subhead frames the offer:** "co-announcement-safe positioning, brand-asset access, a real partner contact at Cena for messaging questions." |
 | **Reference program** | *"A live academic-medical-center HIV-nutrition program runs on this blueprint today. The blueprint generalizes; the program is one instance."* | Frame-setter doubles as headline. Defensible generic-AMC reference; strict-superset UConn upgrade requires only the org-name swap. |
 | **Proof** | *"Partner-protagonist proof. The partner is the hero; Cena is the substrate they ran their program on."* | Twilio/Plaid pattern named; empty-slot-as-rigor positioning. |
 | **About** | *"What Cena is."* (quiet, structural) | Single page; no team theater; no leadership grid. |
@@ -147,10 +154,25 @@ Homepage compresses 1-3 into denser hero composition; role-targeted surfaces mov
 
 #### Your program on Cena (`/your-program-on-cena`)
 
-- **Purpose:** Brownfield-consolidation landing. Deep-linked from exec-sponsor + clinical-champion paths.
-- **Audience:** Exec sponsor primary; clinical champion secondary.
+- **Purpose:** Brownfield-consolidation standalone surface (was embedded section; promoted to top-level URL per Aaron Q3 resolution). Deep-linked from `/for-program-economics` (teaser), `/for-clinical-leaders` (cross-link), and `/for-comms` (co-announcement-fit framing).
+- **Audience:** Exec sponsor primary; clinical champion secondary; comms tertiary.
 - **Headline:** *"Cena runs underneath what you've built, not instead of it."*
 - **Section sequence:** See full spec in §6.
+- **Wayfinding band (per Aaron Q4):** every targeted landing surfaces "see Cena from another angle" — links to `/for-clinical-leaders` (clinical fit), `/for-program-economics` (economic fit), `/how-the-substrate-works` (under-the-hood), `/reference-program` (working example).
+
+#### For comms / external affairs (`/for-comms`)
+
+- **Purpose:** Explicit comms-targeted surface (added per Aaron Q4 resolution). When a partner's comms peer is forwarded a Cena link, they land on a page that frames Cena for *their* job: co-announcement safety, brand-asset access, a named contact for messaging questions.
+- **Audience:** Comms / external affairs (primary); partner-org communications, marketing, PR.
+- **Headline:** *"Cena, translated for your announcement."*
+- **Section sequence:**
+  1. Hero (headline + subhead framing the offer: co-announcement-safe positioning + brand assets + named contact)
+  2. Co-announcement examples block: 3-4 example co-announcement snippets (joint press release intro, social-post pull quote, internal-memo paragraph) — partner sees the *shape* of what's safe to use
+  3. Brand-assets section: logos, color refs, approved positioning language, do's-and-don'ts of how Cena is referenced (Cena is the *substrate*, partner is the *protagonist*)
+  4. Pilot-reference language: exact phrasing Cena uses for the generic AMC pilot; tells comms peers what to mirror
+  5. Named-contact CTA: *"Talk to our lead on this — Vanessa Sena, CEO"* (or whoever Aaron designates as the comms-conversation owner) — direct line, no form gate. Comms peers don't fill forms when checking a quote.
+- **Wayfinding band (per Aaron Q4):** "see Cena from another angle" — links to `/for-clinical-leaders`, `/for-program-economics`, `/how-the-substrate-works`, `/reference-program`, `/proof`.
+- **CTA:** *"Direct line to Cena's announcement lead"* — Calendly or direct contact, NOT a form.
 
 #### Reference program (`/reference-program`)
 
@@ -215,7 +237,7 @@ Internal vocab landmines + public-safe alternatives. Highest-yield catches: "Cap
 
 ## 6. Brownfield-consolidation surface spec
 
-**Embedded in `/for-program-economics` as major section, not separate top-level spoke.** See §10 for cross-expert resolution rationale.
+**Promoted to standalone top-level surface `/your-program-on-cena` per Aaron Q3 resolution** (was embedded section in `/for-program-economics`). `/for-program-economics` retains a brownfield-frame *teaser* section that links here for the full treatment. See §10 for original embed-vs-standalone reasoning + the Aaron-gate reversal.
 
 - **Frame-setter (in-section above-fold):** *"Most partners we talk to already run something — a grant-funded clinic, a sponsored pilot, a Section 1115 waiver, a hospital-foundation garden. Cena runs underneath what you've built, not instead of it."* Names four canonical brownfield shapes by name so reader sees themselves immediately.
 - **What-we-replace / what-we-leave / what-we-connect-to matrix.** Three-column visual primitive (table, not sequence diagram — sequence implies linear migration; table implies coexistence). *Replaced:* ad-hoc spreadsheets, manual audit-log assembly, non-interoperable referral tracking, hand-built outcome reports. *Left intact:* partner's clinical staff, dietitian network, food supplier contracts, clinic-side workflows, IRB-approved protocols. *Connected to:* EHR (FHIR endpoint), partner's existing reporting cadence, partner's grant/waiver reporting templates, partner's data warehouse. **Load-bearing visual; does more work than any copy on the page.** Reader sees "Left intact" column before "Replaced" column — by design.
@@ -285,7 +307,7 @@ Internal vocab landmines + public-safe alternatives. Highest-yield catches: "Cap
 
 Three places the three experts diverged or made overlapping recommendations.
 
-1. **Brownfield-consolidation placement.** Information Topology Designer proposed top-level spoke (`/your-program-on-cena`). Channel Partnerships proposed top-level surface treatment but embedded in `/for-program-economics` per Phase 1 §4 brownfield-buyer-as-exec-vetter framing. **Resolution: embed in `/for-program-economics` as major section.** Reasoning: brownfield-buyer frame IS the economic vetter's question shape; separate page risks reading as different product offer. Embedding frames consolidation as the economic shape it is. **Trade-off:** champions who arrive at consolidation question first must scan past economic framing. **Mitigation:** prominent in-content cross-link from `/for-clinical-leaders` (*"If your program is already running — see how consolidation works"*) deep-links to `#brownfield-consolidation` anchor.
+1. **Brownfield-consolidation placement.** Information Topology Designer proposed top-level spoke (`/your-program-on-cena`). Channel Partnerships proposed top-level surface treatment but embedded in `/for-program-economics` per Phase 1 §4 brownfield-buyer-as-exec-vetter framing. **Team resolution: embed in `/for-program-economics` as major section.** **Aaron-gate reversal (Q3, 2026-06-07): promoted to standalone top-level URL `/your-program-on-cena` per Aaron's framing "this allows us to lean in to multiple marketing angles."** Generalized: every distinct value-frame deserves its own defensible URL. `/for-program-economics` now carries a brownfield-teaser section with a primary link to the standalone surface.
 2. **Homepage hero CTA.** Channel Partnerships flagged for explicit Aaron-decision: hero CTA or no hero CTA? Channel Partnerships read: no hero CTA — hero job is establish positioning per H1/H4 split; first CTA in section 4 (role-router cards) where recognition-stage reader has earned context to want next step. Information Topology Designer + Content Design implicit alignment: section-4 role-router cards do CTA work. **Resolution: no hero CTA. First CTA in section 4 role-router.** Surfacing as open question §11 for Aaron-gate confirmation.
 3. **Proof collection surface.** Channel Partnerships specified `/proof` collection + per-case-study leaf template (empty at launch, ships built). Information Topology Designer's site map did not include `/proof` as top-level spoke — proof shape lived inside `/reference-program`. **Resolution: `/proof` as top-level spoke at launch.** Reasoning: separates *"this is what proof on Cena looks like (empty-slot-as-rigor)"* from *"this is the blueprint your program would follow."* Reference program is shape-of-engagement proof; `/proof` is outcomes-evidence proof. Two distinct proof modes; conflating into one page compromises both. Empty-slot pattern requires its own canonical surface to read as rigor rather than absence.
 
@@ -297,14 +319,14 @@ Three places the three experts diverged or made overlapping recommendations.
 
 ---
 
-## 11. Open questions for Aaron-gate
+## 11. Aaron-gate resolutions (2026-06-07)
 
-Four specific calls where the team converged but Aaron's decision gates Substeps 2-4.
+> All four questions resolved. Substeps 2-4 unblocked. Q3 + Q4 produced structural changes to the spec (see §§1, 3, 4, 6, 13).
 
-1. **Hero CTA on homepage: confirm absence.** Team recommends no hero CTA (recognition stage; section-4 role-router cards carry first CTA). If Aaron wants a hero CTA (e.g., a low-commitment "See how this works" → routes to substrate diagram), the role-router architecture in section 4 collapses one level. **Decision required before voice.md FULL refresh (Substep 2) — hero copy depends on whether CTA earns space there.**
-2. **HX-1 vs. HX-2 homepage hero.** HX-1 (recommended): *"Clinical intelligence infrastructure for food-as-medicine. Built for the programs your partners already run."* HX-2 alternative: *"The substrate your food-as-medicine program runs on. Audit-grade by design."* HX-1 is partner-enabling invitation; HX-2 is audit-grade confidence. Brand-voice call. **Decision required before voice.md FULL refresh (Substep 2).**
-3. **Brownfield surface URL: `/for-program-economics#brownfield-consolidation` (embedded anchor) vs. `/your-program-on-cena` (top-level redirect to anchor).** Team resolved embedded section. Question: does brownfield deserve own top-level URL that 301s to the anchor for SEO/shareability, or is the deep-link anchor sufficient? If yes top-level URL: nav still shows 5 surfaces (URL is shadow for sharing only). **Decision implementation-level, not blocking; can resolve in Substep 4.**
-4. **Comms / external affairs surface: implicit (homepage + About + Reference program) vs. explicit (`/for-comms` dedicated surface).** Team's resolution: implicit — comms reader doesn't have a dedicated landing because their job is to *vet* what champion brought, not seek. Risk: when partner's comms peer is sent a forwarded link, they land on `/reference-program` (which works) or homepage (which works), but never on a surface that says *"this is the page for translating Cena externally."* If Aaron's read is that comms peers need an explicit lane, add `/for-comms` as a top-level spoke (6 instead of 5). **Decision required before voice.md FULL refresh (Substep 2) — comms-surface voice differs from champion-surface voice.**
+1. **Hero CTA absence — APPROVED with named reservation.** Aaron approved the team's recommendation (no hero CTA; role-router cards in section 4 carry first CTA) but flagged unease he was "struggling to name." Working hypothesis: enterprise B2B visitors carry a learned expectation that hero CTA = "this site wants me to engage"; absence may register as *off* without a clear story for why. Mitigation candidates for Substep 2 voice work: (a) a low-key inline link in hero copy ("or jump straight to the substrate diagram"); (b) a below-fold prompt that signals options without reading as CTA. **Action:** Substep 2 voice writer to consider mitigation; if absence still reads thin after voice pass, re-open as a structural call.
+2. **HX-1 confirmed** as homepage hero: *"Clinical intelligence infrastructure for food-as-medicine. Built for the programs your partners already run."*
+3. **Brownfield gets its own top-level URL — `/your-program-on-cena` becomes the primary surface for the brownfield-consolidation content.** Aaron's framing: *"this allows us to lean in to multiple marketing angles."* Generalized: every distinct value-frame deserves its own defensible URL. **Structural change:** §1 site map and §3 headline assignment updated; §4 now treats `/your-program-on-cena` as standalone page; §6 spec is the page spec for that URL; `/for-program-economics` retains a brownfield-frame *teaser* section with a primary CTA-link to `/your-program-on-cena`.
+4. **Comms surface — EXPLICIT, and the question is bigger than implicit-vs-explicit.** Aaron's reframe: targeted-per-audience surfaces are the IA *principle*; per-individual landings (e.g. `/for-dave`) are the *aspiration*; every targeted landing must always surface contextual access back to broader-site vantage points. **Three structural changes:** (a) `/for-comms` added as explicit top-level surface (§§1, 3, 4); (b) new §13 captures per-contact landing as Phase 3+ capability the site IA accommodates; (c) every targeted landing surfaces a "see Cena from another angle" wayfinding band — Substep 2 voice work to write the pattern.
 
 ---
 
@@ -331,3 +353,41 @@ Four specific calls where the team converged but Aaron's decision gates Substeps
 - Tech Accuracy must-not-say list from Phase 1 brief becomes Substep 4's copy gate
 - Stale legacy proof points (30% readmissions / $3,200 savings / 1.8% HbA1c / 85% adherence from `strategy/CLAUDE.md`) explicitly off-limits until primary-source citation
 - HIPAA / PHI / regulatory language hedging (Channel Partnerships *Liability-aware framing guardrails*) requires HDG + counsel review path before any copy lands on `/how-the-substrate-works/security` or NDA-room landing
+
+---
+
+## 13. Per-contact landing capability (Phase 3+ requirement, per Aaron Q4)
+
+Aaron's Q4 resolution reframed the comms surface question into a larger architectural commitment: **the site IA must accommodate per-audience and per-individual targeted landings** as a near-term aspiration, not a one-off shortcut. This section names the requirement; it does NOT build the capability in Phase 2.
+
+### What this commits the site to
+
+- **A per-contact landing template** at URL pattern `/for-[contact-or-org-slug]` (e.g. `/for-dave`, `/for-uconn-health`, `/for-hartford-healthcare`)
+- Each template instance is **authored per contact** with custom context — Cena's read of how it fits into *their* specific processes, *their* program, *their* role
+- Every per-contact landing carries the same wayfinding band as the other targeted surfaces ("see Cena from another angle") so a forwarded link never strands the reader in a one-frame view
+
+### Why this is a generative-determinism shape
+
+- **Contract** (deterministic, authored once): the landing-page template — section sequence, wayfinding band, brand-fidelity constraints, must-not-say list, citation-discipline
+- **Fill** (generative, per-contact): the custom context Cena assembles for the specific contact / org — research on their existing program, mapping to Cena's substrate, named alignments to their stated priorities
+
+This is `generative-determinism.md` applied to surfaces. Same pattern as the deck pipeline (contract = deck shape, fill = per-meeting content), but at the IA layer.
+
+### Strategic-bet linkage
+
+This re-touches the Agentic Discoverability Bet that Phase 1 deferred — *from the other side*. The Bet asked: *can Cena's surfaces be agent-discoverable?* The per-contact landing pattern asks: *can Cena agents generate and emit tailored surfaces for specific contacts?* Both are agent-mediated surface strategies; they compose (an agent-discoverable site that emits agent-generated per-contact landings is the eventual shape). Not building either in Phase 2; the IA must not preclude either.
+
+### Honest limit
+
+Aaron flagged the aspirational gap: *"obviously my claim is large and we don't hit that bar yet but that's the goal."* The capability requires (1) Cena research-and-emit agent infrastructure that doesn't yet exist publicly, (2) operational discipline to maintain per-contact landings as authoritative artifacts, (3) brand-fidelity automation. Phase 2 voice.md refresh writes the *template* voice for the pattern; first per-contact landing ships when Cena has the operational backing.
+
+### Phase 2 implications
+
+- Substep 2 voice.md FULL refresh writes per-contact landing template voice as part of its scope (treated as a target surface like `/for-comms`)
+- Wayfinding-band pattern ("see Cena from another angle") authored once in Substep 2; every targeted landing inherits
+- No per-contact landing instances built in Phase 2; capability slot is reserved in the IA
+
+### Phase 3+ implications
+
+- First per-contact landing instance ships when (a) operational backing is in place AND (b) a real contact / partner-org warrants the investment — likely Vanessa's or Aaron's lead-in for a specific partner conversation
+- Cena research-and-emit agent capability is a separate effort; this IA spec only commits the *template slot*
