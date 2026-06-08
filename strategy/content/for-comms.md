@@ -14,7 +14,7 @@ Section-by-section copy brief for the For comms / external affairs page. Anchore
 - **Primary audience:** Comms / external affairs (single role) at partner org — PR, marketing, internal comms peer. Per IA §4 + voice.md §2.
 - **Headline:** *"Cena, translated for your announcement."* H1, locked verbatim per IA §3.
 - **Voice register:** Translated, useful, named-contact-shaped. Voice should read as *"a real person at Cena will pick up the phone about a quote."* NOT vendor-portal "media kit" register. Per voice.md §2 (For comms row).
-- **CTA architecture:** *"Direct line to Cena's announcement lead — Vanessa Sena, CEO"* (or whoever Aaron designates). Calendly or direct contact, NOT a form. Per IA §9 row "Named-contact CTA (comms-peer-doored)" + voice.md §9 same row.
+- **CTA architecture:** *"Direct line to Cena's announcement lead — Vanessa Sena, CEO."* **Vanessa CONFIRMED 2026-06-08 by Aaron** as the named comms-conversation owner — designation question closed. Calendly or direct contact, NOT a form. Per IA §9 row "Named-contact CTA (comms-peer-doored)" + voice.md §9 same row.
 - **HIPAA-adjacent:** **No.** This page does not handle, describe, or claim about PHI; HDG packet's load on this page is restricted to row 3 (vendor-stack public-naming → "approved positioning language" must NOT name vendors) and row 1 (partner-attested phrasing for pilot reference). No HIPAA-specific copy lands here.
 - **Launch-gating partner-input dependencies:**
   - **Item #1 (UConn-named upgrade)** — directly touches Section 2 (co-announcement examples), Section 4 (pilot-reference language) most heavily, and Section 1 (subhead) by inheritance. Generic-AMC reference is the launch-default; UConn-named is strict-superset edit when Vanessa's red-line clearance lands. Per [outstanding-partner-input.md](../outstanding-partner-input.md) item #1.
@@ -54,7 +54,7 @@ The IA §4 `/for-comms` block defines six sections in order: Hero → Co-announc
 
 **Required claims:**
 - None as factual claims requiring citation — the H1 is positioning language per citation spec §3 (positioning, not factual). Subhead frames the offer; the offer's substantiation lives in sections 2–4.
-- The "direct line" phrase in the subhead implicitly claims a named human will pick up the phone. Verify named contact with Aaron before publish; if no named contact, the generic *"Cena's announcement lead"* framing holds (same as for-clinical-leaders §7 resolution).
+- The "direct line" phrase in the subhead implicitly claims a named human will pick up the phone. **Named contact confirmed: Vanessa Sena, CEO (Aaron 2026-06-08).** Subhead may name Vanessa explicitly or hold the generic *"our announcement lead"* register — both are voice-safe since the page-foot CTA names Vanessa explicitly.
 
 **Required proof / artifacts:**
 - None inline. The subhead's three offers each get a section below (sections 2, 3, 5 respectively) that substantiates them.
@@ -283,12 +283,12 @@ The IA §4 `/for-comms` block defines six sections in order: Hero → Co-announc
 **Canonical CTA copy** (per IA §9 row "Named-contact CTA (comms-peer-doored)" + voice.md §9 same row):
 > *"Direct line to Cena's announcement lead — Vanessa Sena, CEO."*
 
-(Or *"Direct line to Cena's announcement lead — [Aaron-designated contact name + role]"* if Aaron designates someone other than Vanessa. See open question #3 below.)
+(Vanessa Sena confirmed 2026-06-08 by Aaron. No designation alternative.)
 
 **What this section must do:**
 - Use the canonical CTA verbatim or near-verbatim per IA §9 + voice.md §9. The structural elements are: (1) *"Direct line"* — peer respect, no form gate; (2) *"Cena's announcement lead"* — names the role on Cena's side, signals the call won't be a sales rep; (3) named contact + title — makes it a real human, not a queue.
 - Provide a direct-contact mechanism: Calendly embed sized to the contact's actual availability, OR a direct email + phone OR Calendly link visibly shown. The named contact carries the weight; the access mechanism is operational.
-- Name the contact's actual title verbatim (*"CEO"* for Vanessa Sena per HDG packet row 1 + IA §4) — not an inflated label, not a deflated one.
+- Name the contact's title verbatim: *"Vanessa Sena, CEO."* Not inflated, not deflated. Confirmed 2026-06-08.
 - Position as quiet primary CTA at page-foot, separated visibly from the wayfinding band that follows.
 
 **What this section must not do:**
@@ -297,11 +297,11 @@ The IA §4 `/for-comms` block defines six sections in order: Hero → Co-announc
 - Promise outcome metrics in the CTA copy (*"Direct line to learn how we cut readmissions 30%"*) — voice.md §5 stale-claim ban + citation spec §4.
 - Use exclamation marks — voice.md §1 quiet-competence principle.
 - Use *"our team"* in place of the named contact — the named contact is the differentiator from a media kit; deflating to a generic team handle collapses the page's structural posture.
-- Use the named contact without confirming with Aaron at launch — if Aaron doesn't designate a contact before publish, fall back to generic *"Cena's announcement lead"* framing (without a name) rather than fabricating one.
+- Drift from the confirmed name (Vanessa Sena, CEO) — designation locked 2026-06-08; do not fall back to generic framing or substitute without Aaron's explicit re-designation.
 - Repeat the CTA as an inline-banner mid-page — single primary CTA at page-foot per IA §9.
 
 **Required claims:**
-- Named contact's title verbatim (*"Vanessa Sena, CEO"* or Aaron-designated equivalent). **Citation source:** Self-attesting; verify with Aaron at launch.
+- Named contact's title verbatim: *"Vanessa Sena, CEO."* **Citation source:** Self-attesting; confirmed by Aaron 2026-06-08.
 - The implicit claim that a direct line exists and will be answered. **Citation source:** Self-attesting (Cena commits to it).
 
 **Required proof / artifacts:**
@@ -318,8 +318,8 @@ The IA §4 `/for-comms` block defines six sections in order: Hero → Co-announc
 - "Submit your inquiry" / "Fill out the form" / "Request access" — form-gated CTA register; voice.md §9.
 
 **Lens-specific notes:**
-- BV: *"Direct line"* + named contact is the two-job voice mechanic; both must hold. If Aaron designates a different contact than Vanessa at launch, the structural elements (peer respect + form-absence + named role) must hold even if the name changes.
-- CTA review (when lens lands): Confirm named contact + title with Aaron before publish. If contact changes between draft and launch, the CTA copy updates verbatim (no inferred names).
+- BV: *"Direct line"* + named contact is the two-job voice mechanic; both must hold. Vanessa Sena, CEO is the locked named contact (Aaron 2026-06-08).
+- CTA review (when lens lands): If the contact role is ever re-designated, CTA copy updates verbatim (no inferred names).
 - Note: this CTA is the page's only conversion mechanism. Unlike `/for-clinical-leaders` which can lose readers gracefully to deep-links, this surface needs the comms peer to either (a) paste the snippets and leave OR (b) reach out via this CTA. Both are conversion; both work for Cena.
 
 ---
@@ -449,7 +449,7 @@ Per [outstanding-partner-input.md](../outstanding-partner-input.md):
 
 2. **Section 6 wayfinding band — `/proof` line phrasing.** Voice.md §6 doesn't list a canonical `/proof` pattern. IA §4 includes `/proof` in this page's wayfinding-band targets. Brief defaults to *"If you're looking for partner-protagonist proof → proof"* (matches voice.md §2 `/proof` register row). Aaron-gate: confirm default, propose alternative phrasing, or drop the `/proof` line (4-link wayfinding band also valid, with IA §4 spec amended).
 
-3. **Section 5 named-contact CTA — does Aaron designate Vanessa Sena, CEO, or another contact, or generic-shape at launch?** Voice.md §9 names Vanessa Sena verbatim; IA §4 names her *"or whoever Aaron designates."* Brief defaults to Vanessa Sena, CEO. **This question is shared with for-clinical-leaders.md open question #3** — resolving here resolves both. If generic-shape at launch (no named contact), CTA copy collapses to *"Direct line to Cena's announcement lead"* without a name; if Aaron designates a different contact, voice copy updates verbatim.
+3. ~~**Section 5 named-contact CTA — does Aaron designate Vanessa Sena, CEO, or another contact, or generic-shape at launch?**~~ **RESOLVED 2026-06-08 — Vanessa Sena, CEO confirmed by Aaron.** No designation alternative. CTA copy lands verbatim per Section 5 spec.
 
 4. **Brand-assets section logo + color asset implementation — is Phase 2 brief deferring to Phase 3 design implementation correct?** This brief specifies the *content discipline* of the brand-assets section (no form gate, no media-kit framing, do's-and-don'ts table is load-bearing) but defers the actual logo file delivery and color-system display to Phase 3 implementation per project structure. Aaron-gate: confirm Phase 2 brief sets content discipline only, OR scope-expand to require specific logo variants and color hex values be enumerated in this brief.
 

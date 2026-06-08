@@ -55,12 +55,9 @@ Each brief follows the same structure:
 
 ### Panel coverage
 
-Briefs were produced via two methods due to a server-side rate-limit failure on the original 70-agent Workflow:
+All 14 briefs synthesized via single-pass synthesizers with all 4 lenses (PLP / CTA / HDG / BV) applied internally. Each agent read the 6 canonical files and resolved cross-lens conflicts at synthesis time per the dispatch priority (CTA > HDG > BV > PLP).
 
-- **Briefs #1–2 (homepage, for-clinical-leaders):** synthesized 2026-06-08 morning from a partial 4-expert panel where only the Brand Voice Reviewer lens returned valid output. The synthesizer compensated by deferring to upstream specs for the absent lenses (CTA → citation-discipline-spec.md; HDG → HDG packet; PLP → flagged at Aaron-gate). Each brief carries an explicit **Panel-coverage note** at the top.
-- **Briefs #3–14:** synthesized 2026-06-08 morning via single-pass synthesizers with all 4 lenses applied internally. Each agent read the 6 canonical files and resolved cross-lens conflicts at synthesis time per the dispatch priority (CTA > HDG > BV > PLP).
-
-If panel-quality drift is suspected on briefs #1–2 during Aaron-review, re-run those 2 pages with the single-pass synthesizer pattern using the working batch-3 prompt template.
+Production note: the original 70-agent Workflow hit Anthropic-server 429 rate-limits on both runs (not Aaron's usage limit). Workflow run 1 produced partial output for homepage + for-clinical-leaders via BV-only synthesis; those 2 briefs were **regenerated 2026-06-08 afternoon** with the full 4-lens pattern after the rate-limit cause was identified. Pivot for briefs #3–14: direct Agent() dispatch in 3 batches of 4.
 
 ### Anchored to
 
