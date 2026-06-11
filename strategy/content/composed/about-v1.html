@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Cena Health</title>
+
+  <!-- Canonical Haven font stack — Lora (display) + Source Sans 3 (body) + Source Code Pro (mono).
+       Mirrors apps/patient/index.html + packages/design-system/src/partials/head.html. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Code+Pro:wght@400;500&display=swap">
+
+  <style>
+    /*
+     * Inline tokens + Haven primitives needed for /about page.
+     *
+     * Source files this excerpt draws from:
+     *   - Lab/haven-ui/packages/design-system/src/styles/tokens/palette.css      (Cena Color System v2 — sand family canonical)
+     *   - Lab/haven-ui/packages/design-system/src/styles/tokens/semantic.css     (surface + text + border tokens)
+     *   - Lab/haven-ui/packages/design-system/src/styles/tokens/typography.css   (Lora + Source Sans 3, heading-01/02 scale)
+     *   - Lab/haven-ui/packages/design-system/src/styles/tokens/spacing.css      (--spacing: 0.25rem scalar)
+     *   - Lab/haven-ui/packages/design-system/src/styles/tokens/components.css   (document-shell, document-masthead, document-title, document-section, document-section-title, document-prose, document-lead)
+     *
+     * Composition discipline (haven-primitive-codification.md 5-place check):
+     *   Every class used here exists in components.css + COMPONENT-INDEX.md. Zero
+     *   primitives invented at the composition layer. The single composition
+     *   choice is which subset of document-shell parts to render — the masthead's
+     *   eyebrow + meta + draft-banner are intentionally omitted (see notes).
+     */
+
+    /* ---------------------------------------------
+       Token excerpts — Cena Color System v2
+       --------------------------------------------- */
+    :root {
+      /* Sand family — canonical warm-neutral surface */
+      --color-sand-50:  #f8f4ec;
+      --color-sand-100: #e4dfd7;
+      --color-sand-200: #cfcac2;
+      --color-sand-300: #bbb6ad;
+      --color-sand-400: #a8a298;
+      --color-sand-500: #958e85;
+      --color-sand-600: #777069;
+      --color-sand-700: #5a544e;
+      --color-sand-800: #3f3934;
+      --color-sand-900: #25211d;
+
+      /* Teal — used only via the existing teal-400 reference rule (not interactive here) */
+      --color-teal-400: #5f9a8f;
+      --color-teal-700: #1e5149;
+      --color-teal-800: #113933;
+
+      /* Semantic aliases — public-site About surface */
+      --color-surface-page: var(--color-sand-50);
+      --color-text-normal:  var(--color-sand-900);
+      --color-text-muted:   var(--color-sand-700);
+      --color-text-faint:   var(--color-sand-500);
+      --color-border-default: var(--color-sand-300);
+
+      /* Font families — DESIGN.md §Typography */
+      --font-serif: 'Lora', ui-serif, Georgia, 'Times New Roman', serif;
+      --font-sans:  'Source Sans 3', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+      /* Type scale (minor-third 1.2) — heading-01 / heading-02 / body-02 */
+      --text-heading-01: 27.65px;
+      --text-heading-01-lh: 1.2;
+      --text-heading-02: 23.04px;
+      --text-heading-02-lh: 1.25;
+      --text-body-02: 16px;
+      --text-body-02-lh: 1.5;
+      --text-body-01: 19.2px;
+      --text-body-01-lh: 1.5;
+
+      /* Spacing scalar */
+      --spacing: 0.25rem;
+    }
+
+    /* ---------------------------------------------
+       Base — body + Typography Craft font-feature defaults
+       --------------------------------------------- */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background-color: var(--color-surface-page);
+      color: var(--color-text-normal);
+      /* Reading-comfort OpenType set — kern + ligatures always on; Source Sans 3
+         stylistic alternates for visible language warmth (ss03 = single-story g).
+         Mirrors apps/*/index.html canon (Lab/haven-ui/CLAUDE.md "Brand fonts per app"). */
+      font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "ss03" 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Suppress visited-link recolor inheritance on the page — About has no links anyway,
+       but if a future composition wires footer chrome we want the same warm-base register. */
+    a { color: inherit; text-decoration: none; }
+
+    /* ---------------------------------------------
+       Document-shell composition — Haven document district
+       Source: components.css :12801–12886
+       Used here as a public-site quiet structural surface (the brief's register
+       maps cleanly: structural, declarative, single-column, 52rem measure).
+       --------------------------------------------- */
+    .document-shell {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding: calc(var(--spacing) * 10) calc(var(--spacing) * 5);     /* py-10 px-5  */
+      max-width: 52rem;
+    }
+    @media (min-width: 768px) {
+      .document-shell {
+        padding: calc(var(--spacing) * 14) calc(var(--spacing) * 8);   /* md:py-14 md:px-8 */
+      }
+    }
+
+    .document-masthead {
+      padding-bottom: calc(var(--spacing) * 6);
+      margin-bottom: calc(var(--spacing) * 10);
+      border-bottom: 1px solid var(--color-sand-200);
+    }
+
+    .document-title {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: var(--text-heading-01);
+      line-height: var(--text-heading-01-lh);
+      color: var(--color-sand-900);
+      margin: 0;
+      letter-spacing: -0.005em; /* Lora optical tightening at heading register */
+    }
+
+    /* Document lead — opening orientation, slightly larger body.
+       Source: components.css :12848–12852 */
+    .document-lead {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-01);
+      line-height: 1.55;
+      color: var(--color-sand-700);
+      max-inline-size: 68ch;
+      margin: calc(var(--spacing) * 4) 0 0 0; /* mt-4 after the title */
+    }
+
+    /* Section rhythm — Source: components.css :12855–12876 */
+    .document-section {
+      margin-top: calc(var(--spacing) * 12); /* mt-12 */
+    }
+    .document-section:first-of-type {
+      margin-top: 0;
+    }
+
+    .document-section-title {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: var(--text-heading-02);
+      line-height: var(--text-heading-02-lh);
+      color: var(--color-sand-800);
+      margin: 0 0 calc(var(--spacing) * 4) 0; /* mb-4 */
+      letter-spacing: -0.003em;
+    }
+
+    /* Body prose — comfortable measure + rhythm.
+       Source: components.css :12879–12885 */
+    .document-prose {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.65; /* Leading-relaxed approximation — body-02's 1.5 + reading-comfort bump */
+      color: var(--color-sand-700);
+      max-inline-size: 68ch;
+      margin: 0;
+    }
+    .document-prose p + p {
+      margin-top: calc(var(--spacing) * 4); /* mt-4 */
+    }
+
+    /* Three-people line — sits inside document-prose but reads as a compressed
+       structural fact rather than running body. Visual treatment is the same as
+       body prose; the period-separated form does the voice work, so we don't
+       reach for a new primitive. */
+    .document-prose .team-line {
+      /* nothing extra — kept here as a hook in case a future composition wants
+         to tighten letter-spacing or weight. For v1 it's pure semantic markup. */
+    }
+
+    /* ---------------------------------------------
+       Accessibility — focus visible defaults for keyboard nav
+       (no interactive elements on this page, but inherited as base hygiene)
+       --------------------------------------------- */
+    :focus-visible {
+      outline: 2px solid var(--color-teal-700);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--
+    Page composition — /about (footer-only)
+    5 structural elements per IA v2 §5 + locked Aaron-gate batch 2 (Section 5+6 combined).
+    Word count: ~205 words (under floor — surfaced in copywriter notes; voice owner's call).
+    No CTA anywhere (IA §6 + voice.md §9). No hero photo, no team grid, no testimonials.
+  -->
+  <main class="document-shell" role="main">
+
+    <!-- Section 1 — Hero (H1 + subhead)
+         Primitive mapping: document-masthead + document-title + document-lead.
+         The eyebrow + meta + draft-banner parts of document-masthead are intentionally
+         omitted — the H1 "What Cena is." carries the primary mark alone. -->
+    <header class="document-masthead">
+      <h1 class="document-title">What Cena is.</h1>
+      <p class="document-lead">
+        Cena is the clinical intelligence infrastructure being built for food-as-medicine &mdash; a three-person, pre-seed company underneath the programs partner institutions already run.
+      </p>
+    </header>
+
+    <!-- Section 2 — Agents-first thesis
+         Primitive mapping: document-section + document-section-title + document-prose.
+         Honest-today for the thesis-as-thesis; honest-future-tense for program-level
+         deployment claims (Cap-Honest gate ledger Hotspot 3a). -->
+    <section class="document-section" aria-labelledby="thesis">
+      <h2 class="document-section-title" id="thesis">The thesis.</h2>
+      <div class="document-prose">
+        <p>
+          Cena is built agents-first. Humans hold accountability and decisions; agents handle throughput. Internally, that&rsquo;s how we operate today &mdash; three people, agents as primary brainpower, work that would otherwise take a much larger team. In the program, partner clinicians hold clinical authority. Cena&rsquo;s agents are being built to do the throughput work underneath that authority: assemble clinical intelligence between visits, surface decision trails, and reduce the gap between what clinicians need to see and what gets to them in time.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 3 — Three people
+         Primitive mapping: document-section + document-section-title + document-prose.
+         Compressed period-separated form — locked Aaron-gate batch 2 #1.
+         No photos, no biographies, no advisory board. The voice mechanic is the compression. -->
+    <section class="document-section" aria-labelledby="team">
+      <h2 class="document-section-title" id="team">Three people.</h2>
+      <div class="document-prose">
+        <p class="team-line">Aaron Sleeper, Chief Experience Officer. Vanessa Sena, CEO. Andrey Kartashov, CTO.</p>
+      </div>
+    </section>
+
+    <!-- Section 4 — Accountability model
+         Primitive mapping: document-section + document-section-title + document-prose.
+         HDG-locked phrasing (Cap-Honest gate ledger Hotspot 3b HONEST-TODAY).
+         Partner-clinician is the grammatical subject of sentence one. -->
+    <section class="document-section" aria-labelledby="authority">
+      <h2 class="document-section-title" id="authority">Who holds clinical authority.</h2>
+      <div class="document-prose">
+        <p>
+          Partner clinicians retain clinical authority on every program Cena supports. Cena&rsquo;s substrate doesn&rsquo;t make clinical decisions; it captures, surfaces, and trails the decisions clinicians make.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 5 — What we're building (combined with pre-seed framing per locked Aaron-gate batch 2 #3)
+         Primitive mapping: document-section + document-section-title + document-prose.
+         Honest-future-tense substrate-being-built claim (Cap-Honest gate ledger Hotspot 3c).
+         Specific-Primitive serving Cap-Honest: "every recommendation, every approval, every escalation
+         as an append-only trail" — vision specificity allowed in honest future-tense. -->
+    <section class="document-section" aria-labelledby="building">
+      <h2 class="document-section-title" id="building">What we&rsquo;re building.</h2>
+      <div class="document-prose">
+        <p>
+          Cena is the substrate being built to capture every recommendation, every approval, every escalation as an append-only trail &mdash; so the question &ldquo;who decided what, and on what basis?&rdquo; is answerable years from now, not asserted in the moment. We&rsquo;re pre-seed, three people, and one live academic-medical-center pilot in.
+        </p>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
