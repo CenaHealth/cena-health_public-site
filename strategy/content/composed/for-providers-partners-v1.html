@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For providers + partners — Cena Health</title>
+
+  <!-- Canonical Haven font stack — Lora (display) + Source Sans 3 (body) + Source Code Pro (mono).
+       Mirrors about-v1.html + for-payers-investors-v1.html + apps/patient/index.html. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Code+Pro:wght@400;500&display=swap">
+
+  <style>
+    /*
+     * Inline tokens + Haven primitives needed for /for-providers-partners page.
+     *
+     * Source files this excerpt draws from:
+     *   - Lab/haven-ui/packages/design-system/src/styles/tokens/palette.css      (Cena Color System v2 — sand family canonical)
+     *   - Lab/haven-ui/packages/design-system/src/styles/tokens/semantic.css     (surface + text + border tokens)
+     *   - Lab/haven-ui/packages/design-system/src/styles/tokens/typography.css   (Lora + Source Sans 3, heading-01/02 scale)
+     *   - Lab/haven-ui/packages/design-system/src/styles/tokens/spacing.css      (--spacing: 0.25rem scalar)
+     *   - Lab/haven-ui/packages/design-system/src/styles/tokens/components.css   (document-shell, document-masthead, document-title, document-section, document-section-title, document-prose, document-lead)
+     *
+     * Composition discipline (haven-primitive-codification.md 5-place check):
+     *   All core classes exist in components.css + COMPONENT-INDEX.md.
+     *   The 9-step bifurcation table is the composition's primary load-bearing
+     *   structural choice — rendered as Option A (HTML table) for maximum
+     *   bifurcation visibility (today / design-intent two-column structure).
+     */
+
+    /* ---------------------------------------------
+       Token excerpts — Cena Color System v2
+       --------------------------------------------- */
+    :root {
+      /* Sand family — canonical warm-neutral surface */
+      --color-sand-50:  #f8f4ec;
+      --color-sand-100: #e4ddf7;
+      --color-sand-200: #cfcac2;
+      --color-sand-300: #bbb6ad;
+      --color-sand-400: #a8a298;
+      --color-sand-500: #958e85;
+      --color-sand-600: #777069;
+      --color-sand-700: #5a544e;
+      --color-sand-800: #3f3934;
+      --color-sand-900: #25211d;
+
+      /* Teal — reserved for interactive commitment states */
+      --color-teal-400: #5f9a8f;
+      --color-teal-700: #1e5149;
+      --color-teal-800: #113933;
+
+      /* Semantic aliases — public-site surface */
+      --color-surface-page: var(--color-sand-50);
+      --color-text-normal:  var(--color-sand-900);
+      --color-text-muted:   var(--color-sand-700);
+      --color-text-faint:   var(--color-sand-500);
+      --color-border-default: var(--color-sand-300);
+
+      /* Font families — DESIGN.md §Typography */
+      --font-serif: 'Lora', ui-serif, Georgia, 'Times New Roman', serif;
+      --font-sans:  'Source Sans 3', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+      /* Type scale (minor-third 1.2) — heading-01 / heading-02 / body-02 */
+      --text-heading-01: 27.65px;
+      --text-heading-01-lh: 1.2;
+      --text-heading-02: 23.04px;
+      --text-heading-02-lh: 1.25;
+      --text-body-02: 16px;
+      --text-body-02-lh: 1.5;
+      --text-body-01: 19.2px;
+      --text-body-01-lh: 1.5;
+
+      /* Spacing scalar */
+      --spacing: 0.25rem;
+    }
+
+    /* ---------------------------------------------
+       Base — body + Typography Craft font-feature defaults
+       --------------------------------------------- */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background-color: var(--color-surface-page);
+      color: var(--color-text-normal);
+      font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "ss03" 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ---------------------------------------------
+       Document-shell composition — Haven document district
+       Source: components.css :12801–12886
+       --------------------------------------------- */
+    .document-shell {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding: calc(var(--spacing) * 10) calc(var(--spacing) * 5);     /* py-10 px-5  */
+      max-width: 52rem;
+    }
+    @media (min-width: 768px) {
+      .document-shell {
+        padding: calc(var(--spacing) * 14) calc(var(--spacing) * 8);   /* md:py-14 md:px-8 */
+      }
+    }
+
+    .document-masthead {
+      padding-bottom: calc(var(--spacing) * 6);
+      margin-bottom: calc(var(--spacing) * 10);
+      border-bottom: 1px solid var(--color-sand-200);
+    }
+
+    .document-title {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: var(--text-heading-01);
+      line-height: var(--text-heading-01-lh);
+      color: var(--color-sand-900);
+      margin: 0;
+      letter-spacing: -0.005em;
+    }
+
+    .document-lead {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-01);
+      line-height: 1.55;
+      color: var(--color-sand-700);
+      max-inline-size: 68ch;
+      margin: calc(var(--spacing) * 4) 0 0 0;
+    }
+
+    .document-section {
+      margin-top: calc(var(--spacing) * 12);
+    }
+    .document-section:first-of-type {
+      margin-top: 0;
+    }
+
+    .document-section-title {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: var(--text-heading-02);
+      line-height: var(--text-heading-02-lh);
+      color: var(--color-sand-800);
+      margin: 0 0 calc(var(--spacing) * 4) 0;
+      letter-spacing: -0.003em;
+    }
+
+    .document-prose {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.65;
+      color: var(--color-sand-700);
+      max-inline-size: 68ch;
+      margin: 0;
+    }
+    .document-prose p + p {
+      margin-top: calc(var(--spacing) * 4);
+    }
+
+    /* Bulleted prose — for operational pain point lists */
+    .document-prose ul {
+      list-style: none;
+      padding: 0;
+      margin: calc(var(--spacing) * 4) 0 0 0;
+    }
+    .document-prose li {
+      margin-bottom: calc(var(--spacing) * 3);
+      padding-left: calc(var(--spacing) * 6);
+      position: relative;
+    }
+    .document-prose li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--color-sand-800);
+      font-weight: 600;
+    }
+
+    /* Bifurcation table — Section 4 nine-step patient journey
+       Option A: HTML table with today/design-intent two-column structure
+       for maximum bifurcation visibility. */
+    .bifurcation-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: calc(var(--spacing) * 4);
+      font-size: var(--text-body-02);
+      line-height: 1.65;
+    }
+    .bifurcation-table thead {
+      display: none;
+    }
+    .bifurcation-table tr {
+      border-top: 1px solid var(--color-sand-200);
+    }
+    .bifurcation-table td {
+      padding: calc(var(--spacing) * 4) calc(var(--spacing) * 3);
+      color: var(--color-sand-700);
+    }
+    .bifurcation-table td:first-child {
+      padding-left: 0;
+      width: 10%;
+      font-weight: 600;
+      color: var(--color-sand-600);
+      vertical-align: top;
+      font-size: 14px;
+    }
+    .bifurcation-table td:nth-child(2) {
+      width: 25%;
+      font-weight: 600;
+      color: var(--color-sand-900);
+      vertical-align: top;
+    }
+    .bifurcation-table td:nth-child(3),
+    .bifurcation-table td:nth-child(4) {
+      width: 32.5%;
+      vertical-align: top;
+    }
+    .bifurcation-table .today-label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--color-sand-600);
+      margin-bottom: calc(var(--spacing) * 1);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .bifurcation-table .design-intent-label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--color-sand-600);
+      margin-bottom: calc(var(--spacing) * 1);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* CTA form scaffold — calendar-direct (no form backend in v1) */
+    .form-scaffold {
+      margin-top: calc(var(--spacing) * 4);
+      display: flex;
+      flex-direction: column;
+      gap: calc(var(--spacing) * 3);
+    }
+    .cta-button {
+      display: inline-block;
+      padding: calc(var(--spacing) * 3) calc(var(--spacing) * 6);
+      background-color: var(--color-teal-700);
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      align-self: flex-start;
+    }
+    .cta-button:hover {
+      background-color: var(--color-teal-800);
+    }
+    .cta-button:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px var(--color-surface-page), 0 0 0 4px var(--color-teal-700);
+    }
+
+    /* Accessibility — focus visible defaults for keyboard nav */
+    :focus-visible {
+      outline: 2px solid var(--color-teal-700);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--
+    Page composition — /for-providers-partners
+    6 structural sections per IA v2 §5: Hero → Problem → How program runs → Reference program (9-step bifurcation table) → Clinical authority → Contact.
+    Word count: ~1,047 words (per draft).
+    9-step bifurcation: Option A (HTML table) for maximum today/design-intent visibility.
+    Cap-Honest pressure: HIGH — 9-step bifurcation table + per-step tense discipline + clinical-authority frame.
+  -->
+  <main class="document-shell" role="main">
+
+    <!-- Section 1 — Hero (H1 + subhead)
+         Primitive mapping: document-masthead + document-title + document-lead.
+         Partner-protagonist + infrastructure anchor (Translate-Anchor per voice.md §2). -->
+    <header class="document-masthead">
+      <h1 class="document-title">The infrastructure your food-as-medicine program runs on</h1>
+      <p class="document-lead">
+        How a provider prescribes the intervention and receives data back &mdash; without replacing the workflows your team already runs.
+      </p>
+    </header>
+
+    <!-- Section 2 — The problem partners face
+         Primitive mapping: document-section + document-section-title + document-prose + bulleted list.
+         Operational pain recognition; partner-protagonist voice. -->
+    <section class="document-section" aria-labelledby="problem">
+      <h2 class="document-section-title" id="problem">The problem partners face</h2>
+      <div class="document-prose">
+        <p>
+          Running a food-as-medicine program is operational work. The clinician refers a patient. The care team sets a protocol. The patient orders meals against it. The kitchen delivers. Then &mdash; silence.
+        </p>
+        <p style="margin-top: calc(var(--spacing) * 4);">
+          What comes next is the gap. The outcomes the program is designed to capture remain scattered across systems that were built for billing, not for outcomes: adherence data lives in a meal-delivery app. Clinical assessments live in an EHR the Cena substrate cannot read. Re-assessment triggers depend on a clinician remembering, not on a system surfacing what the data shows. The program runs; the evidence of whether it&rsquo;s working stays fragmented.
+        </p>
+        <p style="margin-top: calc(var(--spacing) * 4);">
+          Every program director you talk to is chasing the same problem: <em>I know this protocol works. I need to show it.</em> That&rsquo;s the gap. Not the meals. Not the care plan. The infrastructure underneath that captures the intervention, measures what happened, and surfaces what changed &mdash; so the program that runs on it can defend itself.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 3 — How the program runs on Cena
+         Primitive mapping: document-section + document-section-title + document-prose (multiple paragraphs).
+         Vision-specific, honest-future-tense per Cap-Honest discipline.
+         Partner-protagonist framing; substrate as structural object. -->
+    <section class="document-section" aria-labelledby="how">
+      <h2 class="document-section-title" id="how">How the program runs on Cena</h2>
+      <div class="document-prose">
+        <p>The model is simple: a provider prescribes the intervention. Cena&rsquo;s substrate is being built to receive the data back.</p>
+      </div>
+      <div class="document-prose" style="margin-top: calc(var(--spacing) * 4);">
+        <p><strong>Your program prescribes.</strong> The partner clinician completes the clinical assessment in their EHR. They author the care plan. They set the protocol parameters &mdash; the meal protocol, the check-in cadence, the re-assessment window. The partner&rsquo;s program runs according to that protocol.</p>
+      </div>
+      <div class="document-prose" style="margin-top: calc(var(--spacing) * 4);">
+        <p><strong>Cena is being built to capture and thread the halves together.</strong> The program&rsquo;s downstream surfaces &mdash; ordering, check-ins, outcome capture &mdash; will read from a synchronized care-plan view. Every order your patient places carries the protocol it&rsquo;s derived from. Every adherence check-in surfaces the pattern of what the patient is actually doing against what the protocol expected. Every outcome measurement links back to the care plan that drove the intervention.</p>
+      </div>
+      <div class="document-prose" style="margin-top: calc(var(--spacing) * 4);">
+        <p><strong>Your clinicians keep their authority.</strong> The care plan lives in your EHR. Your system controls it. Cena&rsquo;s substrate is being built to maintain a view that your program&rsquo;s downstream surfaces read from &mdash; not to replace your workflows, not to author the decisions. The clinician decides; the system captures the trail the decision left behind.</p>
+      </div>
+    </section>
+
+    <!-- Section 4 — Reference program: UConn HIV-nutrition pilot
+         Primitive mapping: document-section + document-section-title + document-prose (framing) + bifurcation-table.
+         Cap-Honest Hotspot 1: 9-step patient journey with HONEST-TODAY vs HONEST-FUTURE-TENSE bifurcation.
+         Option A render: HTML table with today/design-intent two-column structure for maximum visibility. -->
+    <section class="document-section" aria-labelledby="reference">
+      <h2 class="document-section-title" id="reference">Reference program: A live academic-medical-center HIV-nutrition program runs on this model today</h2>
+      <div class="document-prose">
+        <p>
+          This is the shape of a food-as-medicine program on Cena&rsquo;s architecture. The partner runs the program; Cena handles the meal-delivery half today and is being built to thread the clinical-intelligence half together. Each step below shows what runs today alongside what the design intent extends to &mdash; so you can see the honest state of what&rsquo;s built, what&rsquo;s in-build, and what&rsquo;s planned.
+        </p>
+      </div>
+      <div class="document-prose" style="margin-top: calc(var(--spacing) * 4); font-size: 13px;">
+        <p><strong>Patient journey:</strong></p>
+      </div>
+      <table class="bifurcation-table">
+        <tbody>
+          <tr>
+            <td>#</td>
+            <td>Step</td>
+            <td>Today</td>
+            <td>Design intent</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Referral</td>
+            <td><span class="today-label">Today</span> A clinician at the academic medical center refers a patient into the program through their existing workflow.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Enrollment</td>
+            <td><span class="today-label">Today</span> The patient consents, sets dietary preferences, and is enrolled in the program.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Assessment</td>
+            <td><span class="today-label">Today</span> The partner clinician runs the clinical assessment in their EHR.</td>
+            <td><span class="design-intent-label">Design intent</span> Cena is being built to surface assessment-derived protocol parameters back into the care plan automatically.</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Care plan</td>
+            <td><span class="today-label">Today</span> The care plan is authored by the partner clinician in their EHR.</td>
+            <td><span class="design-intent-label">Design intent</span> Cena is being built to maintain a synchronized care-plan view that the program&rsquo;s downstream surfaces &mdash; ordering, check-ins, escalation &mdash; read from.</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Ordering</td>
+            <td><span class="today-label">Today</span> The patient orders meals against the program&rsquo;s parameters.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Fulfillment</td>
+            <td><span class="today-label">Today</span> The kitchen receives the order, prepares meals against the patient&rsquo;s protocol, and delivers.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Adherence check-ins</td>
+            <td><span class="today-label">Today</span> Check-ins capture intake data through a focused dietary-recall surface.</td>
+            <td><span class="design-intent-label">Design intent</span> Cena is being built to surface adherence patterns back to the care team &mdash; the structured adherence layer is in build.</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Outcome capture</td>
+            <td><span class="today-label">Today</span> The partner clinician captures outcome measurements through the program&rsquo;s standard protocol.</td>
+            <td><span class="design-intent-label">Design intent</span> Cena is being built to ingest outcome events and link them back to the care plan and intervention trail.</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Re-assessment</td>
+            <td><span class="today-label">Today</span> The partner clinician re-runs the clinical assessment at protocol cadence.</td>
+            <td><span class="design-intent-label">Design intent</span> Cena is being built to surface re-assessment triggers from adherence and outcome signals &mdash; the trigger logic is in build.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="document-prose" style="margin-top: calc(var(--spacing) * 6);">
+        <p><strong>What this structure proves:</strong> Cena handles the meal-delivery half today (steps 1, 2, 5, 6 run on the Cena meal-delivery substrate). Partner clinicians retain authority and capture clinical decisions in their EHR (steps 3, 4, 7, 8 run partner-side). Cena is being built to thread the two together &mdash; so the intelligence captured on the clinical side informs the program&rsquo;s delivery side, and the adherence data from the delivery side feeds back to the care team for re-assessment and protocol adjustment.</p>
+      </div>
+      <div class="document-prose" style="margin-top: calc(var(--spacing) * 4);">
+        <p>The bifurcation is honest. The meal-delivery half is built. The clinical-intelligence half is being built. The integration of the two is the substrate we are constructing.</p>
+      </div>
+    </section>
+
+    <!-- Section 5 — What clinical authority looks like
+         Primitive mapping: document-section + document-section-title + document-prose (three paragraphs).
+         Cap-Honest gate ledger Hotspot 3b: HONEST-TODAY partner-clinician retains authority.
+         HDG-locked phrasing (per HDG packet + Cap-Honest gate ledger). -->
+    <section class="document-section" aria-labelledby="authority">
+      <h2 class="document-section-title" id="authority">What clinical authority looks like</h2>
+      <div class="document-prose">
+        <p><strong>Your dietitians keep their workflows.</strong> The program they run on Cena is your program. The clinicians who author the protocol, approve the recommendations, and make the calls &mdash; those stay with your team.</p>
+      </div>
+      <div class="document-prose" style="margin-top: calc(var(--spacing) * 4);">
+        <p><strong>Your IRB keeps its approval process.</strong> Cena&rsquo;s substrate doesn&rsquo;t displace your institutional review. Your committee retains authority on what protocols run on your program, what data flows where, what a clinician can override and when.</p>
+      </div>
+      <div class="document-prose" style="margin-top: calc(var(--spacing) * 4);">
+        <p><strong>Your program produces the trail your committee needs.</strong> Your program records what your committee requires: who decided what, on what basis, when. Cena&rsquo;s substrate is being built to maintain that trail automatically &mdash; so the question <em>who approved this intervention, and what was the clinical reasoning?</em> is answerable years later, not asserted in the moment.</p>
+      </div>
+    </section>
+
+    <!-- Section 6 — Contact
+         Primitive mapping: document-section + document-section-title + document-prose + CTA.
+         Voice.md §9 calendar-direct pattern (champion-doored, no form).
+         CTA direct link to Calendly (integration route is downstream). -->
+    <section class="document-section" aria-labelledby="contact">
+      <h2 class="document-section-title" id="contact">Talk through what arming your committee looks like</h2>
+      <div class="document-prose">
+        <p>
+          Whether you&rsquo;re running a pilot, scaling an existing program, or exploring the model, talk through the turnkey-program fit and the referral-and-data-back integration. 30-minute call with our clinical lead to walk the model against your institution&rsquo;s existing workflows and decision governance.
+        </p>
+      </div>
+      <div class="form-scaffold" style="margin-top: calc(var(--spacing) * 6);">
+        <a href="#" class="cta-button">Schedule a call</a>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
