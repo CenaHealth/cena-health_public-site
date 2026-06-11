@@ -1,436 +1,217 @@
 # Content Brief: Homepage
 
-**Path:** `/` · **Status:** Awaiting Aaron-gate · **Date:** 2026-06-08 · **Phase 2, Substep 5**
+**Path:** `/` · **Status:** Awaiting Aaron-gate · **Date:** 2026-06-11 · **Phase 2 v2 launch brief 1 of 4**
 
-Regenerated 2026-06-08 with full 4-lens synthesis replacing the BV-only Run 1 brief.
-
-Anchored to [IA spec](../phase-2-information-architecture.md) §3 + §4 (homepage row) + §9 + §11, [voice.md](../../brand/voice.md) §1–6 + §8 + §10, [citation discipline](../citation-discipline-spec.md) §2–4 + §7, [HDG packet](../phase-2-hdg-review-packet.md) sign-off rows 1–2 + 4 + 6–8, and [outstanding-partner-input.md](../outstanding-partner-input.md). 4-lens (PLP / CTA / HDG-light / BV) synthesis; conflict-resolution priority CTA > HDG > BV > PLP.
+Section-by-section copy direction for the homepage. Anchored by reference to [Phase 2 IA v2](../phase-2-information-architecture.md) §5 (homepage block), [Phase 1 brief Amendment 2026-06-11](../phase-1-positioning-brief.md), [voice.md](../../brand/voice.md) §1 + §2 (homepage row) + §4 + §5 + §9, [citation-discipline-spec.md](../citation-discipline-spec.md), [c-017-canonical-positioning.md](../../../../Knowledge/Projects/Cena%20Health/Knowledge%20Migration/c-017-canonical-positioning.md), and [cap-honest-gate-ledger.md](../cap-honest-gate-ledger.md) Hotspot 1–3 (none touch this page directly; homepage stays at category framing).
 
 ---
 
 ## At a glance
 
-- **Purpose:** Pull the clinical champion (dominant warm-intro inbound) and hold the door open for vetters who land cold via forwarded link. Per IA §4 homepage row.
-- **Primary audience:** Clinical champion primary; all 5 roles must not fail on cold landing.
-- **Headline:** **HX-1 LOCKED verbatim** per IA §3 + Aaron-gate Q2 — *"Clinical intelligence infrastructure for food-as-medicine. Built for the programs your partners already run."* Plus Candidate A inline link in subhead (Aaron locked 2026-06-08 per voice.md §8).
-- **Voice register:** Recognition-stage, partner-enabling invitation. Confident, structural, unhurried. The homepage IS the voice exemplar — every downstream surface inherits voice mechanics from how this page lands. Per voice.md §2 (homepage row) + §3 (inheritance rule).
-- **CTA architecture:** **No hero CTA.** First CTA load lives in section 4 role-router cards. Candidate A inline-link mitigates Aaron's Q1 hero-CTA-absence reservation. Lateral routes in sections 5 and 6. Per IA §9 + voice.md §8 + Aaron Q1 lock.
-- **HIPAA-adjacent:** No. Homepage carries no PHI handling and makes no standalone HIPAA-compliance claims. The BAA-architected phrase in the proof strip is architectural-posture per HDG packet sign-off #2; the "audit-trail write" hot-spot in the substrate diagram is the only other HIPAA-adjacent token. Both follow HDG-recommended phrasings exactly.
-- **Conflict-resolution priority:** CTA > HDG > BV > PLP. On homepage, BV is heavy because the page IS the voice exemplar; HDG is light because no HIPAA-feature copy lands; CTA gates the proof strip + audit-primitive citations; PLP gates "substrate" + "food-as-medicine" plain-language accessibility for cold readers.
-- **Launch-gating partner-input dependencies:**
-  - **Item #1 (UConn-named upgrade)** affects proof strip (§2) + reference-program teaser (§6). Generic-AMC default ships; strict-superset edit when Vanessa clears UConn red-line. Cross-reference [outstanding-partner-input.md](../outstanding-partner-input.md).
-  - **Item #2 (US-only data residency)** does NOT directly touch homepage copy. The proof strip's BAA-architected element MUST NOT extend into data-residency framing; route specifics to `/how-the-substrate-works/#security`.
-  - Items #3 (SHA-256 chain) and #4 (five-categories-blocked) do NOT touch homepage; route through `/how-the-substrate-works` per IA §4.
+- **Purpose:** Job 1 (Cena exists) + frame Job 2 at category level + route to per-track Job 2 surfaces + offer Job 3 *(per IA §5 homepage block; v2 IA §1 three jobs)*.
+- **Track:** Cross-track. The track-selector IS the homepage's primary navigational CTA.
+- **IA-job mix:** Job 1 leads; Job 2 framed at category level only (per-track Job 2 lives on the track landings); Job 3 closes with one direct contact path.
+- **Voice register:** Category-claim + track-routing. Confident, structural, unhurried. C-017 anchor is canonical on this surface (Translate-Anchor's anchor-surface carve-out — "infrastructure" can lead in the hero subhead because the homepage is *where the anchor lives*, not an audience-translated surface).
+- **CTA:** Track-selector (primary, structural) + one direct contact path at page-foot (calendar-direct recommended; see Cross-section concerns).
+- **Cap-Honest pressure:** **LOW.** No substrate-mechanic deployment claims on this page; category-claim is ambitious-by-permission per Aaron 2026-06-07 Q4 + 2026-06-11 reaffirmation. The hero "fake it 'til you make it" register lives more naturally on `/for-payers-investors`; on the homepage, hold quiet category-stating posture.
 
 ---
 
 ## Section briefs
 
-The IA §4 homepage row defines six sections in order. Each section brief below uses the IA-named section as the heading. The hero composes two parts (HX-1 headline + Candidate A subhead) treated as one section per IA.
+The IA §5 homepage block hard-locks five sections in order: Hero → Problem in one paragraph → Two-track entry → Quietly-Cena-exists → Contact. Do not reorder.
 
 ---
 
-### Section 1: Hero (HX-1 + Candidate A inline-link subhead)
+### Section 1 — Hero
 
-**Heading:** *"Clinical intelligence infrastructure for food-as-medicine. Built for the programs your partners already run."* — **LOCKED verbatim** per IA §3 HX-1 row + Aaron-gate Q2.
-
-**Subhead (Candidate A LOCKED 2026-06-08 per voice.md §8):** *"Built for the programs your partners already run — or jump straight to the [substrate diagram](#substrate-diagram)."* Em-dash separator + inline anchor link to `#substrate-diagram` (section 3 of this page). The em-dash is doing real work — it signals optionality without committing to button-CTA shape.
-
-**Position:** Hero (first viewport), per IA §4 canonical template (compressed sections 1–3 into denser hero composition).
-
-**Length / shape:** Two sentences in the headline; one subhead sentence with inline link (≤25 words total in subhead including em-dash continuation). No third line. No eyebrow. No tagline above HX-1.
-
-**What this section must do:**
-- Render HX-1 exactly as locked: no rewording, no comma reshuffling, no period changes, no hyphen changes on "food-as-medicine" (hyphenated, lowercase — the C-017 category anchor is the exact string per Phase 1 §1).
-- Apply Candidate A mitigation: append inline link in subhead with em-dash separator linking to `#substrate-diagram`.
-- Establish the two-sentence composition discipline (sentence 1 = category claim, sentence 2 = partner-enabling clarifier) as the voice exemplar every subsequent headline on the site inherits from. Per voice.md §3 inheritance rule.
-- Hold present-tense declarative; no future-tense aspirational framing.
-- Hold quiet-competence register: no exclamation, no superlative, no adjective stack.
-- Lead with C-017 category claim to fight NourishedRx shadow head-on by occupying the framing slot first (per Phase 1 §3 + voice.md §2 homepage mechanics).
-
-**What this section must not do:**
-- Insert a hero CTA button — Aaron's Q1 resolution locked no-hero-CTA with Candidate A inline-link mitigation only.
-- Reword HX-1 to "food as medicine" (unhyphenated) or "Food-as-Medicine" (title-cased) — the C-017 category anchor is the exact string.
-- Add a tagline, eyebrow text, or pre-headline above HX-1 (collapses the two-sentence composition and competes with the category claim).
-- Add meal / kit / dietitian / kitchen imagery or stock food photography in the first viewport (voice.md §5 site-wide forbidden + Phase 1 Appendix B).
-- Insert any outcome percentage, dollar figure, or ROI claim in hero copy (voice.md §5 + Phase 1 Appendix B).
-- Render the inline link as a button (collapses the optionality voice mechanic Candidate A depends on per voice.md §8).
-
-**Required claims:**
-- None requiring citation in hero copy. Hero is positioning, not evidence — per citation spec §3 (Homepage hero row: "Hero forbidden patterns bar quantitative claims here"). All quantitative claims defer to proof strip (§2) and downstream pages.
-
-**Required proof / artifacts:**
-- HX-1 string LOCKED verbatim per IA §3.
-- Candidate A inline-link target: `#substrate-diagram` anchor (§3 of this page per IA §4 deep-link anchors).
-- Link copy: *"substrate diagram"* (voice-safe; "the platform" / "our solution" would not be — per voice.md §4 + §8).
-
-**Voice cues** (per voice.md §2 homepage register + §3 inheritance):
-- Do: present-tense declarative; two-sentence composition; em-dash optionality marker; "the programs your partners already run" doing brownfield-recognition without using the word "brownfield."
-- Don't: future tense; adjective stacks; button-CTA-shaped link copy; meta-narration on what the reader is seeing.
-
-**Forbidden phrasings (this section):** transformative / revolutionary / game-changing / next-generation / AI platform / AI-powered / our platform delivers / solutions / empower / seamless / learn more / click here / explore / discover / Ava / AVA / voice assistant / chatbot / VozCare. Link copy holds *"or jump straight to the substrate diagram"* verbatim or voice-safe near-variant per voice.md §6 + §8.
-
-**Lens-specific notes:**
-
-- **PLP:** Two catches. (1) *"Substrate"* in inline link lands 2 paragraphs above §3 diagram — relies on §3 caption + hot-spot labels for implicit-teaching within one screen scroll. (2) *"Food-as-medicine"* is jargon for non-clinical readers (comms, financial steward). HX-1 locked verbatim — no hero fallback. Mitigation: clarifier *"the programs your partners already run"* gives non-clinical readers a recognition handle. PLP-safe at launch; cold-reader testing may raise downstream-section explainer (not a hero change).
-- **CTA:** No quantitative claims in hero; no citation needed (positioning per citation spec §3 hero row). Safe.
-- **HDG (light):** No HIPAA-adjacent copy in hero. No review.
-- **BV:** Hero IS the voice exemplar — mechanics propagate downstream via voice.md §3 inheritance. Watch link copy: *"or jump straight to the substrate diagram"* reads as optional, not "click here." Em-dash carries the voice work; Phase 3 design must not render link as a button (collapses Candidate A's mechanic). Aaron's Q1 hero-CTA-absence unease is answered structurally by §4 router + voice-mechanically by this link.
+- **Heading (working title):** *"Clinical intelligence infrastructure for food-as-medicine."* (H1 — first sentence of HX-1 candidate from voice.md §2 homepage row; voice owner picks final wording per Translate-Anchor.)
+- **Position:** Section 1, above the fold.
+- **Length / shape:** H1 (one sentence, ≤8 words recommended; the C-017 anchor as-is is 7 words) + subhead (one sentence, ≤25 words) naming the partner-enabling clarifier or a problem-framing pivot. **No hero CTA button** — the track-selector in Section 3 is the page's primary navigational handle; the in-hero subhead inline link to Section 3 is the Q1-reservation-mitigation per voice.md §8 (Candidate A is canonical, ship that pattern adapted to v2 IA).
+- **Must-do:**
+  - Lead the H1 with the C-017 category claim — first sentence of HX-1 *"Clinical intelligence infrastructure for food-as-medicine"* is the recommended canonical anchor (`Cite-Or-Cut` is moot; this is positioning, not metric; `Cap-Honest` passes because pre-seed positioning is permitted to name the category Cena will own).
+  - Subhead does partner-enabling work without "benefit" *(voice.md §4 forbidden)* and without naming meals/kits/dietitians *(forbidden hero pattern per Appendix B + voice.md §5)*. Recommended substance: surface the brownfield reality without using the word; alternative pivot is problem-framing the gap-between-visits *(see Voice cues for the two-headline-direction call)*.
+  - Hold quiet-competence register throughout — the C-017 anchor is doing the work; voice does not amplify it `(Quiet-Comp)`.
+  - Subhead carries the inline-link pattern from voice.md §8 Candidate A, adapted to v2 IA: instead of jumping to a substrate diagram (cut per IA v2), the inline link routes to the track-selector in Section 3 — *"…— or jump to the right track."*
+- **Must-not:**
+  - Use forbidden hero patterns from Appendix B: no outcome percentage, no dollar figure, no "X% reduction in Y" construction, no meal/kit/dietitian/kitchen first-viewport imagery, no "benefit" in partner-frame.
+  - Use any voice.md §4 superlative ("transformative" / "revolutionary" / "game-changing" / "next-generation" / "seamless" / "empower" / "solutions").
+  - Make a substrate-mechanic deployment claim in the hero — Cap-Honest ceiling forbids it even though the homepage's overall pressure is LOW; the hero subhead is the easiest place to slip.
+  - Render a substrate diagram or workflow visualization in the first viewport (cut per IA v2 §3 + Cena Tech Accuracy verdict — implies deployed substrate).
+  - Place a button-shaped CTA in the hero. The track-selector IS the hero's CTA per voice.md §2 homepage per-surface taboos.
+- **Required-claims:**
+  - C-017 category claim. **Citation source:** Positioning canonical per [c-017-canonical-positioning.md](../../../../Knowledge/Projects/Cena%20Health/Knowledge%20Migration/c-017-canonical-positioning.md); no inline citation required (positioning claim per citation spec §3 row "Homepage hero").
+  - No other claims survive Appendix B hero forbidden patterns; quantitative claims do not land on this page.
+- **Voice cues:**
+  - The H1 is **declarative + structural**: name the category, full stop. The subhead does the partner-enabling pivot. `Specific-Primitive` lands as the noun choice "food-as-medicine" (not "nutrition" or "healthcare diet") — the specificity is in the indication frame, not in substrate-feature language.
+  - **Two-direction call for Aaron (Voice owner's recommendation: Direction A):**
+    - **Direction A (recommended) — Category-claim-first:** *"Clinical intelligence infrastructure for food-as-medicine. Built for the programs your partners already run — [or jump straight to the right track](#tracks)."* Inherits HX-1 directly; survives Vanessa's CI-forward direction at the lead noun ("clinical intelligence" leads the first sentence) `(Track-First)`; survives Aaron's 2026-06-11 substrate-as-nav prohibition (no "substrate" in the hero) `(Translate-Anchor)`; survives Cap-Honest cleanly (no deployment claim).
+    - **Direction B (alternative) — Problem-framing-first:** *"What food-as-medicine programs lose between clinical visits. Cena is the clinical intelligence layer being built to close it — [jump to the right track](#tracks)."* Inverts the order to lead with the problem the C-017 anchor solves; pivots category claim to honest future-tense ("being built"). Trade-off: weaker positioning land (the C-017 anchor doesn't lead, it lands as solution); stronger Cap-Honest read (no implied deployment); reads more like the pitch-deck-equivalent floor.
+    - **Aaron-gate:** the voice owner recommends A as the cross-track homepage hero. B is preserved as a fallback if the homepage A/B-reads thin in live testing (parallel to voice.md §8 candidate-C-as-fallback discipline).
 
 ---
 
-### Section 2: Proof strip (AMC pilot reference + BAA-architected + peer-reviewed citations)
+### Section 2 — The problem in one paragraph
 
-**Heading:** No H2 — proof strip is a horizontal element below hero, not a titled section. Optional eyebrow label per design-system treatment.
-
-**Position:** Section 2, immediately below hero, above substrate diagram. Per IA §4 canonical template ("Proof strip — third-party-resolvable signals").
-
-**Length / shape:** 3-element horizontal strip. Pilot reference (left, ~12–15 words), BAA-architected posture (center, ~8–10 words), peer-reviewed citations cluster (right, citation marks + source labels). Total strip ≤45 words.
-
-**Elements (per IA §4):**
-1. **Live AMC HIV-nutrition pilot reference** — generic-AMC framing at launch; strict-superset upgrade to UConn-named when Vanessa clears.
-2. **BAA-architected** — architectural-posture claim; HDG-approved phrasing per sign-off #2.
-3. **Peer-reviewed nutrition outcomes citations** — citation marks + source labels referencing food-as-medicine intervention literature.
-
-**What this section must do:**
-- Use generic-AMC reference language by default: *"A live academic-medical-center HIV-nutrition program runs on Cena today"* — exact strict-superset shape that upgrades by org-name swap when Vanessa clears UConn-naming (per HDG packet sign-off #1 + outstanding-partner-input item #1).
-- Frame BAA element as architectural posture using **HDG packet row 2 recommended phrasing exactly**: *"BAA-architected"* or *"BAA-ready architecture."* Per HDG packet §2 sign-off list #2 + voice.md §10 audit-grade-by-default.
-- Every peer-reviewed nutrition outcomes citation in the strip carries a primary-source citation per citation spec §2 source-hierarchy (clinical-outcomes claim → PubMed-indexed peer-reviewed-literature). Inline markers `[^N]` + References section per citation spec §5.
-- Lead with the pilot reference (specificity-over-generality per voice.md §1 — concrete named primitive beats abstract trust signal).
-- Hold partner-protagonist framing — the AMC is the protagonist running the program; Cena is the substrate they ran it on. Per voice.md §1 substrate-not-vendor.
-- Each element cross-links to the canonical surface where the claim is substantiated in full: pilot reference → `/reference-program`; BAA-architected → `/how-the-substrate-works/#security`; peer-reviewed citations → page-bottom References section.
-
-**What this section must not do:**
-- Insert any of the legacy off-limits proof points (voice.md §5 + citation spec §4 explicitly forbid):
-  - 30% readmission reduction / 30% reduction in hospitalizations
-  - 25% ED visit reduction / 25% fewer ER visits
-  - 1.8% HbA1c reduction
-  - 85% adherence rate
-  - 40% higher adherence (cultural relevance)
-  - $3,200 annual savings per patient
-  - 36% gross margins / 45% at scale
-  - $200 PMPM
-  - $17B preventable costs
-  - 60–90 day implementation
-  - $1.2M–$3M Series A target
-- Use "HIPAA-compliant" as a standalone claim (voice.md §4 + HDG packet §5 prohibits the noun-phrase use).
-- Use "bank-grade encryption" / "enterprise-grade security" / "military-grade" (voice.md §4 — say what's actually true and route specifics to `/how-the-substrate-works/#security`, not the homepage strip).
-- Include a logo wall ("Trusted by [logos]") — voice.md §5 site-wide forbidden until partner pages exist + Phase 1 Appendix B.
-- Frame the AMC pilot as "our customer" or "our partner UConn achieved Y%" (voice.md §2 reference-program register; voice.md §4 — customers / partners-with-quoted-outcome are vendor-frame tells).
-- Name UConn (or any specific partner) in the pilot reference until item #1 lands per outstanding-partner-input.md.
-- Carousel any partner references — single named reference in place, never rotating (voice.md §5).
-- Extend BAA-architected into "BAAs in place" / "BAA with UConn" / "BAA-ready partner" / "fully BAA-compliant" (HDG packet §6 explicit — BAAs are partner-by-partner; universal-coverage claim is unverifiable and creates uncomfortable asymmetry per partner audit).
-- Extend BAA-architected into US-only data residency claim — Item #2 launch-gating until Andrey confirms end-to-end vendor stack (per outstanding-partner-input).
-- Cite trade press / vendor white papers / WebFetch summaries as primary sources for peer-reviewed claims (citation spec §2 source-hierarchy explicit).
-
-**Required claims** (with citation per citation spec):
-- **Pilot reference:** *"A live academic-medical-center HIV-nutrition program runs on Cena today."* **Citation source:** Partner-attested per citation spec §2(c) worked example. **Launch-gating partner-input #1** — generic-AMC framing ships now; UConn-named is strict-superset edit when Vanessa clears. Marker: `[^N]`. Re-check cadence: `on-partner-comms-shift`.
-- **BAA-architected:** *"BAA-architected"* or *"BAA-ready architecture."* **Citation source:** Cena-specific architecture (substrate-architecture canon) + HDG packet §2 sign-off list #2. Marker: `[^N]`. Re-check cadence: `on-architecture-change` + `on-statute-update`.
-- **Peer-reviewed nutrition outcomes:** Selected citations drawn from citation spec §2's approved peer-reviewed-literature inventory (per citation spec §9 worked example pattern). **Citation source:** Clinical outcomes per citation spec §2 row — PubMed-indexed journal article with named authors, journal, year, DOI. Marker: `[^N]`. Re-check cadence: `on-study-supersession`.
-
-**Required proof / artifacts:**
-- Inline citation markers per element. Each resolves to a References entry per citation spec §5.
-- Cross-links from each element to the canonical surface: pilot → `/reference-program`; BAA-architected → `/how-the-substrate-works/#security`; peer-reviewed → page-bottom References.
-- Pre-ship gate (citation spec §7) must pass: every quantitative claim has inline citation; every References entry meets source-hierarchy bar; every entry has Retrieved-date stamp within 365 days for `annual` cadence or 90 days for `on-*` cadences.
-
-**Voice cues** (per voice.md §2 homepage register + §10 audit-grade-by-default reflex):
-- Do: concrete-named-artifact language (*"A live academic-medical-center HIV-nutrition program"*); citation marks visible inline; declarative-fact-not-marketing tone.
-- Don't: abstracted feature claims (*"clinical outcomes you can trust"*); unattributed numerics; "audit-grade" as standalone adjective for the substrate itself (attach to what the substrate *produces*, not the substrate).
-
-**Forbidden phrasings (this section):** HIPAA-compliant / HIPAA-certified / fully HIPAA-compliant / bank-grade / enterprise-grade / military-grade / trusted by / our customers / our partners (without specific naming) / our customer X achieved Y% / proven results / industry-leading / best-in-class / BAAs in place / BAA with [partner] / BAA-ready partner / fully BAA-compliant / US-only data residency (until item #2 resolves) / HITRUST-certified / SOC 2 Type II / FDA-cleared / clinically validated / production-ready / production platform / transformative / revolutionary / next-generation.
-
-**Lens-specific notes:**
-
-- **PLP:** Two catches. (1) *"Academic-medical-center"* is clinical-side jargon; cold financial-steward / comms readers may stumble. Generic-AMC framing is locked by partner-input shape (can't degrade to "major research hospital" without losing upgrade vector). Mitigation: BAA + peer-reviewed elements anchor "hospital-grade clinical infrastructure" implicitly. (2) *"BAA-architected"* is procurement vocabulary for legal-compliance reader; champion doesn't parse reflexively. Acceptable per proof-strip's role-asymmetry — strip is trust-signal for vetters; champion's orientation is §3 + §5.
-- **CTA:** **Peer-reviewed citation inventory is the load-bearing claim-validity gate.** Per citation spec §9, citations must be real PubMed-DOI per §2 source-hierarchy (clinical-outcomes row); reject trade-press or vendor white papers per `feedback_primary_source_values`. Substep 5 `[VERIFY]`-tags each citation per voice.md §10. Spec doesn't pre-approve specific citations; Substep 5 selects + verifies.
-- **HDG (light):** **BAA-architected follows HDG packet row 2 exactly.** No drift to *"BAA-friendly"* (softens), *"fully BAA-compliant"* (regulatory misuse), *"BAA-secure"* (compression loses precision), *"BAAs in place"* (partner-specific), *"BAA-ready partner"* (implies relationship). Architectural-only frame is load-bearing per HDG §6. AMC framing is Cena-self-decided + Vanessa-attested per HDG sign-off #1.
-- **BV:** Audit-grade-by-default stress-tested here. `[VERIFY]`-tag every numeric. Lean concrete-named-artifact over abstracted-feature. Substrate-not-vendor holds: AMC is protagonist; BAA describes Cena's *posture*; citations cite *the literature*.
+- **Heading (working title):** Quiet H2; writer's call. Recommended: *"What's lost between visits."* (verb-first, front-loaded load-bearing noun per voice.md §3 inheritance rule).
+- **Position:** Section 2, immediately under hero.
+- **Length / shape:** **One short paragraph, 60–100 words.** Not bulleted (this is a problem-framing paragraph where the prose carries the argument; `document-structure.md` carve-out for the single short answer applies). No subsections; this is the page's quiet-pivot from category claim to category problem.
+- **Must-do:**
+  - Name the problem the C-017 category exists to solve: what food-as-medicine programs and the payers backing them lose without between-visit clinical intelligence. Frame at *category level* — this is the homepage's job-1-into-job-2 framing, not the per-track job-2 substantiation (per-track work lives on the landings).
+  - Use partner-protagonist construction throughout (`Partner-First`): the *programs* lose; the *care teams* lose; not "we lose" / "the industry loses."
+  - Land in honest present tense — the problem exists today; what's HONEST-TODAY is the problem statement (per Cap-Honest gate ledger Hotspot 2 carve-out: "The problem description… is HONEST-TODAY"). Pre-seed Cap-Honest discipline only bites on Cena's *capability* claims; problem statements are fair game.
+  - Hold quiet-competence; the paragraph reads as observation, not lament `(Quiet-Comp)`.
+- **Must-not:**
+  - Cite any uncited quantitative claim. If a stat would help the paragraph, tag `[VERIFY]` inline and resolve before ship; do not invent a substitute number `(Cite-Or-Cut)`.
+  - Use any §4 voice forbidden phrasing ("seamless," "empower," etc.).
+  - Make a Cena capability claim ("Cena solves this today") — the paragraph names the problem; Section 3 routes to the tracks where Cena's value-being-built is described `(Cap-Honest)`.
+  - Use stale legacy claims (the 30% readmission / 25% ED visit / $3,200 savings library is explicitly OFF-LIMITS per voice.md §5 + citation spec §4).
+- **Required-claims:**
+  - Category-level problem framing — between-visit clinical intelligence gap. **Citation source:** Structural framing per Phase 1 brief §1; no quantitative claim, no citation required at this surface.
+  - Any quantitative claim added here (ED utilization rate, hospitalization rate, market-size figure) — `[VERIFY]` until primary-source cited per citation-discipline-spec §2 + §3. Recommended: ship without a quantitative claim; the structural problem framing does the work.
+- **Voice cues:**
+  - One paragraph, three or four sentences max. The brevity is the voice — quiet competence reads as confidence that the problem is recognizable without lecture `(Quiet-Comp)`.
+  - The grammatical subject is the partner / care team / payer / program, not Cena and not "we" `(Partner-First)`.
+  - If a sentence wants Cena as subject ("Cena sees X"), rewrite with the program / partner as subject.
 
 ---
 
-### Section 3: Substrate diagram with click-through hot-spots
+### Section 3 — Two-track entry
 
-**Heading:** *"How the substrate works"* — caption text above the diagram. Selected to mirror the destination surface headline shape per voice.md §3 inheritance rule + IA §3 hub headline pattern. **LOCKED for this brief** (resolves prior Open Question #1 from Run 1).
-
-**Subhead (caption-line, optional):** Single sentence ≤15 words framing the diagram's payoff (writer's call on exact phrasing; preserve verb-first + load-bearing-noun-first inheritance).
-
-**Position:** Section 3 of homepage, immediately below proof strip. **Anchor: `#substrate-diagram`** (matches Candidate A inline-link target in §1). Per IA §4 deep-link anchors.
-
-**Length / shape:** Single visual primitive with 4 click-through hot-spots; hover captions ≤15 words each; one ≤12-word page caption above the diagram.
-
-**The 4 hot-spots (per IA §4):**
-
-| Hot-spot | Label | Destination anchor |
-|---|---|---|
-| 1 | *"Data ingestion"* | `/how-the-substrate-works/integration#data-flow` |
-| 2 | *"Clinical reasoning"* | `/how-the-substrate-works/#reasoning` |
-| 3 | *"Recommendation with citation"* | `/how-the-substrate-works/sample-audit-trail#recommendation-citation` |
-| 4 | *"Audit-trail write"* | `/how-the-substrate-works/provenance-and-accountability#provenance` |
-
-**What this section must do:**
-- Use *"How the substrate works"* as the diagram's page caption — mirrors hub headline per voice.md §3 inheritance rule + provides plain-language anchor for "substrate" within one screen of the hero's inline link.
-- Caption the diagram in evaluator-respecting voice — never *"How Cena helps your program."*
-- Label hot-spots with verb-first noun-forward specificity (per voice.md §3 inheritance rule + IA §5 scannability primitives).
-- Use *"the substrate"* in body and hover-state copy; never *"the platform,"* *"our solution,"* *"Ava."* Per voice.md §4.
-- Hold the substrate-not-vendor principle per voice.md §1 — diagram tells the story of what data does, not what Cena does to data.
-- Each click-through routes to the matching anchor on `/how-the-substrate-works` per IA §4 hub anchors.
-- Hover captions read as documentation annotations, not marketing claims (per voice.md §2 hub register + sample-audit-trail register applied by inheritance).
-
-**What this section must not do:**
-- Caption the diagram with vendor-framed language (*"Our platform's architecture,"* *"How we deliver outcomes,"* *"Cena's intelligent engine"*).
-- Use *"Ava,"* *"AVA,"* *"voice assistant,"* *"chatbot,"* *"AI-powered,"* *"intelligent automation,"* *"smart routing"* anywhere in labels or captions (voice.md §4 forbidden).
-- Stack adjectives in any caption (*"powerful,"* *"intelligent,"* *"enterprise-grade,"* *"AI-driven"*) — voice.md §2 hub-page taboo extends to homepage diagram per inheritance.
-- Imply the diagram shows displacement of partner workflows — every label must read as additive substrate, not replacement.
-- Claim a quantitative throughput, latency, or volume figure in any caption (route to `/how-the-substrate-works/integration`).
-- Label specific cloud vendors in the diagram (Google Cloud, Vertex AI, Anthropic) — per HDG packet §7 + sign-off #3 + §3.4: do not name vendors publicly; route to NDA room.
-- Label "PHI write" or "compliance event" as alternate phrasings for hot-spot 4 — HDG-recommended language is *"audit-trail write"* per HDG packet §3.1 audit-log naming pattern.
-
-**Required claims** (with citation per citation spec):
-- **Architectural claims** about the substrate's data-flow (data-in → reasoning → recommendation → audit trail). **Citation source:** Cena-specific architecture per citation spec §2 row + cross-link to `/how-the-substrate-works/` hub. No quantitative claims in diagram captions or hot-spot copy by default. If hot-spot hover copy names a specific data-source primitive (e.g., *"FHIR R4 ingestion"*), that's an architectural-claim citation candidate; default voice-review is to route those specifics to `/how-the-substrate-works/integration`.
-
-**Required proof / artifacts:**
-- Hot-spot anchor targets must match IA §4 hub anchors (`#data-flow`, `#reasoning`, `#provenance`).
-- Caption + 4 hot-spot labels — each verb-first or load-bearing-noun-first per voice.md §3 inheritance rule.
-- Diagram brand-fidelity: must clear bar or becomes credibility liability per IA §11 reservation. (Phase 3 design hand-off owns this; voice review enforces voice mechanics within whatever diagram lands.)
-
-**Voice cues** (per voice.md §2 hub-page register applied by inheritance):
-- Do: quiet documentation tone; verb-first labels; "the substrate" as the noun; annotations explain what each step does and what artifact it produces.
-- Don't: marketing inflection in hover state; first-person-Cena framing; adjective stacks; meta-narration on what the reader is seeing.
-
-**Forbidden phrasings (this section):** our platform / our solution / our engine / AI-powered / AI-driven / intelligent / smart / powerful / comprehensive / enterprise-grade / robust / scalable / Ava / AVA / chatbot / voice assistant / next-generation / cutting-edge / transforms / revolutionizes / seamless / frictionless / PHI write / compliance event / regulatory checkpoint (use HDG-aligned *"audit-trail write"*) / named cloud vendors (Google Cloud / Vertex AI / Anthropic — route to NDA room per HDG sign-off #3).
-
-**Lens-specific notes:**
-
-- **PLP:** **"Substrate" gets its first plain-language anchor here.** Caption + hot-spot label structure (data → reasoning → recommendation → audit-trail) does the implicit-teaching work. Catch: third hot-spot *"Recommendation with citation"* — "with citation" reads as jargon; diagram-body visual (link annotation) anchors meaning within same viewport.
-- **CTA:** Verify all 4 hot-spot anchor targets resolve on `/how-the-substrate-works` per IA §4 (`#data-flow`, `#reasoning`, `#recommendation-citation`, `#provenance`). No quantitative claims at diagram surface; citations land at destinations.
-- **HDG (light):** Hot-spot 4 *"Audit-trail write"* is only HIPAA-adjacent token. HDG-aligned per packet §3.1 + §3.2. Do NOT degrade to *"PHI write,"* *"compliance event,"* *"BAA log,"* *"regulatory checkpoint"*.
-- **BV:** Diagram is load-bearing visual primitive. Voice reads as quiet documentation, not marketing inflection. **Risk:** designer/copywriter inflates hovers to compensate for no-hero-CTA — collapses quiet-competence register the no-CTA call protects. Resist.
+- **Heading (working title):** Quiet H2; writer's call. Recommended: *"Two ways to read what we're building."* Alternative: *"For payers and investors. For providers and partners."* (label-as-heading, more direct).
+- **Position:** Section 3, immediately under problem paragraph. **Anchor `#tracks`** (the hero subhead's inline link routes here).
+- **Length / shape:** Two prominent track-entry blocks rendered side-by-side (Phase 3 design owns the visual; this brief specifies structure). Each block carries: track label + 1-sentence framing of what that track reads + a clear navigational handle to the landing.
+- **Must-do:**
+  - **Track 1: For payers + investors.** 1-sentence framing names the CI-forward emphasis: what payers and investors lose without between-visit clinical intelligence; what Cena is being built to provide `(Track-First, Cap-Honest)`. The sentence is the scent the payer/investor reader follows into `/for-payers-investors`.
+  - **Track 2: For providers + partners.** 1-sentence framing names the turnkey-program emphasis: the infrastructure your food-as-medicine program runs on (the anchor word "infrastructure" lands literally here per `Translate-Anchor` carve-out; even in the homepage's cross-track context, the track-2 framing is allowed to surface the providers/partners register). The sentence is the scent the provider/partner reader follows into `/for-providers-partners`.
+  - Track labels are functional and audience-direct — *"For payers and investors"* / *"For providers and partners"* — not creative labels. The discipline matches voice.md §2 per-surface guidance: roles nest under tracks per amendment.
+  - Each navigational handle (Phase 3 implementation: clickable card, button-shaped link, or full-block tap-target) carries an arrow (→) per voice.md §6 wayfinding-band convention adapted to this surface — invitational, not directive.
+  - Track-selector IS the homepage's primary navigational CTA per IA §5; voice register stays quiet (the structural placement does the CTA work, not loud verb choice) `(Quiet-Comp)`.
+- **Must-not:**
+  - Use creative labels for the tracks (*"For the visionaries"* / *"For the builders"* — collapses into superlative-flattery register).
+  - Use "click here" / "learn more" / "explore" / "discover" — voice.md §6 wayfinding band prohibitions, applied here.
+  - Frame the tracks with role-titles in the heading (*"For VPs Population Health"* — role-titles live inside the surface, not in the cross-track selector per voice.md §6 mechanics).
+  - Add a third track (the two-track posture is structural per Phase 1 Amendment 2026-06-11).
+  - Make the framing sentences carry capability claims — they're routing copy, not substantiation. The track landings carry job-2 work.
+- **Required-claims:**
+  - Track 1 framing names *"between-visit clinical intelligence"* as the value frame. **Citation source:** Positioning per Phase 1 brief Amendment 2026-06-11; no inline citation required `(Cap-Honest passes — value-frame in honest future-tense)`.
+  - Track 2 framing names *"the infrastructure your food-as-medicine program runs on"* (anchor word literal here). **Citation source:** Positioning per Phase 1 brief Amendment + C-017; no inline citation required.
+- **Voice cues:**
+  - Each track block reads as recognition, not pitch. The financial-steward landing on the homepage should think *"that one's for me"*; the program director should think the same about the other.
+  - Symmetry matters — the two blocks should feel architecturally equivalent. If one block reads heavier (more capability claims, more verbs) than the other, the asymmetry signals which audience Cena thinks matters more, which betrays the two-track posture.
+  - The arrow (→) does the navigational work; the verb in the framing sentence is the scent.
 
 ---
 
-### Section 4: Role-doored CTA band (5 cards)
+### Section 4 — Quietly, Cena exists
 
-**Heading:** No section heading on the band itself; each of the 5 cards carries its own wayfinding sentence per voice.md §6 pattern.
-
-**Position:** Section 4 of homepage. **Anchor: `#role-router`** per IA §4 deep-link anchors. **First CTA load on the page** (per IA §9 — recognition-stage role-router cards inherit CTA load that absent hero CTA would carry).
-
-**Length / shape:** 5-card grid; each card = wayfinding sentence (≤12 words) + body sentence (≤20 words) + arrow primitive.
-
-**The 5 cards (canonical sentences per voice.md §6 wayfinding-band patterns + IA §4 homepage row):**
-
-| Card | Wayfinding sentence | Destination | Card-body scent (≤20 words) |
-|---|---|---|---|
-| 1 | *"If you're evaluating clinical fit →"* | `/for-clinical-leaders` | Audit trail per recommendation; partner-clinician accountability preserved; what your committee needs to defend the choice. |
-| 2 | *"If you're vetting data architecture →"* | `/how-the-substrate-works/integration` | Built to connect to FHIR endpoints, file drops, and API conventions partners specify. |
-| 3 | *"If you're scoping the contract →"* | `/for-program-economics` | Per-program economics, not per-patient pricing. The substrate produces what VBC reporting requires. |
-| 4 | *"If you're reviewing for compliance →"* | `/how-the-substrate-works/provenance-and-accountability` | Every clinical action carries its trail. The sample audit-ready record is one click away. |
-| 5 | *"If you're translating this internally →"* | `/reference-program` | A live academic-medical-center HIV-nutrition program runs on this blueprint today. |
-
-**What this section must do:**
-- Apply voice.md §6 wayfinding-band sentence patterns exactly: *"If you're [role-action] →"* — names the reader's job, not Cena's offer.
-- Use the 5 canonical sentences from voice.md §6 verbatim.
-- Add a card-body sentence per card: one sentence of scent (≤20 words) describing what the destination surface does for that role's job.
-- Use arrow (→) as the navigational primitive; never *"click here,"* *"learn more,"* *"explore,"* *"discover."* Per voice.md §6.
-- Hold each card-body sentence in evaluator-respecting voice — describe the destination's job, not Cena's offer.
-- Card 5 ("translating this internally") routes to `/reference-program` per IA §4 — that's the champion's read-next path. Voice should make the card feel like *"a working example to point at"* not *"a case study."* Per voice.md §2 reference-program register.
-
-**What this section must not do:**
-- Use role-titles in the sentence (*"For CMOs"* / *"For VPs of Population Health"*) — role-titles belong in destination surface headings, not in the wayfinding sentences per voice.md §6.
-- Add exclamation points or CTA-button language (*"Get started!"* / *"Learn more!"* / *"Discover Cena!"*).
-- Use *"champion,"* *"sponsor,"* *"vetter,"* *"committee"* in card-body copy — these are deal-roles, internal vocab, not reader-facing (voice.md §4 + §11 internal-vocab translation reference). Exception: card 1's body may use *"your committee"* in possessive form (the partner's committee, not Cena's deal-shape).
-- Use *"patient app,"* *"capability matrix,"* *"provenance trail"* anywhere in card-body copy (voice.md §4).
-- Frame any card body as *"See how Cena helps with X"* (vendor framing) — frame as *"X, on Cena's substrate"* or *"What X looks like with audit trail intact."*
-- Use cards 2 or 4's body to preempt HIPAA-adjacent framing on the destination page — card-body scent describes the destination's *job*, not its compliance posture.
-
-**Required claims** (with citation per citation spec):
-- **No primary-source citations required at the card level.** Each card is wayfinding + scent; substantiation lives on the destination page. Card-body sentences are positioning claims per citation spec §3 (no quantitative figures).
-- **Card 5 pilot reference** — uses generic-AMC framing per launch-gating partner-input #1. Strict-superset upgrade to UConn-named when Vanessa clears. Marker: `[^N]` if the card-body uses the verbatim phrasing *"a live academic-medical-center HIV-nutrition program"*; the citation resolves to the same References entry as §2 proof strip pilot reference (one entry, two surface references — define-once per citation spec §5 + §11 vault-rule).
-
-**Required proof / artifacts:**
-- 5 canonical sentences from voice.md §6 used verbatim.
-- Each card body: one ≤20-word sentence describing the destination surface's job.
-- Arrow (→) as the only navigational glyph.
-- Destination URLs match IA §4 page-list exactly: `/for-clinical-leaders`, `/how-the-substrate-works/integration`, `/for-program-economics`, `/how-the-substrate-works/provenance-and-accountability`, `/reference-program`.
-
-**Voice cues** (per voice.md §6 wayfinding-band + §2 evaluator-respecting register):
-- Do: name the reader's job; arrow optionality; describe the destination's job in plain language.
-- Don't: CTA-button language; role-titles in sentence; vendor framing in body; competing card-bodies (each card holds its own scent without redundancy).
-
-**Forbidden phrasings (this section):** click here / learn more / explore / discover / get started / book a call / for CMOs / for VPs / for executives (role-titles in sentence) / see how Cena / discover Cena / champion / sponsor / vetter (as Cena's deal-roles; partner-possessive *"your committee"* acceptable) / patient app / capability matrix / provenance trail / our platform / our solution / HIPAA-compliant / fully compliant (card-body must not preempt destination's HIPAA framing).
-
-**Lens-specific notes:**
-
-- **PLP:** Two catches. (1) Card 1 body uses *"committee"* — plain-language-acceptable as possessive ("your committee") for the champion who needs to defend the choice. (2) Card 3 body uses *"VBC reporting"* without expansion; financial-steward reader (card 3's target) recognizes reflexively. Expansion happens on destination per first-use rule.
-- **CTA:** Verify all 5 destination URLs match IA §4 exactly + verify anchors resolve (no orphan links). Card 5 pilot-reference reuses §2 strip framing — citation source = same References entry per define-once. Pre-ship gate (citation spec §7) catches orphans.
-- **HDG (light):** Card 4 scent *"Every clinical action carries its trail"* is Appendix C #1 verbatim, HDG-approved per packet §3.2. Card 4 body does NOT use *"HIPAA-compliant,"* *"BAA-ready,"* *"fully compliant"* — those preempt HIPAA framing on the destination page.
-- **BV:** Wayfinding-band (voice.md §6) lands as primary CTA load — Aaron's Q1 unease answered structurally by this band. Each card does two jobs: route AND model partner-protagonist register. Card-body drift into vendor framing breaks the rescue. Card 5 routes to `/reference-program` (champion's read-next); voice makes it feel like *"a working example to point at,"* not *"a case study."*
+- **Heading (working title):** Quiet H2; writer's call. Recommended: *"Quietly, Cena exists."* (the IA §5's section name reads cleanly as a heading and holds the register). Alternative: *"What Cena is."* (parallel to /about's headline, signaling continuity; recommended only if /about heading shifts).
+- **Position:** Section 4, after track-selector. **Anchor `#about`** (the section is a scent toward `/about`, not a complete substitute).
+- **Length / shape:** **One short paragraph, 40–80 words.** No team grid, no leadership theater, no mission statement. Carries a clean navigational handle (text link or arrow) to `/about`.
+- **Must-do:**
+  - Name what Cena is in one sentence — three-person company building the clinical intelligence layer for food-as-medicine. Pre-seed-honest, structurally framed `(Cap-Honest, Quiet-Comp)`.
+  - Names what Cena is *being built to provide* in honest future-tense — one sentence — without making a deployment claim. Per Cap-Honest gate ledger Hotspot 3c: *"Cena is the substrate being built to capture decision trails"* is the canonical tense.
+  - Route the reader toward `/about` for the longer (still quiet) read — *"More on what Cena is →"* or equivalent. The arrow carries the routing; voice does not narrate the click.
+  - Hold partner-protagonist frame: even on Cena's own About-scent paragraph, the *programs* and the *partner clinicians* are the subjects when capability is named.
+- **Must-not:**
+  - Insert team photos, leadership names, or a "meet the team" inline — voice.md §5 forbids founder photo grid on About; the spirit extends to this scent paragraph.
+  - Pitch the company (*"What makes Cena different…"*) — quiet structural statement only `(Quiet-Comp)`.
+  - Use present-tense substrate-mechanic claim ("Cena captures every decision trail") — fails Cap-Honest. Honest future-tense is the bar (per Hotspot 3c verdict).
+  - Use mission/vision/passion register (*"Our mission is to…"*) — voice.md §2 About row + §5 site-wide.
+- **Required-claims:**
+  - Three-person company. **Citation source:** Cena-architecture per entity docs; no inline citation required at this scent surface (full citation lives on `/about`).
+  - Pre-seed framing implicit. **Citation source:** Structural; no quantitative claim, no citation required.
+- **Voice cues:**
+  - The paragraph reads as quiet confirmation, not invitation. *"We exist; here's what we are; if you want more, the longer read is one click away."*
+  - The link to `/about` does not need verb-flattery (*"Discover more about who we are"* — superlative + first-person, both wrong). One-word link (*"About"*) or short scent sentence with an arrow is sufficient.
 
 ---
 
-### Section 5: Audit-trail-per-recommendation primitive (Appendix C #1) as concrete proof
+### Section 5 — Contact
 
-**Heading:** *"Audit trail per recommendation"* — **LOCKED** for this brief. Front-loads the load-bearing noun per voice.md §3 inheritance rule. Resolves prior Open Question #2 from Run 1: voice register is artifact-voice (annotations as documentation, per voice.md §2 sample-audit-trail register applied by inheritance per IA §2 sample-audit-trail row).
-
-**Position:** Section 5 of homepage. **Anchor: `#audit-primitive`** per IA §4 deep-link anchors.
-
-**Length / shape:** Single block: section heading + 3–4 sentences of concrete primitive description + 1 inline link sentence. ≤75 words total.
-
-**What this section must do:**
-- Lead with the artifact name as the section heading: *"Audit trail per recommendation."*
-- Body copy describes what the artifact contains and what it satisfies (voice.md §2 sample-audit-trail register applies by inheritance — annotations explain what each field is and what it satisfies).
-- Apply specificity-over-generality principle per voice.md §1: name what gets written into the audit-trail entry, not abstract benefits. Per IA §4 (Phase 1 Appendix C #1 reference) and IA §8 sample-audit-trail structure (input data sources → reasoning step → recommendation → accountable-clinician approval → outcome capture → re-assessment trigger).
-- Include an inline link to `/how-the-substrate-works/sample-audit-trail` with sentence pattern mirroring voice.md §6 (*"See an annotated sample →"* or *"What the record looks like →"*).
-- Hold quiet-competence register: this section earns its place by being concrete, not by being persuasive.
-- Use Phase 1 Appendix C #1 phrasing as the spine: *"Every patient record opened, edited, or acted on leaves a trail — automatically, by the system, not by a clinician remembering to log it."* (Either verbatim or near-verbatim with the document/clinical-action framing preserved.)
-
-**What this section must not do:**
-- Inflate the primitive into a feature claim (*"Our industry-leading audit trail technology delivers unprecedented transparency"*).
-- Use *"provenance trail"* (voice.md §4 — procurement jargon for clinical readers; use *"audit trail"* or *"audit-ready record"*).
-- Claim audit-trail completeness without naming what's written into it (specificity-over-generality fail).
-- Imply audit trail replaces or displaces partner's existing compliance workflows (substrate-not-vendor: it produces artifacts that map to their existing requirements).
-- Include any patient-identified data in body copy — sample data discipline lives on `/sample-audit-trail` per IA §8 (synthetic, no patient referent, no partner referent).
-- Name specific clinician — even a fake one — in the body copy. Per HDG packet §3.3: a fake name in sample-trail context creates a defamation-adjacent surface. Even at the homepage primitive level, use roles ("attending physician," "RD," "care coordinator"), never names.
-- Quote a regulatory section number (45 CFR section) in the body without HDG sign-off. The body describes what the audit-trail contains; specific regulatory-satisfaction claims live on `/sample-audit-trail` per IA §8 + HDG packet §3.3.
-- Use *"PHI write,"* *"compliance event,"* *"BAA log,"* or *"HIPAA-compliant audit"* — HDG-aligned vocabulary is *"audit trail,"* *"audit-ready record,"* *"audit events,"* per HDG packet §3.1 + §3.2.
-
-**Required claims** (with citation per citation spec):
-- **Audit-trail-per-recommendation primitive** (Phase 1 Appendix C #1) — concrete artifact description. **Citation source:** Cena-specific architecture (substrate-architecture canon) + cross-link to `/how-the-substrate-works/provenance-and-accountability`. Marker: `[^N]`. Re-check cadence: `on-architecture-change`.
-- If body names specific artifacts written (model citation, peer-reviewed-literature citation per recommendation, accountable-clinician timestamp), each named artifact carries an architectural-claim citation. Default: name the *categories* of artifacts (input source, reasoning step, citation, accountable clinician, timestamp, outcome capture, re-assessment trigger) without claiming specific implementation details — those route to `/sample-audit-trail`.
-
-**Required proof / artifacts:**
-- Inline link to `/how-the-substrate-works/sample-audit-trail` with voice-safe link copy (*"See an annotated sample →"* or near-variant).
-- Description names what's written into one audit-trail entry — drawn from IA §8 sample-audit-trail structure.
-
-**Voice cues** (per voice.md §2 sample-audit-trail artifact-voice register, applied by inheritance):
-- Do: concrete-artifact description; annotations explain what each field is and what it satisfies; quiet documentation tone.
-- Don't: persuasion-shaped copy; abstract benefit language; padding to compensate for sitting between role-router and reference-program teaser.
-
-**Forbidden phrasings (this section):** provenance trail / provenance solution / industry-leading / unprecedented / cutting-edge / comprehensive transparency / complete audit visibility / our audit trail technology / our compliance solution / transforms compliance / HIPAA-compliant audit / BAA log / PHI write / compliance event (use HDG-aligned *"audit trail"* / *"audit events"*) / named clinician — even a fake one (per HDG §3.3 defamation-adjacent surface) / specific 45 CFR section numbers in body (route to `/sample-audit-trail`).
-
-**Lens-specific notes:**
-
-- **PLP:** *"Audit trail per recommendation"* heading does heavy plain-language work — concrete noun + per-X scoping. PLP-safe for cold champion (legal-compliance vocab) + financial-steward (audit-defensibility vocab). Spine sentence's *"…by the system, not by a clinician remembering to log it"* anchors implicit alternative (clinician-discipline vs. system).
-- **CTA:** **Verify body's named fields match Phase 1 Appendix C #1 + IA §8 sample-audit-trail structure** at draft. If any field is aspirational, hedge per HDG packet §3.2 ("designed-in" not "live") — but safer default at homepage-primitive level: name fewer fields concretely than over-claim fidelity.
-- **HDG (light):** **HIPAA-adjacent phrasing on homepage IS here.** Use HDG-aligned vocabulary: *"audit trail,"* *"audit-ready record,"* *"audit events"* — NOT *"PHI write,"* *"compliance event,"* *"BAA log,"* *"HIPAA-compliant audit."* No fake clinician names per HDG §3.3 (defamation-adjacent surface); role-references only. Specific 45-CFR satisfaction claims route to `/sample-audit-trail` per HDG §3.3.
-- **BV:** Specificity-over-generality stress-test. **Risk:** section reads as filler between heavy neighbors (router + reference teaser) → copywriter pads to compensate. Resist. Concrete primitive in 3–4 sentences + inline link to `/sample-audit-trail` is the right shape. Inheriting sample-audit-trail artifact-voice keeps voice tight.
-
----
-
-### Section 6: Reference-program teaser → /reference-program
-
-**Heading:** No required heading text — teaser block sits below audit-trail primitive section. If a heading is needed for visual separation, use a frame-setter sentence mirroring the destination surface's headline shape per voice.md §3 inheritance rule (e.g., *"A live program runs on this blueprint today."*).
-
-**Position:** Section 6 of homepage. **Anchor: `#reference-teaser`** per IA §4 deep-link anchors. Lateral route per IA §9 (no primary CTA work — that lives in section 4).
-
-**Length / shape:** Single teaser block: 2–3 sentences naming the live reference program + 1 inline link sentence. ≤60 words total.
-
-**What this section must do:**
-- Use the reference-program register from voice.md §2 — blueprint voice, not case-study voice (*"A live academic-medical-center HIV-nutrition program runs on this blueprint today"*).
-- Teaser must mirror the destination surface's headline shape per voice.md §3 (frame-setter doubles as headline pattern). The destination headline is *"A live academic-medical-center HIV-nutrition program runs on this blueprint today. The blueprint generalizes; the program is one instance."*
-- Partner-protagonist framing per voice.md §1: the AMC is the protagonist; Cena is the substrate they ran their program on.
-- Inline link copy follows voice.md §6 patterns: *"See the blueprint →"* or *"How the program runs →"* — verb-first, no *"click here."*
-- Hold present-tense blueprint voice — *"the program produces this report at this cadence"* (voice.md §2 reference-program Do pattern).
-- Use generic-AMC framing at launch per outstanding-partner-input item #1; strict-superset edit to UConn-named when Vanessa clears.
-
-**What this section must not do:**
-- Use the word *"case study"* (voice.md §2 reference-program per-surface taboo — use *"blueprint"*).
-- Use *"our customer UConn,"* *"our partner UConn,"* or any customer/vendor framing (voice.md §2 + §4).
-- Name patient outcomes — even anonymized (voice.md §5 site-wide forbidden + §2 per-surface taboo; outcomes deferred to `/proof` slots).
-- Use *"Foodsmart-style outcomes,"* *"NourishedRx-comparable results,"* or any competitor-comparative framing in teaser copy.
-- Use *"migrate,"* *"modernize,"* *"upgrade from"* — collapses brownfield posture (voice.md §2 `/your-program-on-cena` taboos apply by inheritance to all partner-protagonist surfaces).
-- Quote a reporting cadence as a partner-specific number (e.g., *"UConn reports quarterly"*) without partner-attested citation. Default: blueprint-level cadence framing only.
-
-**Required claims** (with citation per citation spec):
-- **Generic-AMC pilot reference** (strict-superset to UConn-named). **Citation source:** Partner-attested per citation spec §2(c) worked example. **Launch-gating partner-input #1** — generic default ships now; upgrade is org-name swap only when Vanessa clears. Marker: `[^N]` — resolves to same References entry as §2 strip and §4 card 5 (define-once per citation spec §5). Re-check cadence: `on-partner-comms-shift`.
-- **Reporting-cadence claims** (if present in teaser) require live-program-attested citation per citation spec §3 reference-program row. **Default at launch:** no specific cadence figures in teaser; blueprint-level framing only.
-
-**Required proof / artifacts:**
-- Inline link to `/reference-program` with voice-safe link copy.
-- Generic-AMC framing as default; UConn-named upgrade slot reserved (strict-superset edit).
-
-**Voice cues** (per voice.md §2 reference-program register):
-- Do: blueprint voice; present-tense program-runs framing; partner-protagonist; the AMC is the hero, Cena is the substrate they ran it on.
-- Don't: case-study voice; customer/vendor framing; named-patient outcomes; quoted cadence figures without partner attestation.
-
-**Forbidden phrasings (this section):** case study / our customer / our partner X (named) / achieved Y% improvement / X% reduction in Z / industry-comparable / best-in-class / proven outcomes / modernize / migrate / upgrade from / transform / transformative results / patient X experienced / member Y reported (any named-patient outcome) / our reference customer / our flagship partner.
-
-**Lens-specific notes:**
-
-- **PLP:** *"Blueprint"* plain-language-strong; avoids customer/vendor connotation *"case study"* carries; matches destination headline per voice.md §2. PLP-safe. *"Academic-medical-center"* same catch as §2; same disposition.
-- **CTA:** **Verify *"runs on Cena today"* present-tense is true at draft.** Per `project_cena_stage` (pre-revenue, pilots planning) + `project_spark_patient_app_build` (Spark on archived IA). Pilot-reference is Cena-self-decided + Vanessa-attested per HDG sign-off #1 + outstanding-partner-input item #1. Safe to ship generic-AMC as currently-true. Substep 5 `[VERIFY]`-tags per voice.md §10.
-- **HDG (light):** No HIPAA-adjacent copy. No review. UConn-naming upgrade is positioning, not PHI.
-- **BV:** Bridge from recognition (champion landing cold) to substantiation (vetters forward-chain). Hold partner-protagonist line strictly — drift to customer framing or named-outcome storytelling collapses proof-by-shape pattern. Champion's read-next lands here; teaser is what makes them want to forward the link.
+- **Heading (working title):** Quiet H2; writer's call. Recommended: *"Talk to us."* Alternative: *"Get in touch."* (writer rejects the latter — too generic, no Cena-character, drops the verb-direct posture).
+- **Position:** Section 5, page-foot.
+- **Length / shape:** **One direct path** — single CTA, no form unless a tight-form is essential. Per Aaron 2026-06-11: CTA per page-relevance, not global pattern.
+- **Must-do:**
+  - Offer **one** contact path: calendar-direct *(recommended)* or named-contact-line *(alternative)*. Voice owner's call between the two depends on which of Aaron / Vanessa anchors as the "first conversation" person. Recommended default: calendar-direct (lower friction for warm intros + cold inbound both).
+  - Use voice.md §9 CTA voice patterns: peer-to-peer ("Talk through…" / "Talk to us about…"), name what the call is about, name the time commitment, name who's on Cena's side.
+  - Hold quiet competence — no "Schedule your free consultation today!" register (voice.md §9 SaaS-vendor CTA prohibitions).
+- **Must-not:**
+  - Place a generic contact form (cut per IA v2 §2 — *"Public contact form (generic) — warm-intro motion + named CTAs; generic forms invite low-signal inbound that erodes quiet-competence"*).
+  - Use SaaS-vendor CTA register (*"Schedule a demo"* / *"Book a call"* / *"Get started"*) — voice.md §9 forbidden.
+  - Use exclamation marks `(Quiet-Comp)`.
+  - Duplicate the track-selector here — Section 3 is the navigational CTA; this is the contact CTA, structurally different.
+- **Required-claims:**
+  - Named time commitment for the call (e.g., 30 minutes). **Citation source:** Self-attesting (Cena commits to it). Verify the actual default-call length with Aaron before ship.
+  - Named contact-side person or role. **Citation source:** Self-attesting; verify with Aaron whether to name a specific person (Vanessa or Aaron) or use functional role (*"our clinical lead"* / *"our team"*).
+- **Voice cues:**
+  - Voice owner's recommendation: **Calendar-direct, named-side, no form.** Example shape: *"Talk to us about what your program is solving — 30-minute call with [Vanessa / our clinical lead]."* The "what your program is solving" partner-protagonist frame centers the partner immediately; the named time + named side disarms commitment anxiety.
+  - **Aaron-gate single-choice call:** voice owner picks calendar-direct *(see also Cross-section concerns)*. Aaron either confirms or overrides to light-form-gated (4-field) if cold-inbound triage volume justifies the friction.
 
 ---
 
 ## Cross-section concerns
 
-- **Homepage IS the voice exemplar for the whole site.** Per voice.md §3, HX-1's mechanics (front-loaded load-bearing noun; verb-first; partner-possessive; non-scope alongside scope) are what every downstream headline inherits. Drift here propagates everywhere; Brand Voice review's highest-leverage gate is on this page.
-- **Internal-vocab leak risk is highest on the homepage** because it composes voice from every surface. Watch §§3, 4, 5 for *"patient app,"* *"provenance trail,"* *"capability matrix,"* *"Ava,"* *"champion,"* *"sponsor,"* *"committee"* (as Cena's deal-shape) bleeding in. Per voice.md §4 + §11.
-- **Legacy CLAUDE.md off-limits proof points are present in the repo and reachable by any copywriter.** Both `Lab/cena-health-public-site/CLAUDE.md` and `Lab/cena-health-public-site/strategy/CLAUDE.md` reference 30% readmissions / $3,200 / 1.8% HbA1c / 85% adherence / 25% ED visit / 36% gross margins / 40% higher adherence / 60–90 day implementation — voice.md §5 explicitly forbids and citation spec §4 owns the off-limits list. Brand Voice review rejects any draft importing them. **Phase 3 action:** mark the legacy "Proof Point Library" deprecated; route copywriters to citation-discipline-spec.md.
-- **Substrate-not-vendor is the easiest principle to drift on.** Sentences that pull Cena into the foreground (*"our platform delivers,"* *"Cena empowers,"* *"we provide"*) collapse C-017. Highest-risk: §3 diagram (drift to *"Our platform's architecture"*) + §5 audit-trail primitive (inflation to *"Our industry-leading audit trail"*).
-- **Five-principle composition test** per voice.md §1: each principle visible on rendered page. Credible-before-charismatic = no superlatives. Substrate-not-vendor = partner-protagonist throughout. Specificity-over-generality = named primitives. Quiet competence = no exclamation, no adjective stacks. Audit-grade by default = every quantitative claim cited.
-- **Candidate A inline-link execution carries voice risk.** Em-dash + *"or jump straight to the substrate diagram"* must not be rephrased into a button or CTA-styled element by Phase 3. If rendered as button, escalate per voice.md §8.
-- **Substrate plain-language load.** "Substrate" appears in §1 hero + §3 caption/body + §5 body. PLP anchoring depends on §3 doing implicit-teaching work via diagram visual + hot-spot labels. If §3 design fails to anchor visually, PLP-cost compounds downstream.
-- **"Food-as-medicine" PLP load.** C-017 category term in HX-1 (locked). No in-hero fallback. Mitigation: §1 partner-enabling clarifier gives non-clinical readers a recognition handle. PLP-acceptable at launch; cold-reader testing may raise downstream explainer (not hero change).
-- **Section ordering hard-locked by IA §4.** Hero → Proof strip → Substrate diagram → Role-router → Audit-trail primitive → Reference-program teaser. Do not reorder.
+- **Translate-Anchor calibration on this page.** The homepage is the *one launch surface* where the C-017 anchor is canonical at the hero — voice.md §2 homepage row + Translate-Anchor expert principle name this carve-out (the anchor leads on the surface where it's load-bearing). Body copy elsewhere on the page (problem paragraph, track-selector framings, about scent) translates per audience the section is routing toward — the payers-investors track-selector framing does NOT lead with "infrastructure" (per Vanessa's CI-forward direction); the providers-partners track-selector framing DOES (per Translate-Anchor's literal-value carve-out). The hero itself uses "infrastructure" once and only once — at the anchor — and the rest of the page absorbs the audience-translated registers.
+- **Cap-Honest pressure stays LOW across all sections.** No substrate-mechanic claim is required on this page; the page exists to frame Cena's category and route to the tracks. The lowest-risk slip would be a present-tense capability claim in the about-scent paragraph (Section 4); the discipline is to keep all Cena-as-subject sentences in honest future-tense.
+- **Voice cohesion across the five sections.** The page should read as one quiet, structural register — hero declarative; problem observational; track-selector recognition-inviting; about-scent confirmatory; contact peer-to-peer. The shifts are register-shifts, not voice-changes. If a section reads louder than the rest (e.g., the contact section slipping into "Let's transform your program together!"), it breaks the cohesion.
+- **CTA placement decision.** The homepage carries *two* CTA-shaped elements: Section 3 track-selector (primary navigational CTA) and Section 5 contact (primary contact CTA). They serve different jobs (route vs. converse) and should feel structurally different — the track-selector reads as architectural; the contact reads as conversational. If a Phase 3 implementation review flags the page as "carrying two CTAs," the right disposition is to confirm both are doing different work, not to collapse them.
+- **No substrate diagram, no proof strip, no logo wall.** Cut per IA v2 §3. The page that ships in Phase 3 should be visually scan-able as: hero + paragraph + two-track block + scent paragraph + contact. Anything more is pre-amendment shape leaking through.
 
 ---
 
 ## Citation hotspots
 
-Per citation-discipline-spec.md §3 + §10. Each hotspot requires primary-source citation at draft time; `[VERIFY]` per voice.md §10.
+| Surface element | Claim | Citation status |
+|---|---|---|
+| Hero H1 | C-017 category claim | Positioning per citation-discipline-spec §3 row "Homepage hero" — no inline citation required (structural copy only); positioning anchor per [c-017-canonical-positioning.md](../../../../Knowledge/Projects/Cena%20Health/Knowledge%20Migration/c-017-canonical-positioning.md) |
+| Hero subhead | Partner-enabling framing | Structural; no quantitative claim; no citation required |
+| Problem paragraph | Category-level problem framing | Structural per Phase 1 brief §1; if a quantitative ED/utilization figure is added → `[VERIFY]` against primary-source per citation-discipline-spec §2 (recommended: ship without numbers; the structural framing carries) |
+| Track-selector framings | Audience-translated value framings | Positioning; no quantitative claim; no citation required |
+| About scent paragraph | Three-person company; CI layer being built | Cena-architecture per entity docs (full citation lives on `/about`); no inline citation required at scent surface |
+| Contact CTA | 30-minute call commitment + named contact-side | Self-attesting; verify default call length + named contact (or functional role) with Aaron before ship |
 
-- **§1 hero — no citations required.** Forbidden patterns (Phase 1 Appendix B) bar quantitative claims per citation spec §3 hero row. Positioning only.
-- **§2 pilot reference.** Source: Partner-attested per citation spec §2(c). Launch-gating item #1. Generic-AMC ships; UConn-named upgrade pending Vanessa clearance. Cadence: `on-partner-comms-shift`.
-- **§2 BAA-architected.** Source: Cena-specific architecture + HDG sign-off #2. Cadence: `on-architecture-change` + `on-statute-update`.
-- **§2 peer-reviewed nutrition outcomes.** Source: Clinical outcomes per citation spec §2 row (PubMed-indexed). Substep 5 selects + verifies against source-hierarchy at draft (no trade-press or vendor white papers per `feedback_primary_source_values`). Cadence: `on-study-supersession`.
-- **§3 substrate diagram.** Source: Cena-specific architecture + cross-link to hub. No quantitative claims in captions or hot-spots by default. Specifics route to `/how-the-substrate-works/integration`.
-- **§4 card 5 pilot reference.** Reuses §2 entry (define-once).
-- **§5 audit-trail primitive.** Source: Cena-specific architecture + cross-link to `/provenance-and-accountability`. Name field categories; route specific implementation claims to `/sample-audit-trail`. Cadence: `on-architecture-change`.
-- **§6 reference-program teaser.** Reuses §2 pilot-reference entry. Reporting-cadence claims (if present) require live-program-attested citation; default at launch is no cadence figures.
+**Stale legacy claim watchlist:** the 30% readmission / 25% ED visit / 1.8% HbA1c / 85% adherence / $3,200 savings / 36% margins / $200 PMPM library is explicitly OFF-LIMITS per voice.md §5 + citation-discipline-spec §4. None of these can appear in any form on this surface without primary-source re-citation per spec §2. Recommended: do not import any number from the legacy proof library; ship the page without numeric claims.
 
-**Legacy stale-claims watchlist** (citation spec §4): 30% readmissions / 1.8% HbA1c / 85% adherence / 25% ED visit / 40% higher adherence / $3,200 savings / $200 PMPM / 36% gross margins / $17B preventable costs / 60–90 day implementation / $1.2M–$3M Series A — all off-limits. §2 proof strip is the highest leakage-risk surface.
+---
+
+## Cap-Honest gate ledger
+
+Homepage carries **no substrate-mechanic claims** per IA §5 + the v2 IA's explicit cut of the substrate diagram. The Cap-Honest gate fires lightly on this surface; no per-claim ledger from the Tech Accuracy dispatch applies directly. Indirect Cap-Honest discipline:
+
+- **Category claim (C-017) is allowed at the hero** as ambitious-positioning per Aaron 2026-06-07 Q4. This is *not* a deployment claim; the gate passes.
+- **About-scent paragraph (Section 4)** inherits Hotspot 3c discipline at lower pressure: any Cena-as-subject sentence stays in honest future-tense (*"being built to…"*). Full Hotspot 3c verdict applies on `/about`.
+- **Track-selector framings (Section 3)** carry the *scent* of each track's value-frame substance; the substance itself (and its Cap-Honest gating) lives on the track landings. Scent copy is permitted to read as positioning-confident because it routes to the substantiation rather than carrying it.
+
+If the voice owner finds during drafting that a sentence wants to carry a deployment claim (e.g., *"Cena currently runs underneath what you've built"* in the about scent), Cap-Honest blocks. Route to honest future-tense (*"Cena is being built to run underneath…"*) or omit the claim from this page (the brownfield section's full framing lives on `/for-payers-investors`, with verdicts per Hotspot 2).
 
 ---
 
 ## Outstanding partner-input touchpoints
 
-Per [outstanding-partner-input.md](../outstanding-partner-input.md). Homepage touchpoints:
+Per [outstanding-partner-input.md](../outstanding-partner-input.md):
 
-- **Item #1 — UConn-named upgrade** (launch-gating). Touches §2 proof strip pilot-reference + §4 card 5 body + §6 teaser. Hedged default: *"A live academic-medical-center HIV-nutrition program runs on Cena today."* Upgrade when input lands = org-name swap only.
-- **Item #2 — US-only data residency** (launch-gating). NOT authored on homepage. §2 BAA-architected element MUST NOT extend into data-residency framing until Andrey confirms. If cleared, claim lands at `/how-the-substrate-works/#security` per HDG §3.1.
-- **Items #3 (SHA-256 chain) + #4 (five-categories-blocked)** do NOT touch homepage. Cross-linked sub-pages carry those claims.
+- **Item #1 (UConn-named pilot reference upgrade)** — does not touch this page. The UConn pilot reference lives inline on `/for-providers-partners`; the homepage does not name a pilot.
+- **Item #2 (US-only data residency claim verification)** — does not touch this page. Architectural claim lives on cut surface `/how-the-substrate-works` (Phase 3+ vision).
+- **Item #3 (SHA-256 message-hash chain currency)** — does not touch this page. Substrate-mechanic claim cut from launch.
+- **Item #4 (Five-categories-blocked-in-code currency)** — does not touch this page. Substrate-mechanic claim cut from launch.
 
----
-
-## Expert conflicts resolved
-
-Resolution priority: CTA > HDG > BV > PLP.
-
-- **HDG ↔ BV on §2 BAA-architected phrasing.** HDG-approved phrase only: *"BAA-architected"* / *"BAA-ready architecture."* No compression to *"BAA-secure"* or *"audit-grade BAAs"* (loses precision). **HDG wins** — precision IS the trust signal.
-- **HDG ↔ BV on §3 hot-spot 4 label.** Use *"audit-trail write"* exactly per HDG §3.1; not *"audit event"* or *"audit record."* **HDG wins** on HIPAA-adjacent labels.
-- **HDG ↔ BV on §5 clinician naming.** HDG §3.3 prohibits even fake names (defamation-adjacent). **HDG wins** — role-references only.
-- **CTA ↔ BV on §2 peer-reviewed citation selection.** PubMed-DOI bar per citation spec §2 is non-negotiable; readability lives in Phase 3 rendering. **CTA wins** on claim validity.
-- **PLP ↔ BV on §1 *"substrate"* / *"food-as-medicine"* plain-language load.** PLP would push in-hero explainer; BV holds HX-1 locked per voice.md §8 + Aaron Q2. **BV wins on hero lock; PLP routes downstream** — anchoring lives in §3 diagram (substrate) + §1 clarifier (food-as-medicine via partner-enabling recognition handle).
-- **CTA ↔ BV on §5 field specificity.** Use the Appendix C #1 spine sentence (verbatim or near-verbatim) + name field categories; route implementation-specifics to `/sample-audit-trail`. **CTA wins** on claim validity; spine sentence preserves BV specificity-over-generality at the homepage-primitive level.
+**No new launch-gating items surfaced by this brief.**
 
 ---
 
 ## Open questions for Aaron-gate
 
-The 4-lens synthesis resolved Run 1's two voice-question opens (§3 caption + §5 register LOCKED above). Three narrow-scope questions remain.
+1. **Hero direction A vs. B (single-choice call).** Voice owner recommends **Direction A** — category-claim-first, leading with the C-017 anchor *(see Section 1 Voice cues for both)*. Direction B preserves a problem-framing-first fallback if A reads thin in live testing. Confirm A, or override to B.
+2. **Contact CTA — calendar-direct vs. light-form-gated, named contact vs. functional role.** Voice owner recommends **calendar-direct + named contact** (named contact reads warmer; calendar-direct lowers friction for warm intros + cold inbound alike). Confirm, or override.
+3. **Section 4 heading — "Quietly, Cena exists." vs. "What Cena is."** Voice owner recommends the IA §5 quiet-name *"Quietly, Cena exists."* because it preserves the register-shift the IA names; *"What Cena is."* is reserved for `/about` H1 and using it twice fragments the register. Confirm, or override.
 
-1. **§3 substrate diagram caption** LOCKED to *"How the substrate works."* Reopen only if Phase 3 visual design surfaces a constraint that argues for a verb-first variant like *"What the substrate does."*
-2. **§5 spine-sentence usage.** Brief allows verbatim or near-verbatim of the Appendix C #1 spine. **Working call:** near-verbatim latitude (preserves *"by the system, not by a clinician remembering"* mechanics while letting writer adapt cadence). Confirm or lock verbatim.
-3. **§2 peer-reviewed citation inventory.** Brief defers selection to Substep 5's draft phase with CTA gate per citation spec §2 source-hierarchy. **Working call:** accept draft selection with CTA gate — source-hierarchy + §9 worked example are sufficient guardrails. Confirm or pre-select.
+**No questions inherited from the Tech Accuracy dispatch** — the three Aaron-gate questions surfaced by the Cap-Honest gate ledger (re-assessment framing, naming Athena Health, recall surface live status) all live on `/for-providers-partners`.
 
 ---
 
 ## Sign-off
 
-- [ ] Plain Language Positioning
-- [ ] Cena Technical Accuracy
-- [ ] Healthcare Data Governance
-- [ ] Brand Voice Reviewer
+- [ ] Cena Public Site Copywriter draft
 - [ ] Aaron-gate
+- [ ] Phase 3 implementation (composition)

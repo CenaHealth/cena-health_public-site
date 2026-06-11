@@ -1,353 +1,228 @@
-# Content Brief: About (footer)
+# Content Brief: About
 
-**Path:** `/about` · **Status:** Awaiting Aaron-gate · **Date:** 2026-06-08 · **Phase 2, Substep 5**
+**Path:** `/about` · **Status:** Awaiting Aaron-gate · **Date:** 2026-06-11 · **Phase 2 v2 launch brief 4 of 4**
 
-Section-by-section copy brief for the About footer page. Anchored to [Phase 2 IA spec](../phase-2-information-architecture.md) §4 secondary-pages block (single quiet page; no team grid; no leadership theater) + §3 headline ("What Cena is." quiet, structural) + §9 CTA architecture row (footer utility, not buying-relevant), [voice.md](../brand/voice.md) §2 (About row — structural register, no team theater) + §3 (inheritance) + §4–5 (forbidden phrasings + site-wide forbidden patterns including founder-photo-grid and "Trusted by" logo walls), [citation discipline](../citation-discipline-spec.md) §3 row `/about` (three-person team + agents-first thesis + accountability model → Cena-specific architecture per entity docs), [HDG packet](../phase-2-hdg-review-packet.md) row 4 (partner-clinician-accountability framing — public form locked), [Phase 1 brief](../phase-1-positioning-brief.md) §1 (positioning anchor C-017) + §4 (decision-role JTBD per recognition stage) + Appendix B (forbidden hero patterns, extended site-wide), and [outstanding-partner-input.md](../outstanding-partner-input.md) (no items touch this page — about-page claims are Cena-architecture per entity docs, not partner-dependent).
-
-> **Panel-coverage note.** Mirrors sibling briefs: the 4-expert review panel returned BV (Brand Voice Reviewer) findings as the primary synthesis lens for this page. PLP / CTA / HDG findings are anticipated from upstream specs and surfaced inline. HDG load is light — the only HIPAA-adjacent claim that touches this page is the accountability-model framing (HDG row 4, public form locked); the rest is Cena-architecture per entity docs.
+Section-by-section copy direction for the About footer page. Anchored by reference to [Phase 2 IA v2](../phase-2-information-architecture.md) §5 (`/about` block) + §4 (cross-track), [voice.md](../../brand/voice.md) §1 + §2 (About row) + §4 + §5, [citation-discipline-spec.md](../citation-discipline-spec.md) §3 row `/about`, [cap-honest-gate-ledger.md](../cap-honest-gate-ledger.md) **Hotspot 3** (agents-first + accountability + substrate-being-built), [Phase 1 brief Amendment 2026-06-11](../phase-1-positioning-brief.md), and [c-017-canonical-positioning.md](../../../../Knowledge/Projects/Cena%20Health/Knowledge%20Migration/c-017-canonical-positioning.md). Voice patterns inherited where Cap-Honest passes from [v1-2026-06-07/about.md](v1-2026-06-07/about.md).
 
 ---
 
 ## At a glance
 
-- **Purpose:** Single quiet page in the site footer. The page a recognition-stage reader (any role) lands on when they want to know "what is this company structurally" — and find an answer without leadership theater, without a team grid, without a mission statement. Per IA §4 secondary-pages block + §1 footer utility.
-- **Primary audience:** All five decision-roles, recognition stage. Footer utility — not buying-relevant; no role's vetting path runs through this page. Per IA §2 + voice.md §2 (About row).
-- **Headline:** *"What Cena is."* (Quiet, structural.) Locked verbatim per IA §3.
-- **Voice register:** Structural. What Cena IS, not who we are. Quiet. Per voice.md §2 About row + §1 quiet-competence principle.
-- **CTA architecture:** **None.** Footer utility per IA §9 row "About — None — All roles × recognition — Footer utility, not buying-relevant." Adding a CTA collapses the structural-not-promotional posture.
-- **HIPAA-adjacent:** No. Per dispatch instructions. Light HDG load only on the accountability-model framing (Section 4) — public form is HDG-locked per packet row 4; ship as-recommended.
-- **Launch-gating partner-input dependencies:** None. About-page claims are Cena-architecture per entity docs (citation spec §2 row "Cena-specific architecture"), not partner-attested. The page can ship in full at launch.
+- **Purpose:** Quiet recognition. Job 1 at lower pressure for the reader who clicks in from the footer or homepage scent. Names what Cena structurally IS — not who we are *(per IA §5 + voice.md §2 About row)*.
+- **Track:** Cross-track. Footer utility — not buying-relevant; no role's vetting path runs through this page.
+- **IA-job mix:** Job 1 (Cena exists, at lower-pressure register). No Job 2 substantiation, no Job 3 contact CTA (footer utility per IA §6 + Aaron 2026-06-11; the page is structural-not-promotional).
+- **Voice register:** Structural. What Cena IS, not who we are. Quiet. Per voice.md §2 About row + §1 quiet-competence principle. **The C-017 anchor lands canonically** on this surface — the about page can use "infrastructure" / "substrate" / "clinical intelligence" all three because the audience is recognition-stage (cross-track) and the surface is anchor-canonical, not audience-translated.
+- **CTA:** **None.** Footer utility per IA §6 + voice.md §9. Adding a CTA collapses the structural-not-promotional posture.
+- **Cap-Honest pressure:** **LOW.** Hotspot 3 verdicts (agents-first thesis as HONEST-TODAY; partner-clinician accountability as HONEST-TODAY; substrate-being-built as HONEST-FUTURE-TENSE) all calibrate cleanly with the IA-named tense; the page passes Cap-Honest with the Hotspot 3 synthesis paragraph as a defensible draft seed.
 
 ---
 
 ## Section briefs
 
-Section sequence is hard-locked per dispatch instructions + IA §4 + voice.md §2 About row: Hero → Agents-first thesis → Three-person team (functional) → Accountability model → Governance posture. Five sections, single page. No additional sections — no contact form, no CTA band, no team grid, no founder story, no mission statement, no "Trusted by" logo wall.
+Section sequence hard-locked per IA §5 (about block) + voice.md §2 About row: Hero → Agents-first thesis → Three-person team (functional) → Accountability model → Substrate-being-built → What we're building. Six structural elements that compose into a single 250–350-word page; sections may combine in implementation if the page renders more elegantly as fewer-but-longer paragraphs. No additional sections — no contact form, no CTA band, no team grid, no founder story, no mission statement, no "Trusted by" logo wall.
 
 ---
 
-### Section 1: Hero — "What Cena is."
+### Section 1 — Hero
 
-**Heading:** *"What Cena is."* (H1, locked verbatim per IA §3 — do not refine, soften, or reword.)
-
-**Position:** Section 1, canonical per IA §4 secondary-pages block.
-
-**Length / shape:** H1 (locked) + 1–2 sentence subhead naming the structural posture. ≤30 words total subhead. **No hero CTA** (no CTA anywhere on this page per IA §9).
-
-**What this section must do:**
-- Render H1 verbatim per IA §3. The phrase *"What Cena is."* (with the period — declarative, not question-shaped) does the voice job per voice.md §2 About row: structural, not aspirational. Quiet to the point of refusing the conventional About-page move ("Our mission is to…"). The reader's first read should be *"oh — they're actually going to tell me what this is."*
-- Subhead front-loads C-017 in plain-language declarative form: name the category claim once at the top (so the reader who lands here cold knows what kind of company Cena is) + name the structural posture (three people + agents do the throughput work). One sentence is sufficient.
-- Establish the page's structural register in the first read: this is not a story being told; it's a structure being named. Voice gets out of the way.
-- Hold the partner-protagonist frame from the rest of the site by NOT making Cena the protagonist of its own About page (paradoxically — the page describes Cena because it has to; it does not perform Cena).
-
-**What this section must not do:**
-- Open with a founder-origin story (*"In 2025, Aaron and Vanessa saw a problem…"*) — voice.md §2 About row explicit forbidden + §5 site-wide forbidden patterns (no founder-origin-story prose).
-- Use mission-statement framing (*"Our mission is to…"* / *"We believe…"* / *"We exist to…"*) — voice.md §2 + §5 site-wide forbidden patterns.
-- Use "passion" / "passionate" / "mission" / "vision" / "vision-driven" / "purpose-driven" framing — voice.md §2 About row explicit Don't.
-- Open with a hero CTA — IA §9 explicit (About has no CTA).
-- Mention meals, kits, dietitians, kitchens, or food-vendor imagery in first viewport — Appendix B forbidden hero patterns extended site-wide per voice.md §5.
-- Quote outcome percentages or dollar figures — voice.md §5 + citation spec §4 stale-claim ban.
-- Use exclamation marks — voice.md §1 quiet-competence principle.
-- Use "we" as the subject of the first sentence — sets up mission-statement register. The subject is Cena (third-person, structural), not "we" (first-person, narrative).
-
-**Required claims:**
-- C-017 category positioning in the subhead. **Citation source:** Phase 1 positioning brief category anchor; positioning copy per citation spec §3, no inline citation required.
-- Three-person team claim (in the subhead or deferred to Section 3). **Citation source:** Cena-specific architecture per citation spec §2 row + entity doc [`cena-health.md`](../../../../Knowledge/Areas/Meta/Entities/cena-health/cena-health.md) ("3-person team"). Inline citation marker resolves to References entry.
-
-**Required proof / artifacts:**
-- None inline. The subhead's structural claims are substantiated in sections 2–5.
-
-**Voice cues:**
-- The hero's job is signaling *"we're going to be direct about what this company is."* If a reader lands on the hero and senses an emotional appeal incoming, voice has failed.
-- Test against voice.md §2 About-row exemplar: *"Cena is a three-person company built on the thesis that agents are primary brainpower. Partner-institution clinicians retain clinical accountability; Cena's substrate captures the decision trail."* The hero subhead should align with that exemplar's register — declarative, structural, no first-person plural as load-bearing subject.
-- Period after *"What Cena is."* — declarative, not interrogative. The headline answers itself; the page substantiates it.
-
-**Forbidden phrasings (this section):**
-- "Our mission" / "Our vision" / "We believe" / "We exist to" / "Driven by" / "Passionate about" — voice.md §2 + §4 + §5 site-wide forbidden patterns.
-- "Founded in [year] by [names]" / "The Cena story begins…" / "It all started when…" — founder-origin-story prose, voice.md §5 explicit.
-- "Transform" / "revolutionary" / "next-generation" / "game-changing" / "industry-leading" — superlatives, voice.md §4 + §5.
-- "Empower" / "enable" / "purpose-built" — vendor-flattery shapes, voice.md §4.
-- "AI-powered" / "AI platform" / "our AI" — collapses substrate framing.
-
-**Lens-specific notes:**
-- BV: The H1 + subhead together carry the entire register-setting work for the page. The H1 is one of the most-tested voice exemplars in voice.md §2 / §3 (paired with the homepage HX-1 + the for-clinical-leaders H1 as canonical voice anchors). The subhead is the load-bearing element — it must front-load C-017 + the structural posture without sliding into mission-statement register.
-- HDG (light): No HIPAA-adjacent claims in the hero; no HDG review needed for this section. The first HDG-load section on this page is Section 4 (accountability model).
+- **Heading (working title):** *"What Cena is."* (H1, with the period — declarative, not question-shaped. Locked per voice.md §2 About row.)
+- **Position:** Section 1, top of page.
+- **Length / shape:** H1 (locked) + 1-sentence subhead naming the structural posture. ≤30 words total subhead. **No hero CTA** (no CTA anywhere on this page per IA §6 + voice.md §9).
+- **Must-do:**
+  - Render the H1 verbatim. *"What Cena is."* with the period is the voice mechanic — declarative, not interrogative; structural, not aspirational. The reader's first read should be *"oh — they're actually going to tell me what this is"* (per v1-2026-06-07/about.md voice cue inherited where Cap-Honest passes).
+  - Subhead front-loads C-017 in plain-language declarative form: name the category claim once at the top (so the reader who lands here cold knows what kind of company Cena is) + name the structural posture (three people + agents-first + pre-seed). One sentence is sufficient.
+  - Establish the page's structural register in the first read: this is not a story being told; it's a structure being named. Voice gets out of the way `(Quiet-Comp)`.
+  - Hold partner-protagonist frame indirectly — even on Cena's own About page, the partner-clinician accountability + brownfield reality + category-being-built shape Cena's identity around partners, not around Cena. (The discipline is: even when Cena is the page's subject, the company's structure is described relationally — what Cena is relative to partner programs, partner clinicians, the category Cena will own.)
+- **Must-not:**
+  - Open with a founder-origin story (*"In 2025, Aaron and Vanessa saw a problem…"*) — voice.md §2 About row explicit forbidden + §5 site-wide forbidden patterns.
+  - Use mission-statement framing (*"Our mission is to…"* / *"We believe…"* / *"We exist to…"*) — voice.md §2 + §5.
+  - Use "passion" / "passionate" / "mission" / "vision" / "vision-driven" / "purpose-driven" framing — voice.md §2 About row explicit Don't.
+  - Open with a hero CTA — IA §6 (About has no CTA).
+  - Mention meals / kits / dietitians / kitchens / food-vendor imagery in first viewport — voice.md §5 site-wide forbidden patterns + Appendix B.
+  - Quote outcome percentages or dollar figures — voice.md §5 + citation-discipline-spec §4 stale-claim ban.
+  - Use exclamation marks `(Quiet-Comp)`.
+  - Use "we" as the subject of the first sentence — sets up mission-statement register. The subject is Cena (third-person, structural), not "we" (first-person, narrative).
+- **Required-claims:**
+  - C-017 category positioning in subhead. **Citation source:** Phase 1 positioning brief category anchor + [c-017-canonical-positioning.md](../../../../Knowledge/Projects/Cena%20Health/Knowledge%20Migration/c-017-canonical-positioning.md); positioning copy per citation-discipline-spec §3.
+  - Three-person team claim (in subhead or deferred to Section 3). **Citation source:** Cena-architecture per entity docs; inline citation per citation-discipline-spec §3 row `/about`.
+- **Voice cues:**
+  - The hero's job is signaling *"we're going to be direct about what this company is."* If a reader lands on the hero and senses an emotional appeal incoming, voice has failed.
+  - Test against voice.md §2 About-row exemplar: *"Cena is a three-person company built on the thesis that agents are primary brainpower. Partner-institution clinicians retain clinical accountability; Cena's substrate captures the decision trail."* The Hotspot 3 synthesis paragraph is a calibrated update of this exemplar at honest tense (see Cap-Honest gate ledger ledger section below); the hero subhead should align with the synthesized register.
+  - Period after *"What Cena is."* — declarative, not interrogative. The headline answers itself; the page substantiates it.
 
 ---
 
-### Section 2: Agents-first thesis (1–2 paragraphs)
+### Section 2 — Agents-first thesis
 
-**Heading:** Quiet H2 (writer's call — e.g., *"What we built Cena on"* or *"The thesis"* or *"Agents do the work"*). Front-load load-bearing noun per voice.md §3 inheritance rule. Anchor `#thesis` recommended.
-
-**Position:** Section 2 of the canonical sequence — directly under hero, before the three-person team section. This ordering matters: the thesis is what makes the three-person team make structural sense. A reader who learns "three people" first and "agents-first" second reads the team as understaffed; a reader who learns "agents-first" first and "three people" second reads the team as the *intentional* shape of an agents-first company.
-
-**Length / shape:** 1–2 paragraphs. ~80–160 words total. Compact. No bullets — this is the page's one prose section where structural exposition reads better as flowing sentences than as a list (the carve-out from `document-structure.md` for "single short answer" applies inversely here: the thesis is a structural argument, and breaking it into bullets fragments the argument).
-
-**What this section must do:**
-- Name the agents-first thesis structurally per [`project_cena_thesis`](../../../../Knowledge/Areas/Meta/Entities/cena-health/cena-health.md) ([[project_cena_thesis]]): *"Agents-first businesses outperform. Humans provide accountability and trust, not throughput."* Voice-adapted form per voice.md §2 About-row exemplar: *"Cena is built on the thesis that agents are primary brainpower."*
-- Name what agents do (the throughput work — clinical-intelligence assembly, audit-trail capture, recommendation synthesis, reporting cadence, second-system checks) without naming Ava by product handle (voice.md §4 forbids the "Ava" product-handle for the public site; the substrate is described by what it does, not by its internal name).
-- Name what humans do (accountability, trust, the legal stop) — partner-institution clinicians at pilots-planning stage per [`project_cena_accountability_model`](../../../../Knowledge/Areas/Meta/Entities/cena-health/cena-health.md). This is the structural foundation that Section 4 substantiates.
-- Maintain quiet-competence register throughout — the thesis is the company's load-bearing structural bet; voice must signal *"we know this is unusual; we're showing our work"* without defensive over-explanation.
-- Frame the thesis in present tense (Cena IS built on this thesis), not in aspirational future tense (*"Cena will operate as…"*) — per voice.md §5 site-wide forbidden pattern (aspirational copy in present tense is forbidden, but *present-tense structural claims about how Cena IS built today* are exactly the kind of grounded claim this page exists to make).
-
-**What this section must not do:**
-- Pitch the thesis as visionary or revolutionary — voice.md §1 (no superlatives) + §4. The thesis stands on its structural merits, not on a sales register.
-- Promise outcomes from the thesis (*"Agents-first means 10x better outcomes"*) — voice.md §5 + citation spec §4. Cause-and-effect outcome claims require primary-source citation; the structural posture does not.
-- Imply Cena has uniquely discovered the agents-first thesis — it's a bet with growing industry validation; voice.md §1 (credible before charismatic) bars uniqueness-claim language.
-- Use "AI" as a standalone subject (*"AI does the work"*) — voice.md §4 + §11 internal-vocab translation (*"AI" → "the substrate"* or *"Cena's clinical-intelligence platform"*). The thesis names *agents* (functional role), not *AI* (technology category).
-- Name Ava or any internal product handle (*"Ava handles the recommendations"*) — voice.md §4 + the public site does not name Ava per voice.md §5 site-wide forbidden.
-- Use "we" as the load-bearing subject — the page's structural register holds best when Cena is the subject and the thesis is the predicate.
-- Drift into bullets — the structural-argument shape lands as prose; a bulleted thesis fragments the argument.
-
-**Required claims:**
-- Agents-first thesis: *"Agents are primary brainpower; humans provide accountability and trust, not throughput."* **Citation source:** Cena-specific architecture per citation spec §2 row + entity doc [`cena-health.md`](../../../../Knowledge/Areas/Meta/Entities/cena-health/cena-health.md) Intent section ([[project_cena_thesis]]).
-- Implicit substrate-architecture claim (the thesis names what the substrate does in throughput terms). **Citation source:** Cena-specific architecture per citation spec §2 + entity doc [`ava.md`](../../../../Knowledge/Areas/Meta/Entities/cena-health/ava.md) Intent + Vendor-independence sections.
-
-**Required proof / artifacts:**
-- Inline link to `/how-the-substrate-works` for the reader who wants to see the thesis substantiated in architectural detail.
-- Inline link to `/how-the-substrate-works/provenance-and-accountability` for the reader who wants to see the human-accountability side substantiated before reading Section 4.
-- Footnote citation marker on the thesis claim resolving to the References-section entry.
-
-**Voice cues:**
-- The thesis is the page's structural foundation; voice must hold the load without performing the load. *"Cena is built on the thesis that…"* lands; *"At Cena, we believe in the transformative power of agents to revolutionize healthcare…"* collapses the register entirely.
-- Test against voice.md §1 specificity-over-generality: name *what agents do* (clinical-intelligence assembly, audit-trail capture, recommendation synthesis), not *what agents enable* (the latter is abstraction; the former is structural specificity).
-- The closing sentence of the section should pivot to Section 3: *"That's why the team is three people."* (Or a voice-safe variant of the same pivot.) The pivot makes the thesis → team-size relationship structurally legible.
-
-**Forbidden phrasings (this section):**
-- "AI-powered" / "AI platform" / "our AI" / "AI augments" / "intelligent automation" / "next-generation AI" — voice.md §4 + §5.
-- "Revolutionary" / "transformative" / "industry-leading" / "best-in-class" / "cutting-edge" — superlatives without citation; voice.md §5 + §1.
-- "Empower" / "purpose-built" / "seamless" — vendor-flattery shapes, voice.md §4.
-- "Ava" / "the AVA platform" / "voice assistant" / "chatbot" — voice.md §4 internal-vocab landmines.
-- "We believe" / "Our mission" / "Our vision" — mission-statement register, voice.md §2.
-- "Solutions" — voice.md §4 (SaaS-vendor framing).
-- "Game-changing" — voice.md §5 superlative ban.
-
-**Lens-specific notes:**
-- BV: The thesis-paragraph voice is the load-bearing demonstration that Cena's positioning is structural rather than promotional. If this paragraph reads as a manifesto, the page's whole register collapses. The carve-out from CLAUDE.md `document-structure.md` for "voice is the product" applies here — prose is the right shape for this section specifically.
-- CTA (anticipated): Verify the thesis statement matches the canon language in [`cena-health.md`](../../../../Knowledge/Areas/Meta/Entities/cena-health/cena-health.md) Intent section. Drift requires re-citation.
-- HDG (light): No HIPAA-adjacent claims in the thesis paragraph. The accountability framing in the thesis ("humans provide accountability and trust") is structural; the HDG-cleared specific phrasing about partner-institution clinicians lands in Section 4.
+- **Heading (working title):** Quiet H2; writer's call. **Recommended:** *"The thesis."* Alternative: *"What we built Cena on."* (Voice owner picks the noun-form *"The thesis"* — front-loaded load-bearing noun per voice.md §3 inheritance rule.) Anchor `#thesis` recommended.
+- **Position:** Section 2 — directly under hero, **before** the three-person team section. This ordering matters: the thesis is what makes the three-person team make structural sense. A reader who learns "three people" first reads the team as understaffed; a reader who learns "agents-first" first reads the team as the *intentional* shape of an agents-first company.
+- **Length / shape:** **One paragraph, 60–100 words.** No bullets — this is the page's structural-argument section where flowing sentences carry the argument better than a list (`document-structure.md` carve-out for single-short-answer applies inversely here: the thesis is a structural argument).
+- **Must-do:**
+  - Name the agents-first thesis structurally per [project_cena_thesis] memory: *"Agents-first businesses outperform. Humans provide accountability and trust, not throughput."* Voice-adapted form per voice.md §2 About row exemplar + Cap-Honest gate ledger Hotspot 3a verdict (HONEST-TODAY for the thesis-as-thesis): *"Cena is built agents-first — humans hold accountability and decisions; agents handle throughput."*
+  - Name what agents do (the throughput work — clinical-intelligence assembly, audit-trail capture, recommendation synthesis, reporting cadence, second-system checks) **in honest future-tense** for the *in-the-program* claims per Hotspot 3a (*"HONEST-FUTURE-TENSE for any claim implying deployed agents-first operations at scale… any claim about agents doing the clinical work"*). Internal operating posture is HONEST-TODAY (we run agents-first); program-level deployment is HONEST-FUTURE-TENSE (the agents that run *in the partner's program* are being built).
+  - Name what humans do (accountability, trust, the legal stop) — partner-institution clinicians per [project_cena_accountability_model]. This is the structural foundation that Section 4 substantiates.
+  - Maintain quiet-competence register throughout — the thesis is the company's load-bearing structural bet; voice signals *"we know this is unusual; we're showing our work"* without defensive over-explanation `(Quiet-Comp)`.
+- **Must-not:**
+  - Pitch the thesis as visionary or revolutionary — voice.md §1 + §4 (no superlatives). The thesis stands on its structural merits.
+  - Promise outcomes from the thesis (*"Agents-first means 10x better outcomes"*) — voice.md §5 + citation-discipline-spec §4. Cause-and-effect outcome claims require primary-source citation; the structural posture does not.
+  - Imply Cena has uniquely discovered the agents-first thesis — it's a bet with growing industry validation; voice.md §1 (credible before charismatic) bars uniqueness-claim language.
+  - Use "AI" as a standalone subject (*"AI does the work"*) — voice.md §4 internal-vocab translation; the thesis names *agents* (functional role), not *AI* (technology category).
+  - Name Ava or any internal product handle (*"Ava handles the recommendations"*) — voice.md §4 + Cap-Honest gate ledger cross-hotspot pattern (*"Don't name the codebases publicly"*).
+  - Use "we" as the load-bearing subject — the page's structural register holds best when Cena is the subject and the thesis is the predicate.
+  - Drift into bullets — the structural-argument shape lands as prose.
+  - Make a present-tense claim that agents run the partner's clinical work today — fails Hotspot 3a per the *deployed-operations-at-scale* gate.
+- **Required-claims:**
+  - Agents-first thesis (organizational). **Citation source:** Cena-architecture per entity docs + [project_cena_thesis] memory. Inline citation per citation-discipline-spec §3 row `/about`.
+  - Internal operating posture (Cena runs agents-first today). **Citation source:** Self-attesting; structural claim per Hotspot 3a HONEST-TODAY.
+  - Program-level agents-being-built (HONEST-FUTURE-TENSE). **Citation source:** Cena-architecture per entity docs.
+- **Voice cues:**
+  - **The tense discipline at this section.** The two halves of the thesis (internal-operating-posture HONEST-TODAY + program-level-deployment HONEST-FUTURE-TENSE) must both land in the paragraph cleanly. The Hotspot 3a copy-direction example synthesizes both: *"Cena is built agents-first — humans hold accountability and decisions; agents handle throughput. Internally, that's how we operate today. In the program, partner clinicians hold clinical authority; Cena's agents are being built to surface decision trails, signal patterns, and reduce the between-visit gap."*
+  - **The "stage-appropriate ambition" calibration** per Hotspot 3a: pre-seed pre-revenue 3-person team. The about page is the *one* surface where naming the thesis at its actual ambition is appropriate (not the homepage hero, not the payers/investors track lead). Don't tone it down further; don't blow it up bigger.
+  - The thesis paragraph is the page's load-bearing structural argument. The voice owner's reflex: if a sentence reads like an apology for the thesis (*"We know this is unusual, but…"*) or a pitch for it (*"This is why Cena will outperform"*), rewrite as structural fact.
 
 ---
 
-### Section 3: Three-person team — names + roles (functional)
+### Section 3 — Three-person team (functional)
 
-**Heading:** Quiet H2 (writer's call — e.g., *"The team"* or *"Three people"* or *"Who runs Cena"*). Front-load load-bearing noun per voice.md §3. Anchor `#team` recommended.
-
-**Position:** Section 3 of the canonical sequence — between agents-first thesis and accountability model. This ordering matters: the thesis (Section 2) explains why three people make sense; the team (Section 3) names them; the accountability model (Section 4) explains how the structural shape extends to clinical authority.
-
-**Length / shape:** Three name + role lines + ~20–40 words of structural context. Total section ≤120 words. **No photos. No bios. No leadership grid. No quotes. No titles styled as theater.** Per IA §4 secondary-pages block ("no team grid. no leadership photos.") + voice.md §2 About-row taboo ("no leadership photo grid") + §5 site-wide forbidden pattern ("Founder photo grid on About").
-
-**Canonical role list** (per dispatch instructions + entity doc verification):
-- **Aaron Sleeper** — co-founder; UX & experience lead. (Per CLAUDE.md preamble: "Aaron is co-founder and UX/experience lead at Cena Health." Per `cena-health.md` entity doc: "owned-by Aaron (co-founder).")
-- **Vanessa Sena** — CEO. (Verified across HDG packet row 1, voice.md §2 + §9 exemplars, IA §4 / for-comms CTA. Title locked verbatim.)
-- **Andrey** — co-founder; engineering. (Last name not verified in strategy docs or entity docs reviewed; first-name-only at launch is voice-safe given the company's posture, but Aaron should confirm — see Open Questions #1 for the disposition path.)
-
-**What this section must do:**
-- Name the three team members + roles per the canonical list above. Functional roles only (UX & experience lead / CEO / engineering); no inflated titles, no deflated titles, no inherited honorifics.
-- Hold structural register — the section presents the team as the *shape* of Cena, not as a celebration of individuals. Voice gets out of the way; the names + roles do the work.
-- Establish that the team's three-person size is the *intentional* shape of an agents-first company, not an early-stage staffing accident. One short structural sentence is sufficient — e.g., *"The team is three by design — agents-first means the team is small because the work is agent-led."* (Or voice-safe variant.) This sentence does heavy structural work; it must read as observation, not justification.
-- Reference Cena's evolving clinical-staff hiring (Soto, Morales, Director of Clinical Ops per [`project_cena_accountability_model`](../../../../Knowledge/Areas/Meta/Entities/cena-health/cena-health.md)) only if Aaron explicitly opts in at launch — and only as a structural pointer ("Cena is hiring its first clinical staff to extend the partner-clinician-attested model"), not as a names list. Default: do NOT include the clinical-hiring section in launch; defer to a future revision when names are Vanessa-attested and ship as a separate sentence in Section 4 rather than as a Section 3 expansion. See Open Questions #2.
-- Position before the accountability-model section so the reader knows *who* before reading *how clinical accountability works*.
-
-**What this section must not do:**
-- Include team photos / leadership grid / founder portraits — IA §4 explicit ("no team grid. no leadership photos.") + voice.md §2 About-row taboo + §5 site-wide forbidden ("Founder photo grid on About"). The page is structural; photos perform.
-- Include bios beyond name + role (*"Aaron has 15 years of UX leadership experience…"*) — voice.md §2 About-row taboo on leadership theater + §1 quiet-competence principle. A name + a role is sufficient; a bio is performance.
-- Use inflated titles (*"Visionary Chief Experience Officer"* / *"Chief Architect of AI Innovation"*) — voice.md §4 + §5 + brand canon.
-- Use deflated titles that obscure structural responsibility — *"co-founder"* is structural; *"founder"* without the *"co-"* implies single-founder shape and misrepresents the company.
-- Quote any team member (*"'We're building the future of clinical care,' says Aaron"*) — voice.md §5 forbidden (no founder-origin-story prose; no quoted leadership).
-- Use "passionate" / "driven by" / "obsessed with" / "deep expertise in" — voice.md §2 + §4 vendor-flattery shapes.
-- Imply the team is larger than three (*"Our team of senior leaders and clinicians…"*) — misrepresents the company's structural shape; voice.md §5 aspirational-copy ban applies.
-- Name Vanessa Sena's title as anything other than *"CEO"* — verified verbatim across IA §4, voice.md §9, HDG packet row 1.
-- Name Aaron's role with a different label than *"UX & experience lead"* — per CLAUDE.md verbatim. Variant *"UX/experience lead"* (slash form) also acceptable; *"Experience Designer"* or *"Head of Design"* would drift from the canon role.
-
-**Required claims:**
-- Three-person team claim. **Citation source:** Cena-specific architecture per citation spec §2 + entity doc [`cena-health.md`](../../../../Knowledge/Areas/Meta/Entities/cena-health/cena-health.md) Stage section + [[project_cena_stage]] ("3-person team; agents are the primary brainpower").
-- Aaron Sleeper — co-founder, UX & experience lead. **Citation source:** Cena-specific architecture per citation spec §2 + CLAUDE.md preamble + [`cena-health.md`](../../../../Knowledge/Areas/Meta/Entities/cena-health/cena-health.md) ("owned-by Aaron (co-founder)").
-- Vanessa Sena — CEO. **Citation source:** Self-attesting via voice.md §9 + IA §4 + HDG packet row 1 (Vanessa as comms-cleared contact named throughout strategy docs).
-- Andrey — co-founder, engineering. **Citation source:** Self-attesting via Lab/CLAUDE.md ("Andrey's agent (and future partner-team agents)" — Andrey is the engineering counterpart) + [`patient-app.md`](../../../../Knowledge/Areas/Meta/Entities/cena-health/patient-app.md) build references. Last name verification pending — see Open Questions #1.
-- Intentional three-person team-size structural claim. **Citation source:** Cena-specific architecture per citation spec §2 + entity doc Intent + [[project_cena_thesis]] (agents-first means small team by design).
-
-**Required proof / artifacts:**
-- None inline. Names + roles are self-attesting. The structural-team-size claim references the agents-first thesis from Section 2.
-
-**Voice cues:**
-- The structural-by-design sentence is the section's load-bearing voice mechanic. *"Three by design"* (or voice-safe variant) carries the entire argument that the team isn't understaffed — it's the shape that follows the thesis. Without this sentence, the section reads as an org-chart with three rows.
-- Test against voice.md §2 About-row exemplar's structural register: *"Cena is a three-person company built on the thesis that agents are primary brainpower."* The team list should follow that exemplar's grain — quiet, structural, no celebration.
-- Honor the section's brevity. A team-list section that runs longer than 120 words drifts into performative leadership; that's the failure shape this page exists to refuse.
-
-**Forbidden phrasings (this section):**
-- "Visionary" / "industry veteran" / "deep expertise" / "decade-spanning" — voice.md §2 + §4 leadership-theater shapes.
-- "Passionate about" / "obsessed with" / "dedicated to" — voice.md §2 + §4 vendor-flattery.
-- "Our team of senior leaders" / "world-class talent" / "best-in-class team" — voice.md §4 superlatives.
-- "Founded by" / "co-founded by" *as a section opener* — header-shape that signals founder-origin-story register. (The roles can include "co-founder" as a structural descriptor — that's different.)
-- Quoted statements from team members — voice.md §5 forbidden.
-- "AI expert" / "AI pioneer" — voice.md §4 + collapses substrate framing.
-- "[Inflated title here] passionate about [thing]" — voice.md §2 explicit Don't pattern.
-
-**Lens-specific notes:**
-- BV: The voice-safe team section is the page's hardest single voice call — the convention is to perform here (bios, photos, quotes), and refusing that performance IS the structural posture the rest of the page depends on. If this section reads as performative in any draft, rewrite to the canonical voice.md §2 exemplar before review.
-- CTA (anticipated): Verify Andrey's last name and role-label with Aaron at launch (see Open Questions #1). If unverified, ship first-name-only with role; if Aaron provides full name + role, update verbatim.
-- HDG (light): No HIPAA-adjacent claims in this section. The clinical-staff-hiring expansion (Open Questions #2) would carry light HDG load if shipped — verify names with Vanessa per [[project_cena_accountability_model]] ("confirm clinical names with Vanessa before external citation").
+- **Heading (working title):** Quiet H2; writer's call. **Recommended:** *"Three people."* Alternative: *"The team."*
+- **Position:** Section 3, after thesis. Functional naming, not leadership theater.
+- **Length / shape:** **30–80 words.** Names three people by name + role; no photos, no biographies, no leadership-theater framing.
+- **Must-do:**
+  - Name the three people: Aaron Sleeper (Chief Experience Officer), Vanessa Sena (Chief Executive Officer), Andrey Kartashov (Chief Technology Officer). Per [Cena Health business context CLAUDE.md](../../../Knowledge/Projects/Cena%20Health/CLAUDE.md).
+  - Name them functionally — name + role, one line per person or a single compressed sentence. Voice.md §2 About row: *"What Cena is. 3-person team named functionally without leadership theater."*
+  - Hold quiet structural register; no biographies, no mission framing.
+- **Must-not:**
+  - Insert team photos — voice.md §5 site-wide forbidden patterns (no founder photo grid on About).
+  - Provide bios, career histories, or "passionate about X" framing — voice.md §2 About row + §5 explicit.
+  - Add advisory board, investor list, or "trusted by" anything — voice.md §5 site-wide forbidden patterns.
+  - Use superlatives (*"world-class team"* / *"industry veterans"*) — voice.md §4 + §5.
+  - Use creative role-titles that obscure the function (*"Chief Storyteller"* / *"Head of Magic"*) — voice.md §2 About row register.
+- **Required-claims:**
+  - Three named people + roles. **Citation source:** Cena-architecture per entity docs + [Knowledge/Projects/Cena Health/CLAUDE.md](../../../Knowledge/Projects/Cena%20Health/CLAUDE.md) team section. Inline citation per citation-discipline-spec §3 row `/about`.
+- **Voice cues:**
+  - Compression is the voice — three names + three roles + period. Anything more reads as the writer feeling like the section needs justification.
+  - One-line shape that lands: *"Aaron Sleeper, Chief Experience Officer. Vanessa Sena, Chief Executive Officer. Andrey Kartashov, Chief Technology Officer."* (the period-and-newline construction does the structural work; the reader scans the three names, three roles, no embellishment).
 
 ---
 
-### Section 4: Accountability model (1 paragraph)
+### Section 4 — Accountability model
 
-**Heading:** Quiet H2 (writer's call — e.g., *"How accountability works"* or *"Clinical accountability"* or *"Who decides"*). Front-load load-bearing noun per voice.md §3. Anchor `#accountability` recommended.
-
-**Position:** Section 4 of the canonical sequence — between three-person team and governance posture. The accountability model bridges the team section (three people, agents-first) and the governance section (structural, not aspirational): it answers the question *"if agents do the throughput and Cena is three people, who is clinically accountable when a recommendation lands?"*
-
-**Length / shape:** 1 paragraph. ~80–140 words. Compact, structural, citable. The HDG-cleared phrasing per packet row 4 is the load-bearing copy — wrapping that phrasing in a paragraph that contextualizes it for a recognition-stage reader is the section's job.
-
-**What this section must do:**
-- Lead with the HDG-cleared public form per HDG packet §2 row 4 + §3.2 + recommended phrasing: *"During pilots, partner-institution clinicians retain clinical accountability for every recommendation Cena's substrate generates. Cena's role is the audit-grade trail that makes that accountability defensible."* This is the non-negotiable framing; voice can hold the phrasing exactly as HDG cleared it.
-- Frame the model as the structural shape that follows from the agents-first thesis (Section 2) — humans provide accountability and trust, not throughput. The accountability model is *that thesis instantiated in the clinical domain.*
-- Acknowledge the pilots-planning stage (Cena is pre-revenue, in-network, pilots-planning per [[project_cena_stage]]) without leading with the stage — the structural model is the lede; the stage is context. The HDG-cleared phrasing already names "During pilots…" so the stage anchoring is built in.
-- Name what the substrate does in this model — captures the decision trail. This pivots cleanly toward the Section 5 governance posture (the substrate's auditability is the public-facing dimension of governance).
-- Hold the partner-protagonist frame: partner-institution clinicians are the protagonists of clinical accountability; Cena is the substrate underneath that accountability is defensible against.
-- Maintain quiet-competence register: this is a load-bearing claim and voice must match the gravity without inflating it.
-
-**What this section must not do:**
-- Promise more accountability rigor than Cena's pilots-planning stage can substantiate — voice.md §5 aspirational-copy ban (no "production" framing; no "deployed across X partners" framing; no implication of mature governance Cena does not yet have). HDG packet §3.2 + §4 cross-cutting "production / production-ready" verdict is **MUST-NOT-SAY**.
-- Imply Cena's own clinicians make clinical recommendations during pilots — HDG packet §3.2 explicit: "It is critical that it does not slip into 'Cena's clinical staff approve recommendations' — that implies a posture Cena does not hold during pilots." Cena's evolving clinical-staff hiring (Soto, Morales, Director of Clinical Ops per [[project_cena_accountability_model]]) is in flight but not yet load-bearing for the accountability model; do not surface those roles as accountable parties in the model.
-- Use "HIPAA-compliant" / "HIPAA-certified" / "fully compliant" — HDG packet §3.1 + §5 noun-phrase HIPAA prohibition + citation spec §10 failure mode. The accountability-model paragraph does not claim regulatory posture; it names structural roles.
-- Claim "IRB-approved" / "IRB-reviewed" / "FDA-cleared" anywhere — HDG packet §3.2 explicit ("IRB approval attaches to *protocols*, not to Cena as a vendor"). Cena cannot claim those statuses for itself.
-- Use "ownership" framing for patient records (*"Cena owns the patient record"* / *"records belong to Cena"*) — HDG packet §3.2 load-bearing custodial framing: "Public surface MUST read custodial, not proprietary." Use *"Cena holds PHI on behalf of the partner institution"* if PHI custody is mentioned; preferred shape here is to leave PHI mechanics to the substrate-works pages and frame this section's claim around clinical-accountability, not data-custody.
-- Use "model card" / "Anthropic" / "Vertex AI" / specific vendor names — vendor-stack stays out of this page per HDG row 3.
-- Promise the model extends beyond pilots without naming the path (*"In production, Cena will own clinical accountability"*) — aspirational present-tense ban + accountability model evolves through [[project_cena_accountability_model]]; do not pre-commit to a future shape.
-
-**Required claims:**
-- HDG-cleared accountability framing: *"During pilots, partner-institution clinicians retain clinical accountability for every recommendation Cena's substrate generates. Cena's role is the audit-grade trail that makes that accountability defensible."* **Citation source:** HDG packet row 4 + citation spec §2 row "Cena-specific architecture" + [[project_cena_accountability_model]] + entity doc [`cena-health.md`](../../../../Knowledge/Areas/Meta/Entities/cena-health/cena-health.md). Non-negotiable; HDG re-vetting required if altered.
-- Substrate-captures-decision-trail claim (a paraphrase of the audit-trail-per-recommendation primitive per Phase 1 Appendix C #1). **Citation source:** Cena-specific architecture per citation spec §2 + entity doc [`ava.md`](../../../../Knowledge/Areas/Meta/Entities/cena-health/ava.md) + Phase 1 brief Appendix C #1.
-- Implicit pilots-planning stage claim ("During pilots…"). **Citation source:** Cena-specific architecture per citation spec §2 + [[project_cena_stage]].
-
-**Required proof / artifacts:**
-- Inline link to `/how-the-substrate-works/provenance-and-accountability` for the reader who wants to see the accountability model substantiated in regulatory detail.
-- Inline link to `/sample-audit-trail` for the reader who wants to see the audit-trail-per-recommendation primitive made concrete.
-- Footnote citation marker resolving to the References-section entry for the HDG-cleared phrasing.
-
-**Voice cues:**
-- The HDG-cleared phrasing IS the voice work for this section. Voice's job is to wrap that phrasing in a one-paragraph context that holds register; do not rewrite the cleared phrasing. The Section 2 thesis → Section 4 model linkage is the structural payoff — name it briefly in the opening or closing sentence.
-- Test against voice.md §1 specificity-over-generality: *"partner-institution clinicians retain clinical accountability"* is structurally specific; *"a thoughtful approach to clinical oversight"* is content-free. The HDG-cleared phrasing already passes this test.
-- Test against voice.md §1 audit-grade-by-default: the section's load-bearing claim about accountability has a verifiable substantiation (the audit trail per recommendation). Voice references that substantiation without summarizing it (the substrate-works pages own the substantiation; this page references).
-
-**Forbidden phrasings (this section):**
-- "HIPAA-compliant" / "HIPAA-certified" / "fully compliant" — HDG packet §3.1 + §5 + citation spec §10. The public-safe alternatives are *"architected for HIPAA-regulated workflows"* / *"BAA-ready architecture"* — but those phrasings belong on substrate-works pages, not on About.
-- "IRB-approved" / "IRB-reviewed" / "FDA-cleared" / "clinically validated" — HDG packet §3.2 + §4 + citation spec §10.
-- "Cena owns" / "Cena's records" / "records belong to Cena" — HDG packet §3.2 custodial-framing requirement.
-- "Production" / "production-ready" / "deployed at scale" / "in production across [N] partners" — HDG packet §4 cross-cutting + voice.md §5 aspirational-copy ban + [[project_cena_stage]] pilots-planning constraint.
-- "Cena's clinicians" / "our clinical team" — HDG packet §3.2 explicit ("does not slip into 'Cena's clinical staff approve recommendations'").
-- "Trust" as standalone abstraction (*"We build trust"*) — vendor-flattery, voice.md §4. *"Humans provide accountability and trust"* is HDG-cleared phrasing for the thesis section; in this accountability section, the structural role is named directly (clinical-accountability), not abstracted.
-- "AI-driven decisions" / "AI makes recommendations" — voice.md §4 (substrate framing); also imprecise about the accountability shape (substrate generates recommendations; clinicians approve).
-- "Bank-grade" / "enterprise-grade" / "best-in-class accountability" — voice.md §2 forbidden phrasings + §4 superlatives.
-
-**Lens-specific notes:**
-- HDG (load-bearing here): This is the one section of this page where HDG load is meaningful. The packet row 4 phrasing is canonical; the surrounding paragraph contextualizes without altering. If voice drafts deviate from the HDG-cleared phrasing on the load-bearing accountability claim, HDG re-vetting is required per citation spec §8.
-- BV: The accountability section is where the page's structural posture pays off — the claim is precise, the substantiation is referenced, voice gets out of the way. If this section reads as marketing or as defensive, rewrite to honor the HDG-cleared phrasing exactly.
-- CTA (anticipated): Verify the HDG-cleared phrasing against current entity-doc canon — if [`cena-health.md`](../../../../Knowledge/Areas/Meta/Entities/cena-health/cena-health.md) accountability section shifts substantively (e.g., when Cena's clinical staff is sufficiently hired that the model evolves), the section requires re-citation + HDG re-vetting.
+- **Heading (working title):** Quiet H2; writer's call. **Recommended:** *"Who holds clinical authority."* Alternative: *"Accountability."*
+- **Position:** Section 4, after team.
+- **Length / shape:** **40–80 words.** One paragraph naming partner-clinician retention of clinical authority.
+- **Must-do:**
+  - Name the accountability model structurally per Cap-Honest gate ledger Hotspot 3b verdict (HONEST-TODAY): *"Partner clinicians retain clinical authority on every program Cena supports. Cena's substrate doesn't make clinical decisions; it captures, surfaces, and trails the decisions clinicians make."* (Per HDG packet sign-off list #4 recommended phrasing.)
+  - Present-tense, declarative, quiet — this is the operating reality of the UConn pilot and the stated long-term model.
+  - **Recommended:** don't include the forward-evolution carve-out (the evolving-as-Cena-hires-clinical-staff piece) at launch. The simpler present-tense claim does the work; the evolution doesn't yet need public framing per Hotspot 3b.
+  - Use the canonical accountability-model phrasing: partner-institution clinicians retain accountability; Cena's substrate captures the decision trail. Don't paraphrase loosely; this section is HDG-locked.
+- **Must-not:**
+  - Make a substrate-mechanic claim that fails Cap-Honest (*"Cena's substrate captures every clinical decision today"* — fails Hotspot 3c). The substrate-side claim in this section needs tense calibration; see Section 5.
+  - Use "HIPAA-compliant" / "fully compliant" / "certified" — HDG packet §5 noun-phrase HIPAA prohibition.
+  - Frame partner-clinician authority as a "feature Cena offers" — collapses partner-protagonist; reroute to structural fact.
+  - Slip into proprietary-frame language (*"Cena's records"* / *"data we own"*) — HDG packet §3.2 MUST-NOT-SAY.
+  - Extend the model into evolution-tense (*"as Cena's clinical operations expand"*) at launch.
+- **Required-claims:**
+  - Partner-clinician retains clinical authority. **Citation source:** HDG packet sign-off list #4 + Cap-Honest gate ledger Hotspot 3b (HONEST-TODAY); non-negotiable framing per HDG. Inline citation per citation-discipline-spec §3 row `/about`.
+- **Voice cues:**
+  - The section's load-bearing voice mechanic: declarative structural fact, not pitch. Two sentences max; the second sentence (about the substrate capturing/surfacing/trailing the decisions) bridges to Section 5's substrate-being-built framing.
+  - The accountability-model framing is the page's quietest paragraph — and one of the page's most consequential. The legal/compliance reader scanning here is checking for the *"is this defensible"* signal; the HDG-locked phrasing does that work without flattery.
 
 ---
 
-### Section 5: Governance posture (1 paragraph)
+### Section 5 — Substrate-being-built
 
-**Heading:** Quiet H2 (writer's call — e.g., *"Governance"* or *"How Cena is governed"* or *"The governance posture"*). Front-load load-bearing noun per voice.md §3. Anchor `#governance` recommended.
+- **Heading (working title):** Quiet H2; writer's call. **Recommended:** *"What we're building."* Alternative: *"The substrate."* (Voice owner picks *"What we're building"* — the verb construction carries the honest future-tense more cleanly than the noun.)
+- **Position:** Section 5, after accountability.
+- **Length / shape:** **60–100 words.** One paragraph naming what Cena is being built to capture, in honest future-tense per Hotspot 3c.
+- **Must-do:**
+  - Use the IA-prescribed tense: *"Cena is the substrate being built to capture decision trails."* Per Hotspot 3c verdict (HONEST-FUTURE-TENSE) — the IA's tense is correctly calibrated as-named.
+  - Sharpen with Specific-Primitive serving Cap-Honest per Hotspot 3c: naming the primitive (audit-trail per recommendation, immutable append-only event log, deterministic hash chain) is allowed in honest future-tense. **Recommended phrasing per Hotspot 3c example:** *"Cena is the substrate being built to capture every recommendation, every approval, every escalation as an append-only trail — so the question 'who decided what, and on what basis?' is answerable years from now, not asserted in the moment."*
+  - Hold the structural argument that this section makes alongside Section 4 — partner clinicians decide; the substrate (when production-deployed) trails. The two sections together make the company's structural posture defensible.
+- **Must-not:**
+  - Make a present-tense substrate-mechanic claim. **Highest-risk failure mode on this page.** *"Cena captures every clinical action's decision trail"* — **CUT per Hotspot 3c**. *"Every recommendation Cena makes carries an audit-trail entry"* — **CUT per Hotspot 3c** (also overstates because "Cena makes recommendations" implies a deployed system).
+  - Name SHA-256 specifically — item #3 outstanding-partner-input gates the hash mechanism specifity; recommended: structural-primitive framing (*"deterministic hash chain"* or simply *"append-only trail"*) lands the Specific-Primitive payoff without depending on item #3 resolving.
+  - Name internal codebases (Spark, AVA, OpenClaw) — Cap-Honest gate ledger cross-hotspot pattern + voice.md §4.
+  - Frame the substrate as currently-deployed at scale (*"running underneath every partner program"*) — Cap-Honest blocks.
+  - Cite outcome percentages or dollar figures — voice.md §5 + citation-discipline-spec §4.
+- **Required-claims:**
+  - Substrate-being-built (decision-trail capture, immutable append-only, audit-trail per recommendation). **Citation source:** Cena-architecture per entity docs + Hotspot 3c HONEST-FUTURE-TENSE verdict. Inline citation per citation-discipline-spec §3 row `/about`.
+- **Voice cues:**
+  - **The tense discipline holds the section.** Every Cena-as-subject sentence is honest future-tense (*"being built to capture"* / *"will surface"* / *"is designed to"*). No present-tense slip.
+  - The Specific-Primitive payoff per Hotspot 3c is the section's voice mechanic — naming the audit-trail primitive concretely lands the "they know what they're building" signal without overclaiming. *"An append-only trail"* / *"per recommendation"* / *"answerable years from now"* are the load-bearing nouns/phrases.
 
-**Position:** Section 5 of the canonical sequence — final content section before the footer (no CTA, no wayfinding band on this page per IA §9 + dispatch instructions). The governance section closes the structural argument: agents-first thesis (Section 2) → three-person team (Section 3) → clinical accountability (Section 4) → governance (Section 5). The section is a structural-posture statement, not a process-doc; it names how Cena handles brand, clinical, and operational decisions at the company's pilots-planning stage.
+---
 
-**Length / shape:** 1 paragraph. ~80–140 words. Structural, not aspirational. Per dispatch instructions: *"Governance posture: structural, not aspirational."*
+### Section 6 — What we're at (closing structural framing)
 
-**What this section must do:**
-- Name the brand-governance posture: Aaron is sole reviewer / approver for brand decisions, with expert agents handling research / design / execution / maintenance. Per [[project_cena_brand_governance]] + entity doc [`cena-health.md`](../../../../Knowledge/Areas/Meta/Entities/cena-health/cena-health.md). Voice-safe form: *"Cena's brand decisions are reviewed by a sole human approver; expert agents handle the research, design, and maintenance underneath that review."* (Or voice-safe variant.)
-- Name the clinical-governance posture: clinical accountability sits with partner-institution clinicians during pilots (link back to Section 4 to avoid restating); Cena's evolving clinical-staff hiring (Soto, Morales, Director of Clinical Ops per [[project_cena_accountability_model]]) is in flight but not yet load-bearing for governance. Only the *structural posture* lands here; the specific names defer to Vanessa-attestation per memory.
-- Name what governance does NOT include — *no separate brand-team contact exists* per [[project_cena_brand_governance]]; for brand questions, the public-facing contact path is the warm-intro motion through the rest of the site, not a generic governance contact. This non-scope statement is load-bearing for the comms peer who lands on About wondering where to route a brand question.
-- Maintain quiet-competence register — the section names the structure as it is at Cena's pilots-planning stage, not as it aspires to be. The HDG packet §4 "production" verdict + voice.md §5 aspirational-copy ban both apply: no claims about future governance shape that doesn't yet exist.
-- Close the page structurally — the governance section ends the page; no CTA follows. The page's quiet exit IS the structural posture made visible.
-
-**What this section must not do:**
-- Use "compliance" / "governance" as marketing nouns (*"World-class governance"* / *"Best-in-class compliance posture"*) — voice.md §4 superlatives + §5 vendor-flattery.
-- Imply Cena has a Board of Directors / Advisory Board / formal governance committees that don't exist at pilots-planning stage — voice.md §5 aspirational-copy ban; [[project_cena_stage]] structural constraint.
-- Name an external brand-team contact that doesn't exist — [[project_cena_brand_governance]] explicit ("No external brand-team contact exists"). Default brand-question routing is through the warm-intro motion, not through a stated governance contact.
-- Promise a clinical-governance shape that depends on staff Cena hasn't yet hired — voice.md §5 aspirational ban. Soto / Morales / Director of Clinical Ops are in-flight names per [[project_cena_accountability_model]]; do NOT surface them by name on the public site without Vanessa-attestation and partner-comms clearance.
-- Cite a board / leadership team beyond the three named in Section 3 — misrepresents the company's structural shape.
-- Use "stakeholder" / "stakeholders" / "stakeholder engagement" — voice.md §4 vendor-flattery; the page uses partner / clinician / patient (role-named) language.
-- Use "rigor" / "rigorous" / "rigorous discipline" as standalone abstractions — voice.md §4 vendor-flattery; if rigor is real, name the structural element that produces it (the audit trail, the partner-clinician model, the sole-approver review path).
-- Promise a future state Cena hasn't designed (*"Our governance posture will evolve as Cena scales"*) — vague aspirational; voice.md §5. If the structure evolves, the page updates; the page does not promise its own evolution.
-
-**Required claims:**
-- Brand-governance posture: Aaron sole reviewer/approver; expert agents handle research/design/execution/maintenance. **Citation source:** Cena-specific architecture per citation spec §2 + [[project_cena_brand_governance]] + entity doc [`cena-health.md`](../../../../Knowledge/Areas/Meta/Entities/cena-health/cena-health.md).
-- Clinical-governance posture: partner-institution clinicians during pilots; Cena clinical-staff hiring in flight but not load-bearing for public governance claim at launch. **Citation source:** Cena-specific architecture per citation spec §2 + [[project_cena_accountability_model]] + entity doc [`cena-health.md`](../../../../Knowledge/Areas/Meta/Entities/cena-health/cena-health.md).
-- Non-scope claim: no separate brand-team contact exists. **Citation source:** [[project_cena_brand_governance]] explicit.
-
-**Required proof / artifacts:**
-- Inline link back to `/how-the-substrate-works/provenance-and-accountability` for the reader who wants to see the audit-trail-substantiation of the substrate side of governance.
-- No external links; governance is structurally internal to Cena at pilots-planning stage.
-- Footnote citation markers on the brand-governance claim and the clinical-governance claim, resolving to References-section entries.
-
-**Voice cues:**
-- The non-scope statement (*"no separate brand-team contact exists"*) is the section's structural-honesty mechanic. It refuses to invent infrastructure Cena doesn't have. Voice signals *"we know what we are; we don't pretend to be more."*
-- Test against voice.md §1 credible-before-charismatic: the governance posture is structurally specific (sole reviewer + expert agents underneath) without sliding into either self-deprecation ("we're just a small team") or inflation ("our world-class governance system"). The middle ground is the structural register the page exists in.
-- The page's quiet exit (no CTA, no wayfinding band) IS voice — the structural calm of the close mirrors the structural calm of the open. The reader leaves the page knowing what Cena is, having been neither sold to nor performed for.
-
-**Forbidden phrasings (this section):**
-- "Board of Directors" / "Advisory Board" / "Leadership Council" / "Governance Committee" — voice.md §5 aspirational + structurally inaccurate at pilots-planning stage.
-- "World-class governance" / "best-in-class compliance" / "rigorous oversight" / "industry-leading accountability" — voice.md §2 + §4 superlatives.
-- "Stakeholder" / "stakeholders" — voice.md §4 (use partner / clinician / patient by role).
-- "Mission-driven" / "purpose-led" / "values-driven" — voice.md §2 + §4 mission-statement register.
-- "Strategic partnerships" / "strategic governance" — voice.md §4 (vendor-flattery + content-free).
-- "Going forward" / "evolving" *as a promise about future governance shape* — voice.md §5 aspirational.
-- "Cena's governance posture is to…" *as a forward-looking aspiration* — name the present-tense structure, not the future-tense intent.
-- "We pride ourselves on…" / "Our commitment to…" — voice.md §2 mission-statement register.
-- "Soto" / "Morales" / "Director of Clinical Ops" *by name* — defer to Vanessa-attestation per [[project_cena_accountability_model]] memory; not load-bearing for public governance claim at launch.
-
-**Lens-specific notes:**
-- BV: The governance section closes the page; voice's job is to make the close feel structurally complete, not abruptly ended. The non-scope statement is the load-bearing voice mechanic — it earns the page's structural honesty in a single sentence.
-- CTA (anticipated): Verify brand-governance and clinical-governance phrasings against current entity-doc canon. If [[project_cena_brand_governance]] or [[project_cena_accountability_model]] shift substantively, re-citation is required.
-- HDG (light): No HIPAA-adjacent claims in this section beyond a reference back to Section 4. The governance section does NOT introduce new regulatory claims; it structurally describes the company's pilots-planning posture.
+- **Heading (working title):** Quiet H2; writer's call. **Recommended:** *"Where we are."* Alternative: combine with Section 5 into one section if rendering as fewer-but-longer paragraphs.
+- **Position:** Section 6, page-foot. Honest pre-seed framing.
+- **Length / shape:** **30–60 words.** Closes the page with quiet pre-seed honesty.
+- **Must-do:**
+  - Name pre-seed + one live AMC pilot + building outward. Honest about company stage; honest about pilot deployment; ambitious about category (the *"fake it 'til you make it"* register Aaron approved per Phase 1 Q4 has its quietest natural land here).
+  - Generic-AMC framing for launch per item #1; strict-superset upgrade when clearance lands (*"an academic medical center"* → *"UConn Health"*).
+  - Hold partner-protagonist where natural — even the *what-we're-at* framing references the pilot (the partner's pilot) as the proof of build-direction.
+- **Must-not:**
+  - Use the legacy "$1.2M-$3M Series A" fundraising-language landmine — explicitly off-limits per citation-discipline-spec §4.
+  - Make quantitative claims about employee count, deployed-substrate count, ARR, or any other metric — Cite-Or-Cut + Cap-Honest both fire.
+  - Make a defensive over-explanation move (*"We know it's unusual…"*) — quiet competence reads as confidence in the structural posture.
+- **Required-claims:**
+  - Pre-seed framing. **Citation source:** Self-attesting; structural claim about company stage.
+  - Live AMC pilot reference. **Citation source:** Partner-attested per citation-discipline-spec §2(c) + §9(c); generic-AMC default, UConn-named strict-superset upgrade per item #1.
+- **Voice cues:**
+  - The closing paragraph carries the page's quietest honesty. Voice.md §2 About-row exemplar's pre-seed-honest register lands cleanly here.
+  - **Recommended closing shape (per Hotspot 3 synthesis):** *"We're pre-seed, three people, and one live academic-medical-center pilot in."* — preserves the IA-named synthesized closing line where Cap-Honest passes cleanly.
 
 ---
 
 ## Cross-section concerns
 
-- **Structural-not-promotional register holds through every section.** This page exists to refuse the conventional About-page moves (founder origin, mission statement, leadership grid, photos, quotes). Every section must read as structurally honest about what Cena is. If any section drifts toward narrative or performance, the entire page's structural posture collapses. Highest-risk drift sections: Section 3 (team — convention is to perform here), Section 5 (governance — convention is to inflate here).
-- **The page IS the structural posture made visible.** The brevity (single quiet page), the absence (no CTA, no wayfinding, no team grid, no contact form), and the structural sequence (thesis → team → accountability → governance) collectively perform the company's structural shape. A reader who finishes the page should think *"these people know what their company is, and they refused to perform it."* That's the structural payoff.
-- **No CTA anywhere on this page.** Per IA §9 + dispatch instructions ("footer utility, not buying-relevant"). The page's quiet exit is the structural posture made visible. Do not add a CTA at any section's close, do not add a contact form, do not add a sign-up prompt, do not add a wayfinding band. Adding any of these collapses the page's register.
-- **No contact form. No public Contact page lives on the site at all** (per IA §1: "site-wide search and public Contact form" are deliberately absent — warm-intro motion only). The About page does not import a contact gesture from another site convention.
-- **Aaron / Vanessa / Andrey named functionally — no inflated titles, no deflated ones, no bios.** Verbatim: Aaron Sleeper, co-founder, UX & experience lead (per CLAUDE.md + entity doc); Vanessa Sena, CEO (per HDG packet row 1 + voice.md §9 + IA §4); Andrey, co-founder, engineering (last name TBD per Open Questions #1).
-- **Accountability model phrasing is HDG-cleared and load-bearing** — see HDG packet row 4 + §3.2 + recommended phrasing for the canonical public form. Voice does not rewrite the HDG-cleared phrasing; voice contextualizes it in one paragraph. The phrasing is the gate; the context honors the gate.
-- **Vendor stack does NOT appear** anywhere — HDG row 3 + outstanding-partner-input.md not-on-list. No "Anthropic" / "Vertex AI" / "Google Cloud" / model names / cloud vendor names. Substrate-architecture claims describe what the substrate does without naming what it's built on.
-- **Aspirational copy in present tense is forbidden** — voice.md §5 site-wide forbidden pattern. Sections 4–5 are highest-risk: do not describe future clinical-staff hires as if they're shipping today; do not describe future governance shapes as if they exist now.
-- **Cena's clinical-staff hiring** (Soto, Morales, Director of Clinical Ops per [[project_cena_accountability_model]]) is in flight but not yet load-bearing for the public site. Do not surface those names — confirm clinical names with Vanessa before external citation per memory; defer surfacing until Vanessa-attestation lands.
-- **Legacy stale claims are explicitly off-limits.** 30% readmissions / 1.8% HbA1c / 85% adherence / $3,200 savings / 60-90 day implementation / $17B preventable costs — voice.md §5 + citation spec §4 explicit. Treat voice.md as canon; ignore legacy `strategy/CLAUDE.md` Proof Point Library references (LEGACY per working assumptions). This page is least at-risk for stale-claim leakage (no outcomes or financial sections), but the watchpoint still holds.
-- **No team photos. No leadership grid. No quotes. No founder-origin story.** IA §4 + voice.md §2 + §5 + dispatch instructions all converge here. The page refuses leadership theater categorically.
-- **Section ordering hard-locked.** Hero → Agents-first thesis → Three-person team → Accountability model → Governance posture. Do not reorder.
-- **Length budget — single quiet page.** Page total: ~400–700 words across all five sections (this is the shortest brief per dispatch instructions; the page is structurally compact). If a draft runs longer than 700 words, the page has drifted toward About-as-performance and needs to be cut back.
-- **Register asymmetry from siblings.** This page is *all-roles recognition stage* — quieter than `/for-clinical-leaders` (peer-to-peer clinician register, structurally confident), quieter than `/for-comms` (translated, named-contact-shaped), quieter than `/for-program-economics` (defensible-spend register). The About page sits at the structural-floor of register — voice gets out of the way more than on any other page.
+- **Translate-Anchor calibration on this page.** The about page is anchor-canonical — the C-017 anchor (*"Clinical Intelligence Infrastructure for Food-as-Medicine"*) lands literally in the hero subhead; "infrastructure" and "substrate" both survive across the page body because the audience is recognition-stage and cross-track (not audience-translated). The about page is the *one* surface where the voice owner can use the anchor word three times across the page without translation friction.
+- **Voice cohesion across sections.** The page should read as one quiet, declarative, structural register from H1 to closing line. Six structural elements composing into 250–350 words — the brevity IS the voice. If a section feels like it needs more words, the right disposition is to compress, not expand. (The exemplar to test against: voice.md §2 About row's full exemplar paragraph and the Hotspot 3 synthesis paragraph — both reach ~80 words and do the structural argument cleanly.)
+- **Cap-Honest pressure is LOW** but the page's discipline matters. The Hotspot 3 synthesis paragraph is a defensible draft seed (per dispatcher); voice owner's job is to expand it into the six-section structure without losing the calibrated tense per claim. The single highest-risk failure mode is collapsing the agents-first / accountability-model / substrate-being-built three-section register into one over-summarized paragraph that loses the tense discipline.
+- **No CTA.** IA §6 + voice.md §9 + voice.md §2 About row: footer utility. Phase 3 implementation should NOT insert a contact-CTA pattern at the page foot "for completeness"; the structural-not-promotional posture is the discipline.
+- **Length discipline.** 250–350 words total. The page renders in one scroll-stop on most viewports. Anything that feels like it needs scrolling-justification (subheads breaking up scannable wall-of-text, callout boxes, expanded biographies) is the wrong shape; the page is short by design.
 
 ---
 
 ## Citation hotspots
 
-Per citation discipline spec §3 (claim-hotspot inventory, `/about` row: "Three-person team; agents-first thesis; accountability model — Cena-specific architecture (entity docs)") and §10 (claim-citation reflex):
+| Surface element | Claim | Citation status |
+|---|---|---|
+| Hero subhead | C-017 category positioning | Positioning per [c-017-canonical-positioning.md](../../../../Knowledge/Projects/Cena%20Health/Knowledge%20Migration/c-017-canonical-positioning.md); no inline citation required for positioning copy per citation-discipline-spec §3 |
+| Hero subhead | Three-person team claim | Cena-architecture per entity docs; inline citation per citation-discipline-spec §3 row `/about` |
+| Thesis section | Agents-first thesis (organizational) | Cena-architecture per entity docs + [project_cena_thesis]; inline citation per spec §3 row `/about` |
+| Thesis section | Internal operating posture | Self-attesting; structural claim |
+| Thesis section | Program-level agents-being-built | Cena-architecture per entity docs; honest future-tense |
+| Team section | Three named people + roles | Cena-architecture per [Cena Health CLAUDE.md](../../../Knowledge/Projects/Cena%20Health/CLAUDE.md) team section + entity docs; inline citation per spec §3 |
+| Accountability section | Partner-clinician retains clinical authority | HDG packet sign-off list #4 recommended phrasing + Cap-Honest gate ledger Hotspot 3b; non-negotiable HDG-locked phrasing; inline citation per spec §3 |
+| Substrate-being-built section | Decision-trail capture (append-only, audit-trail per recommendation) | Cena-architecture per entity docs + Hotspot 3c HONEST-FUTURE-TENSE; inline citation per spec §3 |
+| Closing pre-seed framing | Pre-seed + one live AMC pilot | Pre-seed = self-attesting; AMC pilot reference = partner-attested per citation-discipline-spec §2(c) + §9(c); generic-AMC default; UConn-named strict-superset upgrade per item #1 |
 
-- **Section 1 hero subhead — three-person team + C-017 category positioning.** Three-person team is a Cena-architecture claim; C-017 category claim is positioning per citation spec §3 (no inline citation required for positioning copy). The three-person team claim carries an inline citation marker resolving to entity doc [`cena-health.md`](../../../../Knowledge/Areas/Meta/Entities/cena-health/cena-health.md) Stage section per citation spec §2 row "Cena-specific architecture."
-- **Section 2 agents-first thesis paragraph.** Load-bearing claim: *"Agents are primary brainpower; humans provide accountability and trust, not throughput."* **Citation source:** Cena-architecture per citation spec §2 row + entity doc [`cena-health.md`](../../../../Knowledge/Areas/Meta/Entities/cena-health/cena-health.md) Intent section + [[project_cena_thesis]]. Inline citation marker on the thesis statement.
-- **Section 2 substrate-throughput claim.** Implicit claim that the substrate handles clinical-intelligence-assembly + audit-trail-capture + recommendation-synthesis. **Citation source:** Cena-architecture per citation spec §2 + entity doc [`ava.md`](../../../../Knowledge/Areas/Meta/Entities/cena-health/ava.md) Intent + Vendor-independence sections.
-- **Section 3 three-person team claim.** **Citation source:** Cena-architecture per citation spec §2 + entity doc [`cena-health.md`](../../../../Knowledge/Areas/Meta/Entities/cena-health/cena-health.md) Stage section + [[project_cena_stage]]. Same citation as Section 1 subhead; cite once at first appearance, reference in the second.
-- **Section 3 individual name + role claims** (Aaron / Vanessa / Andrey). **Citation source:** Self-attesting via Cena-canon docs. No external citation required; entity-doc-internal verification suffices per citation spec §2 row "Cena-specific architecture."
-- **Section 3 structural-team-size claim** (*"Three by design"*). **Citation source:** Cena-architecture per citation spec §2 + [[project_cena_thesis]] (agents-first → small team by design). Inline reference to Section 2 thesis acceptable in lieu of separate citation.
-- **Section 4 HDG-cleared accountability framing.** *"During pilots, partner-institution clinicians retain clinical accountability for every recommendation Cena's substrate generates. Cena's role is the audit-grade trail that makes that accountability defensible."* **Citation source:** HDG packet row 4 + citation spec §2 row "Cena-specific architecture" + [[project_cena_accountability_model]] + entity doc [`cena-health.md`](../../../../Knowledge/Areas/Meta/Entities/cena-health/cena-health.md). Inline citation marker on the load-bearing phrasing. **Non-negotiable; HDG re-vetting required if altered.**
-- **Section 4 substrate-decision-trail claim.** **Citation source:** Cena-architecture per citation spec §2 + entity doc [`ava.md`](../../../../Knowledge/Areas/Meta/Entities/cena-health/ava.md) + Phase 1 brief Appendix C #1.
-- **Section 5 brand-governance claim** (sole reviewer/approver + expert agents underneath). **Citation source:** Cena-architecture per citation spec §2 + [[project_cena_brand_governance]] + entity doc [`cena-health.md`](../../../../Knowledge/Areas/Meta/Entities/cena-health/cena-health.md).
-- **Section 5 clinical-governance posture claim** (partner-clinicians during pilots; Cena clinical-staff hiring in flight). **Citation source:** Cena-architecture per citation spec §2 + [[project_cena_accountability_model]] + entity doc [`cena-health.md`](../../../../Knowledge/Areas/Meta/Entities/cena-health/cena-health.md). May share a single citation with Section 4 (same source).
-- **Section 5 non-scope claim** (no separate brand-team contact). **Citation source:** [[project_cena_brand_governance]] explicit.
+**Stale legacy claim watchlist (OFF-LIMITS per voice.md §5 + citation-discipline-spec §4):**
 
-**Legacy stale claims watchlist** (per citation spec §4): 30% readmissions / 1.8% HbA1c / 85% adherence / $3,200 savings / 60-90 day implementation — explicitly off-limits. This page is low-leakage risk (no outcomes / financial / market sections), but the watchpoint still holds.
+None directly tempt this page — the about page's claim shapes are structural (team / thesis / accountability / substrate-being-built / pre-seed) rather than outcome-quantitative. The single watch-point is **not** drifting into legacy fundraising-language ($1.2M–$3M Series A) in the closing pre-seed paragraph. Pre-seed framing without fundraising-amount specificity is the discipline.
 
-**Vendor-stack mention watchlist** (per HDG row 3): Anthropic / Google Cloud / Vertex AI / specific vendor names explicitly off-limits in every section. No public-safe alternative is needed on this page — the substrate's vendor underpinnings simply don't appear.
+---
 
-**HIPAA-language watchlist** (per HDG packet §3.1 + §5 + citation spec §10): *"HIPAA-compliant"* / *"HIPAA-certified"* / *"fully compliant"* explicitly off-limits. The accountability section (Section 4) references HDG-cleared phrasing only; no regulatory-posture claims land on this page.
+## Cap-Honest gate ledger
 
-**IRB-status watchlist** (per HDG packet §3.2): *"IRB-approved"* / *"IRB-reviewed"* / *"FDA-cleared"* / *"clinically validated"* explicitly off-limits. The page does not claim regulatory statuses for Cena as a vendor.
+Per [cap-honest-gate-ledger.md](../cap-honest-gate-ledger.md) **Hotspot 3** — agents-first + accountability + substrate-being-built:
+
+| Section | Claim | Verdict | Inline copy direction |
+|---|---|---|---|
+| Section 2 (Thesis) | Agents-first as organizational thesis | **HONEST-TODAY** (Hotspot 3a) | Present-tense for the thesis-as-thesis; "Cena is built agents-first" lands cleanly |
+| Section 2 (Thesis) | Agents-first operations at scale (deployed in partner programs) | **HONEST-FUTURE-TENSE** (Hotspot 3a) | Honest future-tense for any claim about agents doing the clinical work in the program |
+| Section 4 (Accountability) | Partner-clinician retains clinical authority | **HONEST-TODAY** (Hotspot 3b) | Per HDG packet sign-off list #4 recommended phrasing; declarative, quiet |
+| Section 4 (Accountability) | Forward-evolution carve-out (Cena hires clinical staff later) | **HONEST-FUTURE-TENSE** if included | **Recommended: don't include at launch** — the simpler present-tense claim does the work |
+| Section 5 (Substrate-being-built) | "Cena is the substrate being built to capture decision trails" | **HONEST-FUTURE-TENSE** (Hotspot 3c) | IA's tense is correctly calibrated as-named; keep it |
+| Section 5 (Substrate-being-built) | Specific-primitive sharpening (audit-trail per recommendation, append-only, deterministic hash chain) | **HONEST-FUTURE-TENSE** (Hotspot 3c — Specific-Primitive serving Cap-Honest) | Per Hotspot 3c example: *"capture every recommendation, every approval, every escalation as an append-only trail"* — vision specificity is allowed in honest future-tense |
+| Section 5 (Substrate-being-built) | Present-tense substrate-mechanic ("Cena captures every clinical action") | **CUT** (Hotspot 3c) | Forbidden — overstates deployed posture |
+
+**The Hotspot 3 synthesis paragraph** (per dispatcher; defensible draft seed):
+
+> *Cena is built agents-first — humans hold accountability and decisions; agents handle throughput. In the program, partner clinicians retain clinical authority on every patient. Cena is the substrate being built to capture decision trails — to make "who decided what, and on what basis?" answerable years later, not asserted in the moment. We're pre-seed, three people, and one live academic-medical-center pilot in.*
+
+That's ~80 words against the IA's 250–350 budget — plenty of room left for the rest of the structural elements (the hero, the functional team identification, plus whatever Quiet-Comp shape the voice owner chooses for the *"Cena exists"* frame). **Voice owner's discipline:** the synthesized paragraph above is a draft seed, not the deliverable. The brief directs the implementer to compose the page's six structural elements into 250–350 words holding the tenses calibrated by the Hotspot 3 verdicts above; the synthesis paragraph above is the calibration anchor for the agents-first + accountability + substrate-being-built register.
 
 ---
 
@@ -355,48 +230,27 @@ Per citation discipline spec §3 (claim-hotspot inventory, `/about` row: "Three-
 
 Per [outstanding-partner-input.md](../outstanding-partner-input.md):
 
-**No items on the outstanding-partner-input tracker touch this page.**
+- **Item #1 (UConn-named pilot reference upgrade)** — touches Section 6 closing pre-seed framing's *"one live academic-medical-center pilot in"* clause. Hedged default that ships now: generic-AMC reference. Strict-superset upgrade when clearance lands: *"academic-medical-center"* → *"UConn Health"*. No other copy changes when upgrade lands.
+- **Item #2 (US-only data residency)** — does not touch this page. Architectural claim lives on cut surface `/how-the-substrate-works` (Phase 3+ vision).
+- **Item #3 (SHA-256 message-hash chain currency)** — touches Section 5 substrate-being-built section *only if* the voice owner chooses to specify "deterministic hash chain" or similar; **recommended hedge:** stay at structural-primitive framing (*"append-only trail"*) which doesn't depend on item #3 resolving. If "SHA-256" appears explicitly, the claim is gated by item #3.
+- **Item #4 (Five-categories-blocked-in-code currency)** — does not touch this page. Substrate-mechanic claim cut from launch and from this page's framing.
 
-- Item #1 (UConn-named upgrade) — does NOT touch this page. About does not reference the AMC pilot by name; partner-pilot references live on `/reference-program`, `/proof`, homepage, `/for-comms`. The About page's accountability section (Section 4) references "partner-institution clinicians" generically per HDG row 4, not a specific named partner.
-- Items #2 (US-only data residency), #3 (SHA-256 chain), #4 (five-categories-blocked) — do NOT touch this page. These are substrate-architecture verification items that surface on `/how-the-substrate-works/*` sub-pages, not on About. The About page references the substrate generically (via Section 2 thesis + Section 4 accountability) but does not make verification-required substrate claims.
-
-**Therefore:** the About page can ship in full at launch without partner-input gating. All citation sources are Cena-architecture per entity docs, which Cena self-attests via canon docs.
-
-**The clinical-staff-hiring expansion** (Section 3 Open Questions #2 — adding Soto/Morales/Director of Clinical Ops as a structural pointer in Section 4 or 5) WOULD touch a partner-input dependency: per [[project_cena_accountability_model]] memory, confirm clinical names with Vanessa before external citation. This is captured as Open Questions #2 below; if Aaron approves the expansion, the clinical-name confirmation becomes a new tracker item.
-
----
-
-## Expert conflicts resolved
-
-**Honest disclosure** (mirroring homepage.md, for-clinical-leaders.md, for-comms.md): Only the Brand Voice Reviewer (BV) findings on this surface were available for the synthesis run. PLP / CTA / HDG findings were not returned for this page; the four-lens internal pass per the dispatch instructions reads upstream specs directly (citation spec §3 + voice.md §2 + HDG packet row 4 + Phase 1 brief) and surfaces section-level questions for Aaron-gate routing where a lens-specific call is load-bearing. The items below reflect *anticipated* cross-lens decisions and BV-internal calls that needed resolution:
-
-- **Section 3 — does the team section include Cena's evolving clinical-staff hiring (Soto, Morales, Director of Clinical Ops)?** Per [[project_cena_accountability_model]] memory, these names are in-flight and require Vanessa-attestation before external citation. BV finding-substitute: surfacing the names defeats the structural-not-aspirational register; deferring them honors the register. **Resolution proposed:** punt to Aaron-gate (Open Questions #2). Default if Aaron defers: do NOT surface clinical-hiring names at launch; the company is structurally three named team members + agents at the public-site moment; a clinical-staff sentence can ship later (likely in Section 4 or Section 5, not Section 3) as a structural pointer ("Cena is hiring its first clinical staff…") without names, only with Vanessa-attestation that the structural claim is currently accurate.
-- **Section 3 — what's Andrey's last name?** Not verified in strategy docs or entity docs reviewed. **Resolution proposed:** ship first-name-only with role at launch ("Andrey — co-founder, engineering") and surface to Aaron at gate per Open Questions #1. Default if Aaron defers: ship first-name-only; voice.md §1 (specificity over generality) is somewhat compromised by missing surname, but first-name-only is voice-safe and is corrected by a verbatim edit when Aaron confirms.
-- **Section 5 — does the governance section explicitly name the warm-intro-motion as the contact path?** Per [[project_cena_brand_governance]], no separate brand-team contact exists; the public motion is warm intros. BV finding-substitute: naming the warm-intro motion in the About-page governance section risks reading as deflection (*"don't contact us, find someone who knows us"*); not naming it leaves the comms peer wondering where to route a brand question. **Resolution proposed:** name it structurally without naming the path operationally. Voice-safe form: *"Cena's brand decisions sit with a sole approver, supported by expert agents; there is no external brand-team contact."* That sentence acknowledges the non-scope without reading as deflection. The page's full IA-mapped wayfinding (other surfaces) handles routing — About does not perform routing on its own surface.
-- **Section 4 — does the accountability section reference the Cena clinical-staff evolution at all?** Per HDG packet §3.2 + [[project_cena_accountability_model]], the model is evolving: partner-clinician-accountability is current state; Cena's own clinical staff is in flight. BV finding-substitute: surfacing the evolution risks aspirational-copy register (voice.md §5); not surfacing it leaves the reader without context for *why* it's "during pilots" framing. **Resolution proposed:** ship the HDG-cleared phrasing verbatim ("During pilots, partner-institution clinicians retain clinical accountability…") which already names the pilots-stage anchoring; do NOT extend with future-state claims in Section 4. If Aaron approves Open Questions #2 (clinical-staff hiring expansion), the evolution can land as a separate structural pointer in Section 5 (governance), not Section 4 (accountability).
-- **Anticipated BV / PLP tension on the brevity of the page.** PLP might push for more plain-language explanation of "agents-first" (a category-defining term the general reader may not know); BV holds register fidelity — the page is structural, not explanatory. **Resolution per dispatch principle (BV holds on register; PLP wins on accessibility unless another lens overrides):** Section 2 thesis paragraph can add one short plain-language gloss on "agents-first" on first use (*"agents-first — agents do the throughput work; humans provide accountability"*) without inflating the section. The gloss honors PLP without sacrificing BV.
-- **Anticipated HDG / BV tension on the agents-first thesis phrasing.** HDG might push for hedging the thesis to avoid implying Cena's substrate makes autonomous clinical decisions; BV holds the structural register. **Resolution per dispatch principle (CTA > HDG > BV > PLP):** HDG concern is preempted by Section 4 — the accountability section explicitly clarifies that partner-clinicians retain accountability, which is the regulatory-side guardrail HDG would require. The thesis in Section 2 stands as-stated because Section 4 substantiates and bounds it.
+**No new launch-gating items surfaced by this brief.**
 
 ---
 
 ## Open questions for Aaron-gate
 
-1. **Section 3 — Andrey's last name and verbatim role label.** Not verified in strategy docs or entity docs reviewed (only first-name references). Brief defaults to *"Andrey — co-founder, engineering"* (first-name + role) at launch. Aaron-gate: confirm Andrey's full name + verbatim role label (*"engineering lead"*? *"head of engineering"*? *"engineering"* alone?). If Aaron defers, ship first-name + *"co-founder, engineering"* as drafted.
+1. **Naming the team — full first-and-last with role-title only, or include short functional descriptors?** Voice owner recommends bare name + role-title per voice.md §2 About row (*"Aaron Sleeper, Chief Experience Officer."*) for quiet structural register. Alternative: 1-line functional descriptor after each name (*"Aaron Sleeper, Chief Experience Officer. Owns the experience layer across patient and clinician surfaces."*) which adds substance but risks reading as biographical. Voice owner picks bare-name-and-role; confirm or override.
+2. **Pre-seed framing — explicit naming of "pre-seed" / "pre-revenue" / "pre-Series A" or hold to *"three people, one pilot, building this in the open"* substance without naming the stage?** Voice owner recommends naming pre-seed explicitly (per Cap-Honest discipline + the *"fake it 'til you make it"* Aaron line's calibration) — the about page is the surface where naming stage at face value lands as confidence, not concession. Alternative: implicit pre-seed framing without the explicit word. Voice owner picks explicit; confirm or override.
+3. **Section 5 + Section 6 combine or remain separate?** Voice owner recommends combining into one paragraph if rendering as fewer-but-longer reads cleaner against the 250–350 word total; alternative: separate-but-quiet two-paragraph close. Phase 3 implementation panel can make the visual call; brief-level direction is "combine if 250–350 word budget compresses naturally; separate if not." Confirm direction or defer to Phase 3.
 
-2. **Section 3 / Section 4 — does the About page surface Cena's evolving clinical-staff hiring (Soto / Morales / Director of Clinical Ops) at launch?** Per [[project_cena_accountability_model]], these are in-flight names requiring Vanessa-attestation before external citation. Brief defaults to NOT surfacing them at launch (the company is structurally three named team members at the public-site moment). Aaron-gate options: (a) Do not surface clinical-hiring names — ship the page as drafted; revisit when Vanessa attests. (b) Surface as a structural pointer in Section 5 (governance) without names — e.g., *"Cena is hiring its first clinical staff to extend the partner-clinician-attested model"* — pending Vanessa-attestation that this structural claim is currently accurate. (c) Surface with names — requires Vanessa-attestation per memory + adds a new tracker item to outstanding-partner-input.md.
-
-3. **Section 4 — does the accountability-model paragraph land verbatim per HDG packet row 4, or with one voice-pass refinement?** Brief defaults to HDG-cleared phrasing verbatim: *"During pilots, partner-institution clinicians retain clinical accountability for every recommendation Cena's substrate generates. Cena's role is the audit-grade trail that makes that accountability defensible."* Aaron-gate: confirm verbatim, OR approve a one-pass voice refinement (refinement must NOT alter the load-bearing accountability claim; can adjust surrounding contextualization only). HDG re-vetting required if the load-bearing phrasing changes.
-
-4. **Section 5 — does the brand-governance description name Aaron specifically as the sole reviewer, or describe the role structurally without naming?** Per [[project_cena_brand_governance]], Aaron is sole reviewer/approver. Brief defaults to structural framing (*"Cena's brand decisions sit with a sole approver, supported by expert agents"*) — i.e., NOT naming Aaron specifically in Section 5 (he's already named in Section 3 as co-founder, UX & experience lead). Aaron-gate options: (a) Structural framing (no second-naming of Aaron in Section 5) — default. (b) Name Aaron explicitly in Section 5 (*"Brand decisions are reviewed by Aaron Sleeper, supported by expert agents"*) — collapses Section 3 → Section 5 into one continuous frame about Aaron, slightly performative. (c) Defer naming convention to Phase 3 implementation per visual / structural design call.
-
-5. **Page closing — does the page end at the governance section, or include a quiet *"Last updated"* / *"Maintained by"* / *"This page reflects Cena's structure at [date]"* sentence at the bottom?** Per IA §4 ("single quiet page") + dispatch instructions ("footer utility"), the page can end at Section 5 cleanly. A structural-stamp sentence (e.g., *"This page reflects Cena's structure at the time of last revision. Last updated [date]."*) would honor the page's structural register and acknowledge that the company evolves — without performing aspirationally about that evolution. Aaron-gate: confirm Section 5 is the clean close (default), OR approve a quiet structural-stamp sentence as the page's final line.
+**No questions inherited from the Tech Accuracy dispatch** — Hotspot 3 verdicts pass cleanly with the IA-calibrated tenses; the three Aaron-gate questions from the Cap-Honest gate ledger all live on `/for-providers-partners`.
 
 ---
 
 ## Sign-off
 
-- [ ] Plain Language Positioning
-- [ ] Cena Technical Accuracy
-- [ ] Healthcare Data Governance
-- [ ] Brand Voice Reviewer
+- [ ] Cena Public Site Copywriter draft
 - [ ] Aaron-gate
+- [ ] Phase 3 implementation (composition)
