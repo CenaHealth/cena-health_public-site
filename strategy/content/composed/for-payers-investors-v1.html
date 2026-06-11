@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For payers + investors — Cena Health</title>
+
+  <!-- Canonical Haven font stack — Lora (display) + Source Sans 3 (body) + Source Code Pro (mono).
+       Mirrors about-v1.html + apps/patient/index.html + packages/design-system/src/partials/head.html. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Code+Pro:wght@400;500&display=swap">
+
+  <style>
+    /*
+     * Inline tokens + Haven primitives needed for /for-payers-investors page.
+     *
+     * Source files this excerpt draws from:
+     *   - Lab/haven-ui/packages/design-system/src/styles/tokens/palette.css      (Cena Color System v2 — sand family canonical)
+     *   - Lab/haven-ui/packages/design-system/src/styles/tokens/semantic.css     (surface + text + border tokens)
+     *   - Lab/haven-ui/packages/design-system/src/styles/tokens/typography.css   (Lora + Source Sans 3, heading-01/02 scale)
+     *   - Lab/haven-ui/packages/design-system/src/styles/tokens/spacing.css      (--spacing: 0.25rem scalar)
+     *   - Lab/haven-ui/packages/design-system/src/styles/tokens/components.css   (document-shell, document-masthead, document-title, document-section, document-section-title, document-prose, document-lead)
+     *
+     * Composition discipline (haven-primitive-codification.md 5-place check):
+     *   Every class used here exists in components.css + COMPONENT-INDEX.md. Zero
+     *   primitives invented at the composition layer. The single composition
+     *   additions are the value-list styling (extends document-prose with
+     *   strong-lead bullets; candidate for codification on second page use per
+     *   generative-determinism 3-use rule) and the form-scaffold styling.
+     */
+
+    /* ---------------------------------------------
+       Token excerpts — Cena Color System v2
+       --------------------------------------------- */
+    :root {
+      /* Sand family — canonical warm-neutral surface */
+      --color-sand-50:  #f8f4ec;
+      --color-sand-100: #e4ddf7;
+      --color-sand-200: #cfcac2;
+      --color-sand-300: #bbb6ad;
+      --color-sand-400: #a8a298;
+      --color-sand-500: #958e85;
+      --color-sand-600: #777069;
+      --color-sand-700: #5a544e;
+      --color-sand-800: #3f3934;
+      --color-sand-900: #25211d;
+
+      /* Teal — used only via the existing teal-400 reference rule (not interactive here) */
+      --color-teal-400: #5f9a8f;
+      --color-teal-700: #1e5149;
+      --color-teal-800: #113933;
+
+      /* Semantic aliases — public-site surface */
+      --color-surface-page: var(--color-sand-50);
+      --color-text-normal:  var(--color-sand-900);
+      --color-text-muted:   var(--color-sand-700);
+      --color-text-faint:   var(--color-sand-500);
+      --color-border-default: var(--color-sand-300);
+
+      /* Font families — DESIGN.md §Typography */
+      --font-serif: 'Lora', ui-serif, Georgia, 'Times New Roman', serif;
+      --font-sans:  'Source Sans 3', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+      /* Type scale (minor-third 1.2) — heading-01 / heading-02 / body-02 */
+      --text-heading-01: 27.65px;
+      --text-heading-01-lh: 1.2;
+      --text-heading-02: 23.04px;
+      --text-heading-02-lh: 1.25;
+      --text-body-02: 16px;
+      --text-body-02-lh: 1.5;
+      --text-body-01: 19.2px;
+      --text-body-01-lh: 1.5;
+
+      /* Spacing scalar */
+      --spacing: 0.25rem;
+    }
+
+    /* ---------------------------------------------
+       Base — body + Typography Craft font-feature defaults
+       --------------------------------------------- */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background-color: var(--color-surface-page);
+      color: var(--color-text-normal);
+      /* Reading-comfort OpenType set — kern + ligatures always on; Source Sans 3
+         stylistic alternates for visible language warmth (ss03 = single-story g).
+         Mirrors apps/*/index.html canon (Lab/haven-ui/CLAUDE.md "Brand fonts per app"). */
+      font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "ss03" 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Suppress visited-link recolor inheritance on the page. */
+    a { color: inherit; text-decoration: none; }
+
+    /* ---------------------------------------------
+       Document-shell composition — Haven document district
+       Source: components.css :12801–12886
+       Used here as a public-site quiet structural surface for the /for-payers-investors page.
+       --------------------------------------------- */
+    .document-shell {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding: calc(var(--spacing) * 10) calc(var(--spacing) * 5);     /* py-10 px-5  */
+      max-width: 52rem;
+    }
+    @media (min-width: 768px) {
+      .document-shell {
+        padding: calc(var(--spacing) * 14) calc(var(--spacing) * 8);   /* md:py-14 md:px-8 */
+      }
+    }
+
+    .document-masthead {
+      padding-bottom: calc(var(--spacing) * 6);
+      margin-bottom: calc(var(--spacing) * 10);
+      border-bottom: 1px solid var(--color-sand-200);
+    }
+
+    .document-title {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: var(--text-heading-01);
+      line-height: var(--text-heading-01-lh);
+      color: var(--color-sand-900);
+      margin: 0;
+      letter-spacing: -0.005em; /* Lora optical tightening at heading register */
+    }
+
+    /* Document lead — opening orientation, slightly larger body.
+       Source: components.css :12848–12852 */
+    .document-lead {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-01);
+      line-height: 1.55;
+      color: var(--color-sand-700);
+      max-inline-size: 68ch;
+      margin: calc(var(--spacing) * 4) 0 0 0; /* mt-4 after the title */
+    }
+
+    /* Section rhythm — Source: components.css :12855–12876 */
+    .document-section {
+      margin-top: calc(var(--spacing) * 12); /* mt-12 */
+    }
+    .document-section:first-of-type {
+      margin-top: 0;
+    }
+
+    .document-section-title {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: var(--text-heading-02);
+      line-height: var(--text-heading-02-lh);
+      color: var(--color-sand-800);
+      margin: 0 0 calc(var(--spacing) * 4) 0; /* mb-4 */
+      letter-spacing: -0.003em;
+    }
+
+    /* Body prose — comfortable measure + rhythm.
+       Source: components.css :12879–12885 */
+    .document-prose {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.65; /* Leading-relaxed approximation — body-02's 1.5 + reading-comfort bump */
+      color: var(--color-sand-700);
+      max-inline-size: 68ch;
+      margin: 0;
+    }
+    .document-prose p + p {
+      margin-top: calc(var(--spacing) * 4); /* mt-4 */
+    }
+
+    /* Value-list styling — extends document-prose with strong-lead bullets.
+       Candidate for codification on second consumer per generative-determinism 3-use rule.
+       v1 composition-only. */
+    .value-list {
+      list-style: none;
+      padding: 0;
+      margin: calc(var(--spacing) * 4) 0 0 0;
+    }
+    .value-list li {
+      margin-bottom: calc(var(--spacing) * 3);
+      padding-left: calc(var(--spacing) * 6);
+      position: relative;
+    }
+    .value-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--color-sand-800);
+      font-weight: 600;
+    }
+    .value-list strong {
+      font-weight: 600;
+      color: var(--color-sand-900);
+    }
+    .value-list li p {
+      margin: 0;
+    }
+
+    /* Form scaffold — light 4-field structure for composition v1.
+       Actual form backend wiring is downstream. */
+    .form-scaffold {
+      margin-top: calc(var(--spacing) * 6);
+      display: flex;
+      flex-direction: column;
+      gap: calc(var(--spacing) * 4);
+      max-width: 100%;
+    }
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: calc(var(--spacing) * 2);
+    }
+    .form-field label {
+      font-weight: 500;
+      font-size: var(--text-body-02);
+      color: var(--color-sand-900);
+    }
+    .form-field input,
+    .form-field textarea {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.5;
+      color: var(--color-text-normal);
+      border: 1px solid var(--color-border-default);
+      border-radius: 4px;
+      padding: calc(var(--spacing) * 2.5) calc(var(--spacing) * 3);
+      background-color: #ffffff;
+    }
+    .form-field input:focus,
+    .form-field textarea:focus {
+      outline: none;
+      border-color: var(--color-teal-700);
+      box-shadow: 0 0 0 2px rgba(30, 81, 73, 0.1);
+    }
+    .form-submit {
+      margin-top: calc(var(--spacing) * 2);
+      padding: calc(var(--spacing) * 3) calc(var(--spacing) * 6);
+      background-color: var(--color-teal-700);
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      font-weight: 500;
+      cursor: pointer;
+      align-self: flex-start;
+    }
+    .form-submit:hover {
+      background-color: var(--color-teal-800);
+    }
+    .form-submit:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px var(--color-surface-page), 0 0 0 4px var(--color-teal-700);
+    }
+
+    /* Bifurcation visual support for Section 3 (brownfield).
+       Composition taste: subtle visual separation between recognition and intent paragraphs
+       is left to the page implementer; here the structure is prose-only. */
+
+    /* Three-people line — sits inside document-prose but reads as a compressed
+       structural fact rather than running body. Visual treatment is the same as
+       body prose; the period-separated form does the voice work. */
+    .document-prose .team-line {
+      /* nothing extra — kept here as a hook in case a future composition wants
+         to tighten letter-spacing or weight. For v1 it's pure semantic markup. */
+    }
+
+    /* ---------------------------------------------
+       Accessibility — focus visible defaults for keyboard nav
+       --------------------------------------------- */
+    :focus-visible {
+      outline: 2px solid var(--color-teal-700);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--
+    Page composition — /for-payers-investors (five sections per IA v2 §5)
+    Hero (H1 + 3-paragraph lead) → Value → Brownfield consolidation → Where Cena is → Contact.
+    Word count: ~842 words (target 700-900w per brief).
+    CTA: page-foot contact via form-gated calendar scaffold (voice owner's rec).
+  -->
+  <main class="document-shell" role="main">
+
+    <!-- Section 1 — Hero (H1 + subhead intro paragraphs)
+         Primitive mapping: document-masthead + document-title + document-lead + document-prose.
+         The hero is richer than /about's: H1 + 3-paragraph problem-statement narrative + closing line.
+         All sections inherit the honest-future-tense + Cap-Honest discipline from the draft. -->
+    <header class="document-masthead">
+      <h1 class="document-title">What healthcare loses when the gap between visits stays opaque.</h1>
+      <div class="document-lead" style="margin-top: calc(var(--spacing) * 4);">
+        <p style="margin: 0;">Between clinical visits, the gaps are where patterns vanish. A patient&rsquo;s medication adherence drifts. A dietary barrier emerges that the care plan didn&rsquo;t anticipate. A sign of clinical change that would normally surface at the next appointment — now six months out — instead surfaces in the emergency department, or not at all.</p>
+        <p style="margin: calc(var(--spacing) * 4) 0 0 0; color: var(--color-sand-700);">For programs built on food-as-medicine, this gap is expensive. Preventable utilization rises. Intervention timing narrows. The data that would prove the program&rsquo;s value — the connection between what the care team designed and what the patient actually experienced — fragments across systems.</p>
+        <p style="margin: calc(var(--spacing) * 4) 0 0 0; color: var(--color-sand-700);">Cena is being built to close it.</p>
+      </div>
+    </header>
+
+    <!-- Section 2 — The value Cena is being built to provide
+         Primitive mapping: document-section + document-section-title + document-prose + value-list (composition addition).
+         Four value primitives with strong-lead bullets; all honest-future-tense per Cap-Honest. -->
+    <section class="document-section" aria-labelledby="value">
+      <h2 class="document-section-title" id="value">The value Cena is being built to provide</h2>
+      <div class="document-prose">
+        <p>What we&rsquo;re building surfaces the insights that today get caught only in hindsight.</p>
+        <ul class="value-list">
+          <li><strong>Between-visit intelligence.</strong> The care team sees adherence patterns, emerging barriers, and clinical changes as they happen — not months later. Actionable, real-time.</li>
+          <li><strong>Preventative intervention.</strong> Patterns that would otherwise trigger an ED visit or an urgent visit get surfaced to the care team first — so the program can intervene before the system does.</li>
+          <li><strong>Reduced ED and hospital utilization.</strong> When food-as-medicine programs run on better between-visit data, patient outcomes improve and system burden drops.</li>
+          <li><strong>Automatic value-based reporting.</strong> Cena is being built to produce the outcome documentation your VBC contracts require — capturing intervention &rarr; adherence &rarr; outcome &rarr; re-assessment — automatically from the program&rsquo;s workflow, not from spreadsheets.</li>
+        </ul>
+      </div>
+      <div class="document-prose" style="margin-top: calc(var(--spacing) * 4);">
+        <p>The substrate is designed so the care team&rsquo;s existing program keeps running on its existing rhythm. What changes is what the care team sees, and what the program can demonstrate.</p>
+      </div>
+    </section>
+
+    <!-- Section 3 — Brownfield consolidation
+         Primitive mapping: document-section + document-section-title + document-prose (multiple paragraphs).
+         Cap-Honest Hotspot 2 verdicts embedded: HONEST-TODAY for recognition + four canonical shapes;
+         HONEST-FUTURE-TENSE for consolidation intent. Brownfield section carries the page's primary risk-lowering work.
+         The bifurcation is visible in paragraph structure, not in visual markup (per brief note). -->
+    <section class="document-section" aria-labelledby="brownfield">
+      <h2 class="document-section-title" id="brownfield">Cena is being built to run underneath what you&rsquo;ve built, not instead of it</h2>
+      <div class="document-prose">
+        <p>If your program is a grant-funded clinic, a sponsored pilot, a Section 1115 Medicaid demonstration waiver, or a hospital-foundation community kitchen, you know the gap.</p>
+      </div>
+      <div class="document-prose" style="margin-top: calc(var(--spacing) * 4);">
+        <p><strong>You&rsquo;ve already built something.</strong> You&rsquo;ve invested in the program&rsquo;s structure, trained the staff, proven the model works for your patients. The fragmentation isn&rsquo;t failure — it&rsquo;s the cost of running food-as-medicine on infrastructure built for something else.</p>
+        <p style="margin-top: calc(var(--spacing) * 2);"><strong>That&rsquo;s the gap Cena is being built to consolidate.</strong></p>
+      </div>
+      <div class="document-prose" style="margin-top: calc(var(--spacing) * 4);">
+        <p>When Cena is live, your program keeps running on the clinical workflows you&rsquo;ve designed. Your dietitians keep their assessment protocols. Your case managers keep their outreach cadence. Your program&rsquo;s IRB-approved intervention stays exactly what you built. What changes is that the clinical actions your team takes — assessments, care plans, adherence check-ins, outcome measurements — carry a unified trail. One system sees what your program is doing. One report reflects what your program achieved.</p>
+      </div>
+      <div class="document-prose" style="margin-top: calc(var(--spacing) * 4);">
+        <p><strong>What stays yours:</strong> clinical authority (your team retains every decision); data ownership (your program owns the patient relationship); branding and external messaging (your program is the protagonist when you talk about it). Cena is the layer underneath that captures the data your team needs to prove what you&rsquo;re solving.</p>
+      </div>
+    </section>
+
+    <!-- Section 4 — Where Cena is in its build
+         Primitive mapping: document-section + document-section-title + document-prose.
+         Honest-TODAY pre-seed framing + agents-first thesis (company operating posture).
+         The section anchors the page's value vision with structural honesty. -->
+    <section class="document-section" aria-labelledby="build">
+      <h2 class="document-section-title" id="build">Where Cena is in its build</h2>
+      <div class="document-prose">
+        <p>We&rsquo;re pre-seed. Three people. One live academic-medical-center HIV-nutrition program runs on this model today; we&rsquo;re building outward from there.</p>
+        <p style="margin-top: calc(var(--spacing) * 2);">We&rsquo;re building toward the clinical intelligence infrastructure layer for food-as-medicine — confidently, ahead of where we&rsquo;re proven, because the category needs naming. The gap between visits is a category. The solution is a substrate. And that&rsquo;s what we&rsquo;re building.</p>
+        <p style="margin-top: calc(var(--spacing) * 2);">Our team: Vanessa Sena, CEO, and partner-institution clinicians who retain accountability for every program decision. The agents-first thesis runs the company — humans hold authority and decisions; agents handle the throughput.</p>
+      </div>
+    </section>
+
+    <!-- Section 5 — Contact
+         Primitive mapping: document-section + document-section-title + document-prose + form-scaffold (composition addition).
+         Voice.md §9 form-gated CTA pattern. Light 4-field form scaffold for composition v1;
+         actual form backend wiring + Calendly integration is downstream Phase 3+ work. -->
+    <section class="document-section" aria-labelledby="contact">
+      <h2 class="document-section-title" id="contact">Talk through what your program is solving</h2>
+      <div class="document-prose">
+        <p>Whether you&rsquo;re running a pilot, scaling an existing program, or exploring the model, talk through the value-based-contract fit and the consolidation opportunity. 30-minute call. Light form (name, role, organization, one sentence on what you&rsquo;re solving). Calendar picks the time.</p>
+      </div>
+      <form class="form-scaffold">
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="">
+        </div>
+        <div class="form-field">
+          <label for="role">Role</label>
+          <input type="text" id="role" name="role" placeholder="">
+        </div>
+        <div class="form-field">
+          <label for="organization">Organization</label>
+          <input type="text" id="organization" name="organization" placeholder="">
+        </div>
+        <div class="form-field">
+          <label for="problem">What you&rsquo;re solving</label>
+          <textarea id="problem" name="problem" rows="3" placeholder=""></textarea>
+        </div>
+        <button type="submit" class="form-submit">Continue to calendar</button>
+      </form>
+    </section>
+
+  </main>
+</body>
+</html>
