@@ -190,18 +190,28 @@ Per IA v2 §5's framing of /about as the first Phase 3 composition + end-to-end 
 
 ---
 
-## What's next (for Aaron after composition v1 lands)
+## Aaron-gate resolutions 2026-06-11
 
-1. **Aaron-gate composition pass.** Open `about-v1.html` in a browser. Visual taste call: does the page land as the brief described? Specifically: voice gets out of the way ✓ / structural register ✓ / quiet authority ✓ / warm ground showing through ✓.
-2. **Resolve Q1 (gradient blobs), Q2 (document-shell register), Q3 (letter-spacing).** Three taste calls where my reads are documented but Aaron has the final word.
-3. **Typography Review gate.** Pass to the Typography Review surface (next pipeline step per IA v2 §5).
-4. **If composition + typography pass:** the pipeline's end-to-end shape is proven. Homepage + track-landings compositions become routine pipeline work against the same shape.
-5. **If composition needs iteration:** revise here; do not propagate iteration into homepage + track-landings until v1 is locked.
+All 3 composition open questions resolved at Haven-UI DS lead's picks.
+
+- ✅ **Q1 (ambient gradient blobs) — LOCKED to omit.** Quiet structural surface; no decoration. Cap-Honest + Quiet-Comp pull this direction.
+- ✅ **Q2 (document-shell register on marketing) — LOCKED to ship.** Document-district register reads as quietly-defensible on the marketing surface. Track-landings + homepage will surface evidence for a `public-shell` primitive sibling when their structural shape earns codification per generative-determinism's 3-use rule; not pre-emptively codified.
+- ✅ **Q3 (Lora display letter-spacing) — LOCKED at composition-layer taste.** -0.005em on document-title + -0.003em on document-section-title held as inline composition CSS. Promotion to Haven canon deferred until Typography Review (or a future composition) corroborates the call.
+
+**Composition validates the Phase 3 end-to-end PL composition pipeline for the public site.** Homepage + track-landings compositions inherit the pattern; iteration on /about closed.
+
+---
+
+## What's next
+
+1. **Continue per IA v2 §5 sequence:** `/for-payers-investors` draft + composition (Cap-Honest pressure MODERATE — brownfield section + value-frame substrate claims need tense discipline).
+2. **Then:** `/for-providers-partners` draft + composition (Cap-Honest pressure HIGH — 9-step UConn pilot bifurcation render is the page's load-bearing voice mechanic).
+3. **Then:** homepage composition (track-selector + category framing; cross-track register).
+4. **Public-shell primitive codification** — defer until track-landings or homepage compose; surface evidence first, then promote per generative-determinism 3-use rule.
 
 ---
 
 ## Sign-off
 
-- [ ] Aaron-gate composition pass
-- [ ] Typography Review
-- [ ] Phase 3 pipeline-validation gate (this composition closes the gate for /about)
+- [x] Aaron-gate composition pass (Q1 + Q2 + Q3 locked 2026-06-11)
+- [x] Phase 3 pipeline-validation gate (this composition closes the gate for /about)
