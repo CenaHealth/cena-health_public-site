@@ -1,3 +1,5 @@
+> **Status: superseded as authoritative audience map (2026-06-11).** Two-track amendment ([phase-1-positioning-brief.md](phase-1-positioning-brief.md) Amendment block + [phase-2-information-architecture.md](phase-2-information-architecture.md) §4) compresses the audience model to **Payers + Investors** / **Providers + Partners**, with roles nesting under tracks. The 3-maturity-level segmentation below carries useful raw material — problem framing, language samples, pain-point inventory — and remains valid as **input research**, not as the authoritative audience map. Revision pending. Until revised, treat this file as historical reference; canonical audience model lives in the Phase 1 brief + Phase 2 IA v2.
+
 # Target Audiences for Cena Health Portal Site
 
 ## Primary Audience Segments

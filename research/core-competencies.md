@@ -1,3 +1,5 @@
+> **Status: review before reuse (2026-06-11).** This file likely carries pre-amendment positioning framing ("Integrated Nutrition-First Care Delivery" as platform claim) + uncited proof points that voice.md §5 lists as forbidden until re-cited. The C-017 anchor — "Clinical Intelligence Infrastructure for Food-as-Medicine" — supersedes the platform-style positioning here. Treat the listed competencies as **raw material for problem-and-value framing**; every quantitative claim requires primary-source citation per [verify-time-sensitive-claims.md](../../../.claude/rules/verify-time-sensitive-claims.md) + [strategy/citation-discipline-spec.md](../strategy/citation-discipline-spec.md) before any reuse on the public site. Reconciliation against the amendment + Capability-Honest discipline pending.
+
 Core Competencies
 Strategic, differentiated, and investor-ready.
 

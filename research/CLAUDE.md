@@ -1,5 +1,14 @@
 # Research Directory Rules
 
+> **Reconciliation pending (2026-06-11).** This CLAUDE.md was authored against the pre-amendment single-funnel framing and references load-bearing patterns the 2026-06-11 amendment + Phase 2 IA v2 supersede — specifically: "Audience-first navigation - User chooses path based on role/maturity" (compressed to two-track posture), "Outcome-driven sections - Every section title should hint at benefit" (collides with voice.md §4 — no "benefit" in partner-frame), "Proof-heavy - Metrics, case studies, testimonials at every level" (collides with voice.md §5 forbidden patterns — no testimonial carousel, no case-study-with-named-patient-outcomes), and the 7-competency list (likely needs reconcile against C-017 anchor + Capability-Honest discipline). Until reconciled, defer to the canonical sources for any decision the patterns below would inform:
+>
+> - **Audience model:** [strategy/phase-1-positioning-brief.md](../strategy/phase-1-positioning-brief.md) Amendment block + [strategy/phase-2-information-architecture.md](../strategy/phase-2-information-architecture.md) §4
+> - **Site structure:** [Phase 2 IA v2](../strategy/phase-2-information-architecture.md)
+> - **Voice + forbidden patterns:** [brand/voice.md](../brand/voice.md)
+> - **Quantitative claim discipline:** [strategy/citation-discipline-spec.md](../strategy/citation-discipline-spec.md) + [verify-time-sensitive-claims.md](../../../.claude/rules/verify-time-sensitive-claims.md)
+>
+> The research material itself (competitor intelligence, market sizing inputs, raw findings) remains useful as raw input; the directory rules below are partial drift.
+
 ## Purpose of This Directory
 
 The `/research/` directory contains market research, competitive intelligence, sitemaps, and strategic planning documents. When working in this directory, focus on **analysis, discovery, and strategic thinking** - not implementation.

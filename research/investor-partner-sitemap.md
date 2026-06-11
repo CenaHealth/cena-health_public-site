@@ -1,3 +1,5 @@
+> **Status: superseded as site-structure source-of-truth (2026-06-11).** [Phase 2 IA v2](../strategy/phase-2-information-architecture.md) is the canonical site shape: 3 pages + about (homepage + `/for-payers-investors` + `/for-providers-partners` + `/about` footer-only). The maturity-based navigation model below was authored against the single-funnel framing the 2026-06-11 amendment supersedes. This file remains useful as historical reference for the original site-architecture work + as a source of section-content ideas that may inform the v2 IA's per-page content briefs. Do not treat as current sitemap; the v2 IA owns site structure.
+
 # Cena Health Investor & Partner Site Map (Revised)
 
 ## Strategic Architecture: Maturity-Based Navigation
