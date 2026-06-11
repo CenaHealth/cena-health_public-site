@@ -301,17 +301,18 @@ Per [outstanding-partner-input.md](../outstanding-partner-input.md):
 
 ## Open questions for Aaron-gate
 
-**Three inherited from the Tech Accuracy dispatch (Cap-Honest gate ledger Hotspot 1 cross-step pattern):**
+### Resolved 2026-06-11 (Aaron-gate batch 1)
 
-1. **Step 9 (re-assessment) framing.** Does the IA mean *"partner-clinician re-runs assessment at protocol cadence"* (HONEST-TODAY, single-line) or *"Cena substrate triggers re-assessment automatically from adherence/outcome signals"* (HONEST-FUTURE-TENSE, two-line bifurcation)? **Dispatcher's default:** Cena-substrate-triggered HONEST-FUTURE-TENSE (two-line). Voice owner's recommendation: the design-intent framing is the stronger pitch and the bifurcation discipline holds the page's Cap-Honest posture cleanly. Confirm or override.
-2. **Naming "Athena Health" publicly in Step 3 / Step 4 framing.** Does the partner-relationship comfort zone extend to publicly naming the partner's EHR vendor on the public marketing site? **Dispatcher's default:** functional framing (*"the partner's EHR"*); don't name the vendor. Voice owner's recommendation: hold functional framing for launch; the bifurcation render still works without the vendor name; the strict-superset upgrade to *"Athena Health"* lands cleanly later if Aaron-or-Vanessa-confirm. Confirm or override.
-3. **Step 7 (adherence check-ins) live status at the AMC.** Is the focused dietary-recall surface currently deployed and patients using it today, or is it gated behind a flag for the next enrollment phase? **Dispatcher's default:** HONEST-FUTURE-TENSE (two-line) until Andrey verifies live status. Voice owner's recommendation: honest-future-tense is the conservative posture for launch; if Andrey verifies live status, the *"today"* line can name the surface as running (still functional, *"a focused dietary-recall surface"* not *"the Spark recall feature"*). Confirm or override.
+1. ✅ **Step 9 (re-assessment) framing — LOCKED to Cena-substrate-triggered HONEST-FUTURE-TENSE.** Aaron confirmed the dispatcher's default. Two-line bifurcation render: *Today: partner clinician re-runs at protocol cadence; Design intent: Cena is being built to surface re-assessment triggers from adherence/outcome signals.* Composition draft against this.
+2. ✅ **Naming "Athena Health" publicly — LOCKED to functional framing.** Aaron confirmed functional framing (*"the partner's EHR"*); don't name the vendor. Strict-superset upgrade preserved as future option if partner-relationship comfort zone shifts.
 
-**One additional question surfaced by this brief:**
+### Remaining
 
-4. **Step 4 (care plan) — bifurcation render at this step.** The verdict is HONEST-FUTURE-TENSE; the recommended copy direction is *"The care plan is authored by the partner clinician in their EHR. Cena is being built to maintain a synchronized care-plan view…"* This step's design-intent framing is the most substantive of the eight bifurcated steps (the "synchronized care-plan view that the program's downstream surfaces read from" is doing real work for the technical evaluator and the clinical champion both). The question is whether to lean into the design-intent specificity here (recommended; the substantive frame is the section's load-bearing technical-evaluator scent) or hold it at structurally-minimal honest future-tense framing (alternative; less risk of overclaiming, less informational payload for the evaluator). Voice owner recommends substantive framing; Aaron confirms or overrides.
+3. **Step 7 (adherence check-ins) live status at the AMC** — depends on Andrey verification. **Dispatcher's default holds:** HONEST-FUTURE-TENSE (two-line) until Andrey confirms whether the focused dietary-recall surface is currently deployed and patients using it today, or gated behind a flag. If Andrey verifies live status, the *"today"* line can name the surface as running (functional framing only — *"a focused dietary-recall surface"*, never *"the Spark recall feature"*). Track at [outstanding-partner-input.md](../outstanding-partner-input.md).
 
-**No questions surfaced beyond these four.**
+### Remaining (voice-craft; Copywriter-defaulted; Aaron read-and-correct in-brief)
+
+4. **Step 4 (care plan) — bifurcation render at this step.** Voice owner recommends **substantive design-intent framing** *(the "synchronized care-plan view that the program's downstream surfaces read from" is doing real work for the technical evaluator and clinical champion both)*. Alternative: structurally-minimal honest future-tense (less risk of overclaiming, less informational payload). Override in-brief or at composition draft pass if preferred.
 
 ---
 

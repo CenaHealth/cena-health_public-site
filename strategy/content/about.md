@@ -241,9 +241,11 @@ Per [outstanding-partner-input.md](../outstanding-partner-input.md):
 
 ## Open questions for Aaron-gate
 
-1. **Naming the team — full first-and-last with role-title only, or include short functional descriptors?** Voice owner recommends bare name + role-title per voice.md §2 About row (*"Aaron Sleeper, Chief Experience Officer."*) for quiet structural register. Alternative: 1-line functional descriptor after each name (*"Aaron Sleeper, Chief Experience Officer. Owns the experience layer across patient and clinician surfaces."*) which adds substance but risks reading as biographical. Voice owner picks bare-name-and-role; confirm or override.
-2. **Pre-seed framing — explicit naming of "pre-seed" / "pre-revenue" / "pre-Series A" or hold to *"three people, one pilot, building this in the open"* substance without naming the stage?** Voice owner recommends naming pre-seed explicitly (per Cap-Honest discipline + the *"fake it 'til you make it"* Aaron line's calibration) — the about page is the surface where naming stage at face value lands as confidence, not concession. Alternative: implicit pre-seed framing without the explicit word. Voice owner picks explicit; confirm or override.
-3. **Section 5 + Section 6 combine or remain separate?** Voice owner recommends combining into one paragraph if rendering as fewer-but-longer reads cleaner against the 250–350 word total; alternative: separate-but-quiet two-paragraph close. Phase 3 implementation panel can make the visual call; brief-level direction is "combine if 250–350 word budget compresses naturally; separate if not." Confirm direction or defer to Phase 3.
+### Resolved 2026-06-11 (Aaron-gate batch 2)
+
+1. ✅ **Team-naming — LOCKED to bare name + role-title.** *"Aaron Sleeper, Chief Experience Officer." / "Vanessa Sena, CEO." / "Andrey Kartashov, CTO."* per voice.md §2 About row. Quiet structural register; confident-by-restraint. Functional-descriptor alternative cut from this pass.
+2. ✅ **Pre-seed framing — LOCKED to explicit.** Name *"pre-seed"* (or *"pre-revenue, pre-Series A"*) directly in the closing paragraph. Per Cap-Honest discipline + the *"fake it 'til you make it"* calibration; naming stage at face value reads as confidence. Implicit-substance-only alternative cut.
+3. ✅ **Section 5 + Section 6 — LOCKED to combined.** Closing paragraph combines what-we're-building substance + pre-seed framing in one beat. Substance + stage-framing reinforce each other; cleaner read against the 250–350 word budget. Page renders as 5 structural elements (one combined closing) rather than 6.
 
 **No questions inherited from the Tech Accuracy dispatch** — Hotspot 3 verdicts pass cleanly with the IA-calibrated tenses; the three Aaron-gate questions from the Cap-Honest gate ledger all live on `/for-providers-partners`.
 

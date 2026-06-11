@@ -202,9 +202,14 @@ Per [outstanding-partner-input.md](../outstanding-partner-input.md):
 
 ## Open questions for Aaron-gate
 
-1. **Hero direction A vs. B (single-choice call).** Voice owner recommends **Direction A** — category-claim-first, leading with the C-017 anchor *(see Section 1 Voice cues for both)*. Direction B preserves a problem-framing-first fallback if A reads thin in live testing. Confirm A, or override to B.
-2. **Contact CTA — calendar-direct vs. light-form-gated, named contact vs. functional role.** Voice owner recommends **calendar-direct + named contact** (named contact reads warmer; calendar-direct lowers friction for warm intros + cold inbound alike). Confirm, or override.
-3. **Section 4 heading — "Quietly, Cena exists." vs. "What Cena is."** Voice owner recommends the IA §5 quiet-name *"Quietly, Cena exists."* because it preserves the register-shift the IA names; *"What Cena is."* is reserved for `/about` H1 and using it twice fragments the register. Confirm, or override.
+### Resolved 2026-06-11 (Aaron-gate batch 1)
+
+1. ✅ **Hero direction A (category-claim-first) — LOCKED.** Aaron confirmed Direction A. Direction B (problem-framing-first) preserved in Section 1 Voice cues as fallback if A reads thin in live testing. Composition draft against A.
+
+### Remaining (voice-craft; Copywriter-defaulted; Aaron read-and-correct in-brief)
+
+2. **Contact CTA — calendar-direct vs. light-form-gated, named contact vs. functional role.** Voice owner recommends **calendar-direct + named contact** (named contact reads warmer; calendar-direct lowers friction for warm intros + cold inbound alike). Override in-brief or at composition draft pass if preferred.
+3. **Section 4 heading — "Quietly, Cena exists." vs. "What Cena is."** Voice owner recommends the IA §5 quiet-name *"Quietly, Cena exists."* because it preserves the register-shift the IA names; *"What Cena is."* is reserved for `/about` H1 and using it twice fragments the register. Override in-brief if preferred.
 
 **No questions inherited from the Tech Accuracy dispatch** — the three Aaron-gate questions surfaced by the Cap-Honest gate ledger (re-assessment framing, naming Athena Health, recall surface live status) all live on `/for-providers-partners`.
 

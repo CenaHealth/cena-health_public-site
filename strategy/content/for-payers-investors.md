@@ -251,11 +251,19 @@ Per [outstanding-partner-input.md](../outstanding-partner-input.md):
 
 ## Open questions for Aaron-gate
 
-1. **Hero direction.** Voice owner recommends problem-framing-first: *"What healthcare loses when the gap between visits stays opaque."* with a subhead naming what Cena is being built to provide. Alternative: a between-visit-intelligence noun-phrase H1 (rejected as too dense). Confirm direction.
-2. **Contact CTA — form-gated calendar vs. calendar-direct.** Voice owner recommends form-gated calendar (light 4-field form) for the financial-steward workflow fit; alternative is calendar-direct (warmer, lower friction, accepts cold-inbound triage cost). Confirm or override.
-3. **Where-Cena-is section — name Vanessa as CEO + named clinical lead, or hold to functional roles?** Voice owner's recommendation defers to Section 4's named-vs-functional call inherited from /about. Cross-section consistency: if `/about` names Vanessa as CEO, this page can too; if `/about` holds to functional roles, this page does too.
-4. **Number of value primitives in Section 2 (3 vs. 4 vs. 5).** Voice owner recommends 3–4. Confirm range or override.
-5. **Section 3 length — 400 vs. 600 words.** Voice owner recommends 400–500 words for the launch shape (brownfield-recognition + consolidation-intent + boundary-statement). The v1 brief's 600+ words covered three consolidation patterns with 4-step playbooks (Phase 3+ vision material per IA v2). Confirm 400–500 word range for launch, or override toward the v1 substance depth.
+### Resolved 2026-06-11 (Aaron-gate batch 1)
+
+1. ✅ **Hero direction — INHERITS Homepage Direction A (category-claim-first).** Aaron confirmed Homepage = Direction A; this page inherits per cross-landing cohesion. CI-forward problem statement runs *inside* the page (Section 1 problem framing + Section 2 value Cena is being built to provide); the H1 leads with category framing translated for the Payers+Investors register per Translate-Anchor. Composition draft against the inherited Direction A; previous problem-framing-first H1 candidate preserved in Section 1 Voice cues as fallback.
+
+### Resolved 2026-06-11 (Aaron-gate batch 2)
+
+3. ✅ **Where-Cena-is section — LOCKED to named (Vanessa as CEO + named clinical lead).** Inherits from `/about` Section 4 team-naming = bare name + role-title. Cross-page cohesion holds.
+5. ✅ **Section 3 length — LOCKED to 400–500 words.** Tighter launch shape: brownfield-recognition + consolidation-intent + boundary-statement. The v1 brief's 600+ word treatment (4-step playbooks across three consolidation patterns) moves to Phase 3+ vision material; expansion to 600+ flagged for the next pass once first partner-acquisition cycle generates real brownfield-pattern data.
+
+### Remaining (voice-craft; Copywriter-defaulted; Aaron read-and-correct in-brief)
+
+2. **Contact CTA — form-gated calendar vs. calendar-direct.** Voice owner recommends form-gated calendar (light 4-field form) for the financial-steward workflow fit; alternative is calendar-direct (warmer, lower friction, accepts cold-inbound triage cost). Override in-brief or at composition draft pass if preferred.
+4. **Number of value primitives in Section 2 (3 vs. 4 vs. 5).** Voice owner recommends 3–4. Override in-brief if preferred.
 
 **No questions inherited from the Tech Accuracy dispatch** — the three Aaron-gate questions surfaced by the Cap-Honest gate ledger all live on `/for-providers-partners`.
 
