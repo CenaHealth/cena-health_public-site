@@ -1,8 +1,23 @@
 # Cena Health Public Site — Phase 1 Positioning Brief
 
-**Status:** Awaiting Aaron-gate · **Date:** 2026-06-07 · **Scope:** Strategy brief only (no IA, no wireframes, no HTML this pass)
+**Status:** Aaron-gated 2026-06-07 · **Amended:** 2026-06-11 (see Amendment block below) · **Date:** 2026-06-07 · **Scope:** Strategy brief only (no IA, no wireframes, no HTML this pass)
 
 **Team:** Demand-Generation Strategist (lead) · Pattern Scout · Cena Technical Accuracy · Plain Language Positioning · Contrarian. Synthesized from 5-expert Phase 1 Workflow (`wf_fad100aa-c73`). Plan: [`~/.claude/plans/cena-public-site-restrategy.md`](../../../../.claude/plans/cena-public-site-restrategy.md).
+
+---
+
+## Amendment — 2026-06-11 Tech Talk (Aaron · Vanessa · Andrey)
+
+Filed via `/intake-meeting`. Re-anchors the site's **lead emphasis and structure** per Vanessa's direction. It **does not overturn the C-017 canonical headline** — "Clinical Intelligence Infrastructure for Food-as-Medicine", owned by [`c-017-canonical-positioning.md`](../../../Knowledge/Projects/Cena%20Health/Knowledge%20Migration/c-017-canonical-positioning.md) — it refines how that positioning is *deployed* on the public site. Three changes; everything below this block reads under them.
+
+1. **Lead with "clinical intelligence," not "infrastructure."** Vanessa: "infrastructure" is too nebulous for payers/investors; the resonant hook is the *intelligence gained between visits* — preventative, actionable interventions that reduce ED visits and hospital utilization. Keep programmatic/infrastructure capability **visible as substance** (the unique "providers prescribe interventions and receive data back" offering), not as the lead term. CI already leads the canonical headline — this sharpens the emphasis, it does not reverse the claim.
+2. **Two audience tracks, explicitly segmented.** The site splits at the top level into two messaging tracks:
+   - **Payers + Investors** — insights and intelligence (the CI value proposition; ED/utilization reduction; the data gained between visits).
+   - **Providers + Partners** — the turnkey program + referral process (how a provider prescribes the intervention and receives data back).
+   This refines §2's single-funnel framing: the five decision-roles now nest under the two tracks — clinical champion / technical evaluator / legal-compliance / comms → **Providers+Partners**; exec sponsor / financial steward (+ investor) → **Payers+Investors**.
+3. **Informational, not transactional.** The site explicitly excludes transactional features — no food ordering, no dietitian-appointment scheduling. Model reference: **NourishedRX's site shape** (structure-as-model). Note the distinction from §3: NourishedRx remains the *primary competitive shadow* to defend against on positioning; emulate its informational-site **structure**, do not adopt its **positioning**.
+
+**Downstream inheritance (separate down-scoping pass, NOT done in this intake):** Phase 2 IA ([`phase-2-information-architecture.md`](phase-2-information-architecture.md)), the content plan, and Phase 3a primitive audit all derive from this brief and must be re-grounded against this amendment — particularly the two-track split and the informational-only scope. Aaron's framing: the prior content pass ran "too big / too future / agentic"; this amendment brings the site back to **what enables sales conversations immediately**. That re-scoping of Phase 2/3 is follow-on work for Aaron to direct.
 
 ---
 
@@ -15,6 +30,8 @@ Frame is **proof-led, thesis-framed**: a generically-referenced academic-medical
 ## 2. Primary audience + decision-role map
 
 B2B2C partner buying committees. The clinical champion is the only role that *seeks* Cena; the other four *vet* what the champion brought them. Site does both jobs: pull the champion in, arm the champion to defend the choice internally.
+
+> **Per Amendment 2026-06-11:** these five roles now nest under two top-level site tracks — clinical champion / technical evaluator / legal-compliance / comms → **Providers+Partners** (turnkey program + referral); exec sponsor / financial steward / investor → **Payers+Investors** (clinical-intelligence insights). The role-level JTBD below holds within each track.
 
 - **Clinical champion** — CMO, Program Director, principal investigator. Question: *"Will this work for my patient population, and does it preserve my clinical authority?"* Lands first, scanning for clinician-accountability signals and outcomes that survive IRB/quality review.
 - **Technical evaluator** — IT/Informatics, FHIR/Epic integration owner. Question: *"Can this integrate without breaking my stack, and what's the data/PHI flow?"* Arrives deep-linked by the champion; wants integration surface, data-handling posture, BAA path.
@@ -70,7 +87,7 @@ What the site must accomplish on first visit, per role — the seed of Phase 2's
 
 1. **UConn-comms hinge.** Entire frame depends on the AMC pilot being referenceable concretely enough to carry "proof" weight. Can Vanessa get a read on UConn comms timeline before Phase 2 starts? If the generic reference is blocked >6 months, frame degrades to thesis-led-with-deferred-proof and channel sequencing shifts (LinkedIn becomes channel 1, site channel 2).
    - **Status 2026-06-07:** Aaron sent the bounded-ask Slack to Vanessa. Awaiting reply. Phase 2 IA can proceed against the generic-AMC assumption; UConn-named upgrade is a strict-superset edit if/when comms clears.
-2. **Headline pick.** Plain Language surfaced two finalists:
+2. **Headline pick.** Plain Language surfaced two finalists. **Per Amendment 2026-06-11:** both finalists below lead on "infrastructure" — revisit toward a **clinical-intelligence-forward** construction for the Payers+Investors track (Vanessa: "infrastructure" reads as nebulous to that audience). H1/H4 may still fit the Providers+Partners track where "the infrastructure your program runs on" is the literal value. Per-track headline assignment is now a two-track decision, owned by the Phase 2 IA re-grounding pass.
    - **H1:** "The clinical infrastructure your nutrition program runs on" — partner-enabling bet; champion-pulls-org-in.
    - **H4:** "Run your food-as-medicine program on infrastructure that holds up to audit" — provenance-as-posture bet; arm-the-champion.
    - **Aaron's call 2026-06-07:** *both land, audience-dependent.* H4 fits the **business person trying to improve something without in-house staff** (≈ exec sponsor / financial steward — economic + audit frame). H1 fits the **nutrition champion making good on a program-plan dream** (≈ clinical champion — partner-enabling substrate). Both decision-roles are already in §2's map.
