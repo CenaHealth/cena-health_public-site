@@ -39,21 +39,54 @@ Five principles. They compose; they are not ranked. Every sentence on a Cena sur
 
 ## 2. Per-surface voice guidance
 
-Each surface in the IA spec has a voice register calibrated to its primary decision-role. Same five principles; different posture per audience.
+Each surface has a voice register calibrated to its primary audience. Same five principles; different posture per audience.
+
+**Calibration note (2026-06-11):** the [Phase 2 IA v2](../strategy/phase-2-information-architecture.md) recalibrated the site shape to 3 pages + about (homepage + `/for-payers-investors` + `/for-providers-partners` + `/about` footer-only). The two new track-landings have voice subsections below (Payers+Investors landing, Providers+Partners landing). Subsections covering surfaces cut from launch (`/for-clinical-leaders`, `/for-program-economics`, `/your-program-on-cena`, `/for-comms`, `/how-the-substrate-works` hub + sub-pages, `/sample-audit-trail`, `/reference-program` standalone, `/proof` collection) are **preserved as Phase 3+ vision** rather than deleted — voice patterns calibrated to specific decision-roles within those surfaces will inform sections of the launch track-landings, and several may earn surface status back when site purpose expands beyond the pitch-deck-equivalent floor. Each preserved subsection carries its lifecycle marker inline.
 
 ### Homepage (`/`)
 
-- **Audience:** Clinical champion primary; all five decision-roles must not fail on cold landing.
-- **Register:** Partner-enabling invitation. Confident, structural, unhurried.
-- **Headline (HX-1, confirmed):** *"Clinical intelligence infrastructure for food-as-medicine. Built for the programs your partners already run."*
-- **Voice mechanics in the headline:**
+- **Audience:** Cross-track; first landing for both Payers+Investors and Providers+Partners audiences. Track-selector is the page's primary navigational CTA.
+- **Register:** Category-claim + track-routing. Confident, structural, unhurried.
+- **Headline (recalibration candidate):** HX-1 from the 2026-06-07 pass — *"Clinical intelligence infrastructure for food-as-medicine. Built for the programs your partners already run."* — survives literally as the cross-track hero candidate (first sentence leads with "Clinical intelligence" which honors Vanessa's CI-forward direction at the lead noun). Voice owner's next substantive pass should test it against the recalibrated site purpose (exist + show what we solve + offer contact) and may sharpen toward problem-framing in the first sentence rather than category-claim. **Recommended replacement only if the recalibration finds the category-claim opening reads as too dense for the new pitch-deck-equivalent purpose.**
+- **Voice mechanics in HX-1:**
   - First sentence states the category (C-017) — fights NourishedRx shadow head-on by naming the category before competitor framing can occupy the read.
   - Second sentence does partner-enabling work without "benefit" (forbidden) and without naming meals/kits/dietitians (forbidden in first viewport). "The programs your partners already run" surfaces the brownfield reality without using the word.
 - **Do:** *"Cena runs underneath what you've built, not instead of it."*
 - **Don't:** *"Transform your food-as-medicine program with Cena's revolutionary AI platform."*
-- **Per-surface taboos:** no hero CTA button (see §8 reservation mitigation); no meal/kit/dietitian/kitchen imagery in first viewport; no outcome percentage or dollar figure in hero copy.
+- **Per-surface taboos:** no meal/kit/dietitian/kitchen imagery in first viewport; no outcome percentage or dollar figure in hero copy; no role-doored 5-card router (replaced by two-track selector per IA v2); no substrate-diagram-as-hero-scent (cut per IA v2 + Cena Technical Accuracy 2026-06-11 verdict — implies deployed substrate Cena doesn't yet have); no working-session-CTA-as-hero (cut per IA v2). The Q1 reservation that drove §8 Candidate A is materially moot now — the track-selector IS the hero's CTA, so the prior "no hero CTA button" framing converts to "the track-selector is the hero's job."
 
-### For clinical leaders (`/for-clinical-leaders`)
+### For payers + investors landing (`/for-payers-investors`)
+
+- **Audience:** Exec sponsor / VP Population Health, VBC CFO, payer medical director, investor. Roles nest under this track per Phase 1 Amendment 2026-06-11.
+- **Register:** Clinical-intelligence-forward. Leads on insights gained between visits — preventative, actionable interventions that reduce ED visits and hospital utilization. "Infrastructure" reads as nebulous to this audience per Vanessa; copy translates the C-017 anchor's "infrastructure" lead per Translate-Anchor. The brownfield-consolidation substance lives as a section here because it lowers perceived risk for this audience — payers and investors hear less greenfield-risk when the model layers under existing programs.
+- **Headline (TBD, voice owner's next substantive pass):** lead the first sentence with the problem this audience recognizes (the opacity of the gap between clinical visits, the cost burden of preventable utilization, the reporting burden of value-based contracts), not with "infrastructure" or "substrate." Recommended starting pattern: a problem-statement headline whose subhead names what Cena is being built to provide. Cap-Honest honest future-tense throughout.
+- **Voice mechanics:**
+  - Problem-first — name what the reader recognizes as costly + currently unsolved.
+  - Vision-specific in honest future-tense — what Cena is being built to provide; name value primitives (between-visit intelligence; preventative intervention; reduced ED/utilization; system-economic alignment with VBC) without claiming what runs today.
+  - Brownfield section uses the four canonical shapes (grant-funded clinic, sponsored pilot, Section 1115 waiver, hospital-foundation garden) so the reader recognizes their org's posture in the first 200 words of that section.
+  - "Where Cena is in its build" section: honest pre-seed framing; honest about the live AMC pilot; ambitious about category. Aaron's "fake it 'til you make it" line has its natural register here.
+- **Do:** *"What healthcare loses when the gap between clinical visits stays opaque to the care team — that's the gap Cena is being built to close."*
+- **Don't:** *"Our platform delivers 30% reduction in ED visits."* (Vendor framing; uncited stale metric forbidden per §5; outcome percentage forbidden in hero.)
+- **Per-surface taboos:** no leading sentence with "infrastructure" or "substrate" (Translate-Anchor for this audience); no substrate-as-deployed-feature; no audit-trail-as-marketing-differentiator; no per-patient pricing; no PMPM figure without primary-source citation; no testimonial carousel; no aspirational present-tense substrate claims (Cap-Honest); no greenfield-risk language ("migrate," "modernize," "upgrade from" — brownfield section's whole job is the inverse posture).
+
+### For providers + partners landing (`/for-providers-partners`)
+
+- **Audience:** Clinical champion (CMO / Program Director / PI), technical evaluator, legal-compliance, comms / external affairs. Roles nest under this track per Phase 1 Amendment 2026-06-11.
+- **Register:** Turnkey-program + referral-and-data-back. *"The infrastructure your nutrition program runs on"* lands literally here as direct value — anchor word is reader-appropriate; per Translate-Anchor carve-out. Partner-protagonist throughout; the program is the partner's; Cena is what it runs on.
+- **Headline (recalibration candidate):** H1 from the 2026-06-07 pass — *"The clinical infrastructure your nutrition program runs on."* — still lands literally on this audience. Voice owner's next pass should verify it survives against the recalibrated site purpose (exist + show what we solve + offer contact) and may adjust if the problem-framing register feels stronger as the opening.
+- **Voice mechanics:**
+  - Partner-protagonist — "your nutrition program" centers the partner; "runs on" makes Cena structural rather than additive.
+  - Problem the audience recognizes — operational pain of running a food-as-medicine program without a substrate that captures intervention → outcome → re-assessment.
+  - Turnkey-program + referral-and-data-back model in plain language; Vision-specific Cap-Honest framing for substrate primitives.
+  - **UConn HIV-nutrition pilot as inline reference section** — frame-setter doubles as section heading: *"A live academic-medical-center HIV-nutrition program runs on this model today."* Patient-journey shape (referral → enrollment → assessment → care plan → ordering → fulfillment → adherence check-ins → outcome capture → re-assessment); each step described against what's honest today vs honest design. Strict-superset edit to UConn-named when Vanessa's comms clears. Worked indication examples (CKD / oncology / diabetes hypotheticals) cut per Cap-Honest — claims Cena can't substantiate.
+  - Clinical-authority-preserved section defends against the "this displaces my dietitians" objection.
+- **Do:** *"Your dietitians keep their workflows. Your IRB keeps its approval process. The program is built so the substrate captures the trail your committee needs."* (Honest future-tense per Cap-Honest; partner-protagonist; clinical-authority-preserved.)
+- **Don't:** *"Our AI augments your clinical team to drive better outcomes."* (Vendor framing; "drive outcomes" content-free; "AI" instead of "substrate" pulls a different positioning.)
+- **Per-surface taboos:** no language implying Cena replaces or displaces clinicians; no "AI does the diagnosis"; no patient-outcome storytelling; no "case study" framing for the UConn reference section (use *"blueprint"* / *"the live program"*); named patient outcomes deferred; no aspirational present-tense substrate claims; no working-indication-examples-as-claim (CKD/oncology/diabetes hypotheticals cut per Cap-Honest).
+
+### For clinical leaders (`/for-clinical-leaders`) — Phase 3+ vision; cut from launch per IA v2
+
+> Cut from launch shape. Audience's voice patterns inform the clinical-champion read within `/for-providers-partners`'s "Clinical authority preserved" section. Subsection preserved for future surface re-introduction when site purpose expands beyond the pitch-deck-equivalent floor.
 
 - **Audience:** Clinical champion (CMO, Program Director, PI). Single role.
 - **Register:** Peer-to-peer, clinician-respecting. Speaks to *"will this preserve my clinical authority?"* before *"what does it do?"*
@@ -63,7 +96,9 @@ Each surface in the IA spec has a voice register calibrated to its primary decis
 - **Don't:** *"Our AI augments your clinical team to drive better outcomes."* (vendor framing; "drive outcomes" is content-free)
 - **Per-surface taboos:** no language that implies Cena replaces or displaces clinicians; no "AI does the diagnosis"; no patient-outcome storytelling.
 
-### For program economics (`/for-program-economics`)
+### For program economics (`/for-program-economics`) — Phase 3+ vision; cut from launch per IA v2
+
+> Cut from launch shape. Audience's voice patterns inform the financial-steward read within `/for-payers-investors`'s value-frame and brownfield-consolidation sections. Subsection preserved for future surface re-introduction when site purpose expands beyond the pitch-deck-equivalent floor.
 
 - **Audience:** Exec sponsor / financial steward (VP Population Health, VBC CFO, payer medical director).
 - **Register:** Defensible-spend register. Economic frame; audit as bridge concept earning both financial-steward and comms-vetter reads.
@@ -73,7 +108,9 @@ Each surface in the IA spec has a voice register calibrated to its primary decis
 - **Don't:** *"At only $X PMPM, Cena delivers Y% ROI within Z months."* (forbidden patterns; per-patient pricing is the delivery-vendor tell)
 - **Per-surface taboos:** no per-patient pricing; no "ROI calculator"; no testimonial carousel; no SaaS pricing-tier table.
 
-### Your program on Cena (`/your-program-on-cena`)
+### Your program on Cena (`/your-program-on-cena`) — Phase 3+ vision; cut from launch per IA v2
+
+> Cut from launch shape. Brownfield-consolidation substance folds into `/for-payers-investors` as a section because brownfield framing is one of the strongest risk-lowering reads for payers and investors. Subsection's voice patterns (recognition-statement register; naming the four canonical brownfield shapes) inform that section. Surface re-introduction earned when partner volume warrants a standalone canonical URL.
 
 - **Audience:** Exec sponsor primary; clinical champion secondary; comms tertiary.
 - **Register:** Recognition-statement. The brownfield buyer's first read must be *"they see what we actually run."*
@@ -83,7 +120,9 @@ Each surface in the IA spec has a voice register calibrated to its primary decis
 - **Don't:** *"Migrate from your legacy program to Cena's modern platform."* (greenfield framing; "migrate" implies displacement)
 - **Per-surface taboos:** no "modernize," "transform," "migrate," "upgrade from" — all imply displacement, all collapse the brownfield posture; never list Cena's modules before listing the partner's surfaces.
 
-### For comms / external affairs (`/for-comms`)
+### For comms / external affairs (`/for-comms`) — Phase 3+ vision; cut from launch per IA v2
+
+> Cut from launch shape. No live partner co-announcing today; built for a future state. Subsection preserved for surface re-introduction when UConn comms clears + there's something to co-announce.
 
 - **Audience:** Partner-org comms, marketing, PR.
 - **Register:** Translated, useful, named-contact-shaped. Voice should read as *"a real person at Cena will pick up the phone about a quote."*
@@ -93,7 +132,9 @@ Each surface in the IA spec has a voice register calibrated to its primary decis
 - **Don't:** *"Download our complete media kit and brand guidelines package."* (vendor-portal register; not what the comms peer is asking for)
 - **Per-surface taboos:** no marketing-collateral framing; no "media kit" language; no form-gated assets (comms peers don't fill forms when checking a quote).
 
-### How the substrate works hub + sub-pages (`/how-the-substrate-works`, `/integration`, `/provenance-and-accountability`)
+### How the substrate works hub + sub-pages (`/how-the-substrate-works`, `/integration`, `/provenance-and-accountability`) — Phase 3+ vision; cut from launch per IA v2
+
+> Cut from launch shape. Pitch-deck-equivalent site doesn't have a substrate hub; the technical-evaluator NDA-funnel is earned through warm-intro paths when a partner organization is in active technical due diligence, not advertised on the public site. Subsection's voice patterns (factual, evaluator-respecting, documentation-not-pitch register) inform any future substrate-mechanic content if Cena's substrate becomes publicly-deployed and the site purpose expands.
 
 - **Audience:** Technical evaluator + legal/compliance (co-primary).
 - **Register:** Factual, evaluator-respecting. No marketing inflection. Reads as documentation, not pitch.
@@ -103,7 +144,9 @@ Each surface in the IA spec has a voice register calibrated to its primary decis
 - **Don't:** *"Powerful, enterprise-grade, secure, scalable architecture purpose-built for healthcare."* (adjective stack signals nothing; reads as defensive)
 - **Per-surface taboos:** no developer-portal slang ("just plug in," "out of the box"); no security-marketing register ("bank-grade encryption" — say what's actually true: "AES-256 at rest, TLS 1.3 in transit, with primary-source citation"); no acronym-stacking without expansion on first use.
 
-### Sample audit trail (`/how-the-substrate-works/sample-audit-trail`)
+### Sample audit trail (`/how-the-substrate-works/sample-audit-trail`) — Phase 3+ vision; cut from launch per IA v2
+
+> Cut from launch shape per IA v2 + Cena Technical Accuracy 2026-06-11 verdict — a page showing an artifact a substrate produces, when Cena's substrate doesn't yet produce it for anyone publicly, is exactly the Capability-Honest failure mode this discipline blocks. Subsection's voice patterns (artifact voice; voice almost disappears; annotation-as-explanation) inform any future audit-trail content if Cena's substrate becomes publicly-deployed.
 
 - **Audience:** IRB liaison; legal/compliance.
 - **Register:** Artifact voice — voice almost disappears. The page is the artifact; copy is annotation.
@@ -113,7 +156,9 @@ Each surface in the IA spec has a voice register calibrated to its primary decis
 - **Don't:** *"As you can see, our audit trails provide unprecedented transparency for compliance teams."* (meta-narration on what the reader is seeing; the reader sees it)
 - **Per-surface taboos:** no CTAs (per IA §9); no marketing voice on the artifact page itself; no calls-to-action embedded as inline links.
 
-### Reference program (`/reference-program`)
+### Reference program (`/reference-program`) — Phase 3+ vision as standalone surface; UConn HIV-nutrition content survives as inline section on `/for-providers-partners`
+
+> The UConn HIV-nutrition reference is real and load-bearing — it survives in launch, but as an inline section on `/for-providers-partners` rather than as a standalone surface (per IA v2 §5 + Aaron's 2026-06-11 call). Subsection's blueprint-voice patterns (present-tense, structural, replicable; "blueprint" not "case study"; "the live program" not "our customer X"; strict-superset edit to UConn-named when Vanessa clears comms) inform that inline section. Standalone surface re-introduction earned when proof artifacts beyond the single AMC pilot warrant their own canonical URL.
 
 - **Audience:** All four vetting roles eventually land here.
 - **Register:** Blueprint voice — present-tense, structural, replicable. "This is the shape of an indication program on Cena" rather than "this is what happened with one customer."
@@ -123,7 +168,9 @@ Each surface in the IA spec has a voice register calibrated to its primary decis
 - **Don't:** *"Our customer UConn Health achieved 30% improvement in patient outcomes."* (customer/vendor framing; named-patient-outcome storytelling; uncited figure)
 - **Per-surface taboos:** the word *"case study"* (use *"blueprint"*); *"our customer X"* (use *"the live program"*); named patient outcomes (defer to `/proof` slots).
 
-### Proof (`/proof`)
+### Proof (`/proof`) — Phase 3+ vision; cut from launch per IA v2
+
+> Cut from launch shape. Empty-slot-as-rigor is a sophisticated pattern; pitch-deck-equivalent pre-revenue site doesn't earn it. Subsection preserved for surface re-introduction when partner volume + a portfolio of proof artifacts warrant the surface (the slots then read as rigor; on a 3-page launch site they would read as absence).
 
 - **Audience:** All roles, substantiation stage.
 - **Register:** Empty-slot-as-rigor. Voice signals *"we know what counts as proof; we publish it when it clears."*
