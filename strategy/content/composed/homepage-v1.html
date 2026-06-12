@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cena Health</title>
+
+  <!-- Canonical Haven font stack — Lora (display) + Source Sans 3 (body) + Source Code Pro (mono).
+       Mirrors about-v1.html + for-payers-investors-v1.html + for-providers-partners-v1.html + apps/patient/index.html. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Code+Pro:wght@400;500&display=swap">
+
+  <style>
+    /*
+     * Inline tokens + Haven primitives needed for / (homepage).
+     *
+     * Source files this excerpt draws from:
+     *   - Lab/haven-ui/packages/design-system/src/styles/tokens/palette.css      (Cena Color System v2 — sand family canonical)
+     *   - Lab/haven-ui/packages/design-system/src/styles/tokens/semantic.css     (surface + text + border tokens)
+     *   - Lab/haven-ui/packages/design-system/src/styles/tokens/typography.css   (Lora + Source Sans 3, heading-01/02 scale)
+     *   - Lab/haven-ui/packages/design-system/src/styles/tokens/spacing.css      (--spacing: 0.25rem scalar)
+     *   - Lab/haven-ui/packages/design-system/src/styles/tokens/components.css   (document-shell, document-masthead, document-title, document-section, document-section-title, document-prose, document-lead)
+     *
+     * Composition discipline (haven-primitive-codification.md 5-place check):
+     *   Core document-shell primitives exist in components.css + COMPONENT-INDEX.md.
+     *   The track-selector cards in Section 3 are a PRIMARY STRUCTURAL LOAD-BEARING
+     *   element (per brief — the homepage's primary CTA). They render as Option A
+     *   (side-by-side cards with subtle border; stacked on mobile). This composition
+     *   choice has downstream implications for public-shell codification.
+     */
+
+    /* ---------------------------------------------
+       Token excerpts — Cena Color System v2
+       --------------------------------------------- */
+    :root {
+      /* Sand family — canonical warm-neutral surface */
+      --color-sand-50:  #f8f4ec;
+      --color-sand-100: #e4ddf7;
+      --color-sand-200: #cfcac2;
+      --color-sand-300: #bbb6ad;
+      --color-sand-400: #a8a298;
+      --color-sand-500: #958e85;
+      --color-sand-600: #777069;
+      --color-sand-700: #5a544e;
+      --color-sand-800: #3f3934;
+      --color-sand-900: #25211d;
+
+      /* Teal — used only via the existing teal-400 reference rule (not interactive here) */
+      --color-teal-400: #5f9a8f;
+      --color-teal-700: #1e5149;
+      --color-teal-800: #113933;
+
+      /* Semantic aliases — public-site homepage surface */
+      --color-surface-page: var(--color-sand-50);
+      --color-text-normal:  var(--color-sand-900);
+      --color-text-muted:   var(--color-sand-700);
+      --color-text-faint:   var(--color-sand-500);
+      --color-border-default: var(--color-sand-300);
+
+      /* Font families — DESIGN.md §Typography */
+      --font-serif: 'Lora', ui-serif, Georgia, 'Times New Roman', serif;
+      --font-sans:  'Source Sans 3', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+      /* Type scale (minor-third 1.2) — heading-01 / heading-02 / body-02 */
+      --text-heading-01: 27.65px;
+      --text-heading-01-lh: 1.2;
+      --text-heading-02: 23.04px;
+      --text-heading-02-lh: 1.25;
+      --text-body-02: 16px;
+      --text-body-02-lh: 1.5;
+      --text-body-01: 19.2px;
+      --text-body-01-lh: 1.5;
+
+      /* Spacing scalar */
+      --spacing: 0.25rem;
+    }
+
+    /* ---------------------------------------------
+       Base — body + Typography Craft font-feature defaults
+       --------------------------------------------- */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background-color: var(--color-surface-page);
+      color: var(--color-text-normal);
+      /* Reading-comfort OpenType set — kern + ligatures always on; Source Sans 3
+         stylistic alternates for visible language warmth (ss03 = single-story g).
+         Mirrors apps/*/index.html canon (Lab/haven-ui/CLAUDE.md "Brand fonts per app"). */
+      font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "ss03" 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Suppress visited-link recolor inheritance on the page. */
+    a { color: inherit; text-decoration: none; }
+
+    /* ---------------------------------------------
+       Document-shell composition — Haven document district
+       Source: components.css :12801–12886
+       Used here as the homepage's quiet structural surface.
+       --------------------------------------------- */
+    .document-shell {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding: calc(var(--spacing) * 10) calc(var(--spacing) * 5);     /* py-10 px-5  */
+      max-width: 52rem;
+    }
+    @media (min-width: 768px) {
+      .document-shell {
+        padding: calc(var(--spacing) * 14) calc(var(--spacing) * 8);   /* md:py-14 md:px-8 */
+      }
+    }
+
+    .document-masthead {
+      padding-bottom: calc(var(--spacing) * 6);
+      margin-bottom: calc(var(--spacing) * 10);
+      border-bottom: 1px solid var(--color-sand-200);
+    }
+
+    .document-title {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: var(--text-heading-01);
+      line-height: var(--text-heading-01-lh);
+      color: var(--color-sand-900);
+      margin: 0;
+      letter-spacing: -0.005em; /* Lora optical tightening at heading register */
+    }
+
+    /* Document lead — opening orientation, slightly larger body.
+       Source: components.css :12848–12852 */
+    .document-lead {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-01);
+      line-height: 1.55;
+      color: var(--color-sand-700);
+      max-inline-size: 68ch;
+      margin: calc(var(--spacing) * 4) 0 0 0; /* mt-4 after the title */
+    }
+
+    .document-lead a {
+      color: var(--color-teal-700);
+      text-decoration: underline;
+      text-decoration-color: currentColor;
+      text-underline-offset: 0.25em;
+    }
+
+    /* Section rhythm — Source: components.css :12855–12876 */
+    .document-section {
+      margin-top: calc(var(--spacing) * 12); /* mt-12 */
+    }
+    .document-section:first-of-type {
+      margin-top: 0;
+    }
+
+    .document-section-title {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: var(--text-heading-02);
+      line-height: var(--text-heading-02-lh);
+      color: var(--color-sand-800);
+      margin: 0 0 calc(var(--spacing) * 4) 0; /* mb-4 */
+      letter-spacing: -0.003em;
+    }
+
+    /* Body prose — comfortable measure + rhythm.
+       Source: components.css :12879–12885 */
+    .document-prose {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.65; /* Leading-relaxed approximation — body-02's 1.5 + reading-comfort bump */
+      color: var(--color-sand-700);
+      max-inline-size: 68ch;
+      margin: 0;
+    }
+    .document-prose p + p {
+      margin-top: calc(var(--spacing) * 4); /* mt-4 */
+    }
+
+    /* Track-selector cards — composition-layer treatment for Section 3.
+       LOAD-BEARING STRUCTURAL ELEMENT: this is the homepage's primary CTA.
+       Option A (side-by-side cards): subtle border, sand-100 bg, quiet visual emphasis.
+       Mobile: stacks vertically. Desktop: side-by-side with symmetric spacing.
+    */
+    .track-selector {
+      margin-top: calc(var(--spacing) * 4); /* mt-4 after the section heading */
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: calc(var(--spacing) * 6);
+    }
+
+    @media (min-width: 768px) {
+      .track-selector {
+        grid-template-columns: 1fr 1fr;
+        gap: calc(var(--spacing) * 8);
+      }
+    }
+
+    .track-card {
+      padding: calc(var(--spacing) * 6);
+      border: 1px solid var(--color-sand-300);
+      background-color: var(--color-sand-100);
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .track-card-title {
+      font-family: var(--font-serif);
+      font-weight: 600;
+      font-size: var(--text-body-02);
+      line-height: 1.4;
+      color: var(--color-sand-900);
+      margin: 0 0 calc(var(--spacing) * 3) 0;
+    }
+
+    .track-card-description {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.55;
+      color: var(--color-sand-700);
+      margin: 0 0 calc(var(--spacing) * 3) 0;
+      flex-grow: 1;
+    }
+
+    .track-card-link {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      color: var(--color-teal-700);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .track-card-link::after {
+      content: " \2192"; /* → arrow */
+      margin-left: 0.25em;
+    }
+
+    .track-card-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact CTA section styling */
+    .contact-lead {
+      font-size: var(--text-body-02);
+      line-height: 1.65;
+      color: var(--color-sand-700);
+      margin: 0 0 calc(var(--spacing) * 4) 0;
+    }
+
+    .contact-cta {
+      display: inline-block;
+      margin-top: calc(var(--spacing) * 2);
+      color: var(--color-teal-700);
+      text-decoration: underline;
+      text-decoration-color: currentColor;
+      text-underline-offset: 0.25em;
+      font-weight: 500;
+    }
+
+    /* About link styling */
+    .about-link {
+      display: inline-block;
+      margin-top: calc(var(--spacing) * 2);
+      color: var(--color-teal-700);
+      text-decoration: underline;
+      text-decoration-color: currentColor;
+      text-underline-offset: 0.25em;
+      font-weight: 500;
+    }
+
+    .about-link::after {
+      content: " \2192"; /* → arrow */
+      margin-left: 0.25em;
+    }
+
+    .about-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Accessibility — focus visible defaults for keyboard nav */
+    :focus-visible {
+      outline: 2px solid var(--color-teal-700);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--
+    Page composition — / (homepage)
+    5 structural sections per IA v2 §5 + copy draft homepage-draft-v1.md.
+    Word count: ~180 words total (hero 16w + problem 52w + tracks 42w + about 35w + contact 35w).
+    PRIMARY STRUCTURAL LOAD: Section 3 track-selector is the homepage's primary
+    navigational CTA (per brief §5 Must-do). Renders as Option A (side-by-side cards,
+    mobile stacked). This composition choice is evidence point for public-shell
+    codification decision.
+  -->
+  <main class="document-shell" role="main">
+
+    <!-- Section 1 — Hero (H1 + subhead with inline anchor link)
+         Primitive mapping: document-masthead + document-title + document-lead.
+         The subhead includes an inline link to #tracks anchor (the track-selector).
+    -->
+    <header class="document-masthead">
+      <h1 class="document-title">Clinical intelligence infrastructure for food-as-medicine.</h1>
+      <p class="document-lead">
+        Built for the programs your partners already run &mdash; <a href="#tracks">or jump to the right track</a>.
+      </p>
+    </header>
+
+    <!-- Section 2 — The problem in one paragraph
+         Primitive mapping: document-section + document-section-title + document-prose.
+         Honest-today framing per copy discipline; problem statement without Cena-as-solution.
+    -->
+    <section class="document-section" aria-labelledby="problem">
+      <h2 class="document-section-title" id="problem">What&rsquo;s lost between visits.</h2>
+      <div class="document-prose">
+        <p>
+          Between clinical visits, the patterns that would trigger intervention today instead surface in the emergency department &mdash; or not at all. For food-as-medicine programs, the gap between what the care team designed and what the patient actually experienced fragments across systems. The program runs. The evidence stays scattered.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 3 — Two-track entry (LOAD-BEARING CTA)
+         Primitive mapping: document-section + document-section-title + track-selector (composition layer).
+         The track-selector is the PRIMARY NAVIGATIONAL CTA per brief §5.
+         Option A (side-by-side cards): subtle border, sand-100 background, quiet visual weight.
+         Each card: track title (bold) + framing sentence + arrow link.
+         Mobile: stacks vertically. Desktop: side-by-side grid.
+    -->
+    <section class="document-section" aria-labelledby="tracks">
+      <h2 class="document-section-title" id="tracks">Two ways to read what we&rsquo;re building.</h2>
+      <div class="track-selector">
+        <div class="track-card">
+          <h3 class="track-card-title">For payers + investors</h3>
+          <p class="track-card-description">
+            The intelligence gained between visits &mdash; patterns that would otherwise trigger unnecessary system use. Cena is being built to close that gap.
+          </p>
+          <a href="/for-payers-investors" class="track-card-link">For payers + investors</a>
+        </div>
+        <div class="track-card">
+          <h3 class="track-card-title">For providers + partners</h3>
+          <p class="track-card-description">
+            The infrastructure your nutrition program runs on &mdash; capturing the trail your committee needs to defend the program.
+          </p>
+          <a href="/for-providers-partners" class="track-card-link">For providers + partners</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 — Quietly, Cena exists (About scent)
+         Primitive mapping: document-section + document-section-title + document-prose.
+         One paragraph; routes to /about for the longer read. No team photos, no pitch.
+    -->
+    <section class="document-section" aria-labelledby="existence">
+      <h2 class="document-section-title" id="existence">Quietly, Cena exists.</h2>
+      <div class="document-prose">
+        <p>
+          A three-person, pre-seed company underneath the programs partner institutions already run. We&rsquo;re building the clinical intelligence layer for food-as-medicine. <a href="/about" class="about-link">About</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 5 — Contact
+         Primitive mapping: document-section + document-section-title + document-prose.
+         Single CTA path: calendar-direct + named contact (Vanessa Sena, CEO).
+         Peer-to-peer register; no SaaS vendor framing.
+    -->
+    <section class="document-section" aria-labelledby="contact">
+      <h2 class="document-section-title" id="contact">Talk through what your program is solving.</h2>
+      <div class="document-prose">
+        <p>
+          30-minute call with Vanessa Sena, CEO.
+        </p>
+        <p>
+          <a href="https://calendly.com/vanessa-cena/30min" class="contact-cta">Schedule via Calendly</a> or <a href="mailto:vanessa@cenahealth.com" class="contact-cta">direct contact</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
