@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For providers + partners — Cena Health</title>
+
+  <!-- Canonical Haven font stack. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Code+Pro:wght@400;500&display=swap">
+
+  <style>
+    /*
+     * Cena Health public-site /for-providers-partners — v2 composition.
+     *
+     * Design spec: v2-design-spec.md §3.3
+     * Identity: the structural-proof document — bifurcation table is the page's
+     *           center of gravity; everything orients to it.
+     * Structural lifts vs v1:
+     *   - Eyebrow + H1 + short lead (tight hero; payoff is below)
+     *   - Pull-quote treatment for the program director voice
+     *   - 3 vertically-stacked numbered structural cards for how-it-runs
+     *   - Bifurcation table: outer measure breakout to 60rem on desktop, visible
+     *     column eyebrows, asymmetric left-rule treatment per column (today gets
+     *     a sand-300 rule marker; design-intent floats free)
+     *   - Shared site-shell
+     */
+
+    :root {
+      --color-sand-50:  #f8f4ec;
+      --color-sand-100: #e4ddf7;
+      --color-sand-200: #cfcac2;
+      --color-sand-300: #bbb6ad;
+      --color-sand-400: #a8a298;
+      --color-sand-500: #958e85;
+      --color-sand-600: #777069;
+      --color-sand-700: #5a544e;
+      --color-sand-800: #3f3934;
+      --color-sand-900: #25211d;
+
+      --color-teal-400: #5f9a8f;
+      --color-teal-700: #1e5149;
+      --color-teal-800: #113933;
+
+      --color-surface-page: var(--color-sand-50);
+      --color-text-normal:  var(--color-sand-900);
+      --color-text-muted:   var(--color-sand-700);
+      --color-text-faint:   var(--color-sand-500);
+      --color-border-default: var(--color-sand-300);
+
+      --font-serif: 'Lora', ui-serif, Georgia, 'Times New Roman', serif;
+      --font-sans:  'Source Sans 3', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+      --text-heading-01: 27.65px;
+      --text-heading-01-lh: 1.2;
+      --text-heading-02: 23.04px;
+      --text-heading-02-lh: 1.25;
+      --text-body-02: 16px;
+      --text-body-02-lh: 1.5;
+      --text-body-01: 19.2px;
+      --text-body-01-lh: 1.5;
+      --text-eyebrow: 12px;
+      --text-eyebrow-lh: 1.4;
+
+      --spacing: 0.25rem;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background-color: var(--color-surface-page);
+      color: var(--color-text-normal);
+      font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "ss03" 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ---------------------------------------------
+       Site shell — identical to homepage-v2
+       --------------------------------------------- */
+    .site-nav {
+      width: 100%;
+      border-bottom: 1px solid var(--color-sand-200);
+      background-color: var(--color-surface-page);
+    }
+    .site-nav-inner {
+      max-width: 60rem;
+      margin: 0 auto;
+      padding: calc(var(--spacing) * 4) calc(var(--spacing) * 5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: calc(var(--spacing) * 4);
+    }
+    @media (min-width: 768px) {
+      .site-nav-inner {
+        padding: calc(var(--spacing) * 5) calc(var(--spacing) * 8);
+      }
+    }
+    .site-nav-mark {
+      font-family: var(--font-serif);
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--color-sand-900);
+      letter-spacing: -0.005em;
+      white-space: nowrap;
+    }
+    .site-nav-links {
+      display: flex;
+      align-items: center;
+      gap: calc(var(--spacing) * 5);
+    }
+    @media (min-width: 768px) {
+      .site-nav-links { gap: calc(var(--spacing) * 7); }
+    }
+    .site-nav-link {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--color-sand-700);
+      padding: calc(var(--spacing) * 1) 0;
+      border-bottom: 2px solid transparent;
+      transition: color 120ms ease;
+      white-space: nowrap;
+    }
+    @media (min-width: 768px) {
+      .site-nav-link { font-size: 14px; }
+    }
+    .site-nav-link:hover { color: var(--color-sand-900); }
+    .site-nav-link.is-current {
+      color: var(--color-sand-900);
+      border-bottom-color: var(--color-sand-900);
+    }
+    .site-nav-link-full { display: none; }
+    .site-nav-link-short { display: inline; }
+    @media (min-width: 640px) {
+      .site-nav-link-full { display: inline; }
+      .site-nav-link-short { display: none; }
+    }
+
+    .site-footer {
+      width: 100%;
+      border-top: 1px solid var(--color-sand-200);
+      background-color: var(--color-surface-page);
+      margin-top: auto;
+    }
+    .site-footer-inner {
+      max-width: 60rem;
+      margin: 0 auto;
+      padding: calc(var(--spacing) * 6) calc(var(--spacing) * 5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: calc(var(--spacing) * 3);
+      text-align: center;
+    }
+    @media (min-width: 640px) {
+      .site-footer-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        gap: calc(var(--spacing) * 4);
+        padding: calc(var(--spacing) * 8) calc(var(--spacing) * 8);
+      }
+    }
+    .site-footer-link {
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-teal-700);
+      text-decoration: underline;
+      text-decoration-color: currentColor;
+      text-underline-offset: 0.25em;
+    }
+    .site-footer-link::after { content: " \2192"; margin-left: 0.15em; }
+    .site-footer-contact {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      color: var(--color-sand-600);
+    }
+    .site-footer-mark {
+      font-family: var(--font-serif);
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--color-sand-900);
+      letter-spacing: -0.005em;
+    }
+
+    /* ---------------------------------------------
+       Document-shell — P+P outer measure 52rem
+       --------------------------------------------- */
+    .document-shell {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding: calc(var(--spacing) * 12) calc(var(--spacing) * 5);
+      max-width: 52rem;
+      flex: 1 0 auto;
+    }
+    @media (min-width: 768px) {
+      .document-shell {
+        padding: calc(var(--spacing) * 16) calc(var(--spacing) * 8) calc(var(--spacing) * 16);
+      }
+    }
+
+    .document-masthead {
+      padding-bottom: calc(var(--spacing) * 6);
+      margin-bottom: calc(var(--spacing) * 12);
+      border-bottom: 1px solid var(--color-sand-200);
+    }
+
+    .document-eyebrow {
+      font-family: var(--font-sans);
+      font-size: var(--text-eyebrow);
+      line-height: var(--text-eyebrow-lh);
+      font-weight: 600;
+      color: var(--color-sand-600);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 0 0 calc(var(--spacing) * 4) 0;
+    }
+
+    .document-title {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: var(--text-heading-01);
+      line-height: var(--text-heading-01-lh);
+      color: var(--color-sand-900);
+      margin: 0;
+      letter-spacing: -0.005em;
+    }
+    @media (min-width: 768px) {
+      .document-title { font-size: 30px; }
+    }
+
+    .document-lead {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-01);
+      line-height: 1.55;
+      color: var(--color-sand-700);
+      max-inline-size: 60ch;
+      margin: calc(var(--spacing) * 5) 0 0 0;
+    }
+
+    .document-section {
+      margin-top: calc(var(--spacing) * 14);
+    }
+    .document-section:first-of-type { margin-top: 0; }
+
+    /* Reference section gets the biggest top + bottom margin on the page */
+    .document-section.reference-section {
+      margin-top: calc(var(--spacing) * 20);
+      margin-bottom: calc(var(--spacing) * 8);
+    }
+
+    .document-section-title {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: var(--text-heading-02);
+      line-height: var(--text-heading-02-lh);
+      color: var(--color-sand-800);
+      margin: 0 0 calc(var(--spacing) * 5) 0;
+      letter-spacing: -0.003em;
+    }
+
+    .document-prose {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.65;
+      color: var(--color-sand-700);
+      max-inline-size: 68ch;
+      margin: 0;
+    }
+    .document-prose p + p { margin-top: calc(var(--spacing) * 4); }
+    .document-prose strong {
+      font-weight: 600;
+      color: var(--color-sand-900);
+    }
+    .document-prose em {
+      font-style: italic;
+      color: var(--color-sand-800);
+    }
+
+    /* ---------------------------------------------
+       Pull-quote treatment — for the program director's voice in problem section
+       Lora italic, sand-200 left rule, indented.
+       --------------------------------------------- */
+    .problem-pullquote {
+      margin: calc(var(--spacing) * 6) 0 0 0;
+      padding: calc(var(--spacing) * 1) 0 calc(var(--spacing) * 1) calc(var(--spacing) * 6);
+      border-left: 3px solid var(--color-sand-300);
+      font-family: var(--font-serif);
+      font-size: var(--text-body-01);
+      line-height: 1.5;
+      color: var(--color-sand-900);
+      font-style: italic;
+      font-weight: 400;
+      max-inline-size: 60ch;
+    }
+    .problem-pullquote::before {
+      content: "\201C"; /* opening curly quote */
+      margin-right: 0.05em;
+    }
+    .problem-pullquote::after {
+      content: "\201D"; /* closing curly quote */
+      margin-left: 0.05em;
+    }
+    .problem-pullquote-attribution {
+      display: block;
+      margin-top: calc(var(--spacing) * 2);
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 600;
+      font-style: normal;
+      color: var(--color-sand-600);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .problem-pullquote-attribution::before {
+      content: "\2014\00a0"; /* em-dash + nbsp */
+    }
+
+    .problem-pullquote-followup {
+      margin-top: calc(var(--spacing) * 5);
+    }
+
+    /* ---------------------------------------------
+       How-it-runs structural cards — 3 numbered cards with left rule + eyebrow
+       --------------------------------------------- */
+    .how-it-runs-stack {
+      display: flex;
+      flex-direction: column;
+      gap: calc(var(--spacing) * 5);
+      max-inline-size: 68ch;
+    }
+    .how-it-runs-card {
+      padding: calc(var(--spacing) * 1) 0 calc(var(--spacing) * 1) calc(var(--spacing) * 6);
+      border-left: 2px solid var(--color-sand-300);
+      display: flex;
+      flex-direction: column;
+      gap: calc(var(--spacing) * 2);
+    }
+    .how-it-runs-eyebrow {
+      font-family: var(--font-sans);
+      font-size: 11px;
+      line-height: 1.4;
+      font-weight: 600;
+      color: var(--color-sand-600);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin: 0;
+    }
+    .how-it-runs-card p {
+      margin: 0;
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.65;
+      color: var(--color-sand-700);
+    }
+    .how-it-runs-card p strong {
+      font-weight: 600;
+      color: var(--color-sand-900);
+    }
+
+    /* The opening framing paragraph above the cards */
+    .how-it-runs-intro {
+      margin-bottom: calc(var(--spacing) * 6);
+    }
+
+    /* ---------------------------------------------
+       Reference section / bifurcation table — BIGGEST STRUCTURAL ROOM LIFT.
+       Breaks out from 52rem column to 60rem on desktop.
+       Visible column eyebrows. Asymmetric left-rule per column.
+       --------------------------------------------- */
+    .reference-intro {
+      margin-bottom: calc(var(--spacing) * 6);
+    }
+    .reference-section-eyebrow {
+      font-family: var(--font-sans);
+      font-size: var(--text-eyebrow);
+      line-height: var(--text-eyebrow-lh);
+      font-weight: 600;
+      color: var(--color-sand-600);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 0 0 calc(var(--spacing) * 3) 0;
+    }
+    .reference-frame {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.65;
+      color: var(--color-sand-700);
+      max-inline-size: 68ch;
+      margin: 0;
+    }
+
+    .bifurcation-wrap {
+      margin-top: calc(var(--spacing) * 8);
+    }
+    @media (min-width: 1024px) {
+      .bifurcation-wrap {
+        /* Breakout to 60rem container */
+        margin-left: calc((52rem - 60rem) / 2);
+        margin-right: calc((52rem - 60rem) / 2);
+      }
+    }
+
+    .bifurcation-table-v2 {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: var(--text-body-02);
+      line-height: 1.55;
+    }
+
+    /* Visible column headers as uppercase eyebrows */
+    .bifurcation-table-v2 thead th {
+      font-family: var(--font-sans);
+      font-size: 11px;
+      line-height: 1.4;
+      font-weight: 600;
+      color: var(--color-sand-600);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-align: left;
+      padding: 0 calc(var(--spacing) * 3) calc(var(--spacing) * 3) calc(var(--spacing) * 3);
+      vertical-align: bottom;
+      border-bottom: 1px solid var(--color-sand-300);
+    }
+    .bifurcation-table-v2 thead th:first-child {
+      padding-left: 0;
+      width: 6%;
+    }
+    .bifurcation-table-v2 thead th:nth-child(2) {
+      width: 22%;
+    }
+    .bifurcation-table-v2 thead th:nth-child(3) {
+      width: 36%;
+    }
+    .bifurcation-table-v2 thead th:nth-child(4) {
+      width: 36%;
+    }
+
+    .bifurcation-table-v2 tbody tr {
+      border-top: 1px solid var(--color-sand-200);
+    }
+    .bifurcation-table-v2 tbody tr:first-child {
+      border-top: none;
+    }
+    .bifurcation-table-v2 tbody td {
+      padding: calc(var(--spacing) * 5) calc(var(--spacing) * 3);
+      color: var(--color-sand-700);
+      vertical-align: top;
+    }
+
+    .bifurcation-step-num {
+      padding-left: 0 !important;
+      font-family: var(--font-serif);
+      font-size: 13px;
+      font-weight: 400;
+      font-style: italic;
+      color: var(--color-sand-500);
+      width: 6%;
+    }
+    .bifurcation-step-label {
+      font-family: var(--font-serif);
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--color-sand-900);
+      letter-spacing: -0.003em;
+      width: 22%;
+    }
+
+    /* "Today" column: anchored visual marker — sand-300 small left-rule */
+    .bifurcation-today {
+      width: 36%;
+      position: relative;
+      padding-left: calc(var(--spacing) * 5) !important;
+    }
+    .bifurcation-today::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: calc(var(--spacing) * 5);
+      bottom: calc(var(--spacing) * 5);
+      width: 2px;
+      background-color: var(--color-sand-400);
+    }
+
+    /* "Design intent" column: floats free — no left rule */
+    .bifurcation-design {
+      width: 36%;
+      color: var(--color-sand-700);
+    }
+
+    .bifurcation-empty {
+      color: var(--color-sand-400);
+    }
+
+    /* What this structure proves — closing paragraphs */
+    .reference-closing {
+      margin-top: calc(var(--spacing) * 10);
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.65;
+      color: var(--color-sand-700);
+      max-inline-size: 68ch;
+    }
+    .reference-closing p { margin: 0 0 calc(var(--spacing) * 4) 0; }
+    .reference-closing p:last-child { margin-bottom: 0; }
+    .reference-closing strong {
+      font-weight: 600;
+      color: var(--color-sand-900);
+    }
+
+    /* ---------------------------------------------
+       Clinical authority section — kept as prose; tightened spacing
+       --------------------------------------------- */
+    .authority-stack {
+      display: flex;
+      flex-direction: column;
+      gap: calc(var(--spacing) * 5);
+      max-inline-size: 68ch;
+    }
+    .authority-block {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.65;
+      color: var(--color-sand-700);
+    }
+    .authority-block strong {
+      font-weight: 600;
+      color: var(--color-sand-900);
+    }
+    .authority-block em {
+      font-style: italic;
+    }
+
+    /* ---------------------------------------------
+       Contact CTA
+       --------------------------------------------- */
+    .cta-button {
+      display: inline-block;
+      margin-top: calc(var(--spacing) * 5);
+      padding: calc(var(--spacing) * 3) calc(var(--spacing) * 6);
+      background-color: var(--color-teal-700);
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .cta-button:hover { background-color: var(--color-teal-800); }
+    .cta-button:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px var(--color-surface-page), 0 0 0 4px var(--color-teal-700);
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--color-teal-700);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* ---------------------------------------------
+       Mobile bifurcation table — degrades to v1's stacked-block treatment
+       --------------------------------------------- */
+    @media (max-width: 767px) {
+      .bifurcation-table-v2 thead {
+        display: none;
+      }
+      .bifurcation-table-v2 tbody, .bifurcation-table-v2 tr, .bifurcation-table-v2 td {
+        display: block;
+        width: 100% !important;
+      }
+      .bifurcation-table-v2 tbody tr {
+        padding: calc(var(--spacing) * 5) 0;
+      }
+      .bifurcation-table-v2 tbody td {
+        padding: 0 0 calc(var(--spacing) * 3) 0;
+      }
+      .bifurcation-step-num {
+        display: inline-block !important;
+        width: auto !important;
+        margin-right: calc(var(--spacing) * 2);
+      }
+      .bifurcation-step-label {
+        display: inline-block !important;
+        width: auto !important;
+        font-size: 18px;
+      }
+      .bifurcation-today, .bifurcation-design {
+        padding-left: calc(var(--spacing) * 4) !important;
+        margin-top: calc(var(--spacing) * 2);
+      }
+      .bifurcation-today::before {
+        top: 0;
+        bottom: 0;
+      }
+      .bifurcation-today::after {
+        content: "Today";
+        display: block;
+        font-family: var(--font-sans);
+        font-size: 11px;
+        font-weight: 600;
+        color: var(--color-sand-600);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: calc(var(--spacing) * 1);
+      }
+      .bifurcation-design::before {
+        content: "Design intent";
+        display: block;
+        font-family: var(--font-sans);
+        font-size: 11px;
+        font-weight: 600;
+        color: var(--color-sand-600);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: calc(var(--spacing) * 1);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Site shell — top nav. is-current on the P+P link. -->
+  <nav class="site-nav" aria-label="Primary">
+    <div class="site-nav-inner">
+      <a href="homepage-v2.html" class="site-nav-mark">Cena Health</a>
+      <div class="site-nav-links">
+        <a href="for-payers-investors-v2.html" class="site-nav-link">
+          <span class="site-nav-link-full">For payers + investors</span>
+          <span class="site-nav-link-short">Payers</span>
+        </a>
+        <a href="for-providers-partners-v2.html" class="site-nav-link is-current" aria-current="page">
+          <span class="site-nav-link-full">For providers + partners</span>
+          <span class="site-nav-link-short">Providers</span>
+        </a>
+        <a href="about-v2.html" class="site-nav-link">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="document-shell" role="main">
+
+    <!-- Section 1 — Hero (eyebrow + H1 + short lead).
+         Hero is the simpler of the four pages; structural payoff is below. -->
+    <header class="document-masthead">
+      <p class="document-eyebrow">For providers + partners</p>
+      <h1 class="document-title">The infrastructure your food-as-medicine program runs on.</h1>
+      <p class="document-lead">
+        How a provider prescribes the intervention and receives data back &mdash; without replacing the workflows your team already runs.
+      </p>
+    </header>
+
+    <!-- Section 2 — Problem with pull-quote treatment for the program director voice -->
+    <section class="document-section" aria-labelledby="problem">
+      <h2 class="document-section-title" id="problem">The problem partners face.</h2>
+      <div class="document-prose">
+        <p>
+          Running a food-as-medicine program is operational work. The clinician refers a patient. The care team sets a protocol. The patient orders meals against it. The kitchen delivers. Then &mdash; silence.
+        </p>
+        <p>
+          What comes next is the gap. The outcomes the program is designed to capture remain scattered across systems that were built for billing, not for outcomes: adherence data lives in a meal-delivery app. Clinical assessments live in an EHR the Cena substrate cannot read. Re-assessment triggers depend on a clinician remembering, not on a system surfacing what the data shows. The program runs; the evidence of whether it&rsquo;s working stays fragmented.
+        </p>
+      </div>
+      <blockquote class="problem-pullquote">
+        I know this protocol works. I need to show it.
+        <span class="problem-pullquote-attribution">Every program director, in some form</span>
+      </blockquote>
+      <div class="document-prose problem-pullquote-followup">
+        <p>
+          That&rsquo;s the gap. Not the meals. Not the care plan. The infrastructure underneath that captures the intervention, measures what happened, and surfaces what changed &mdash; so the program that runs on it can defend itself.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 3 — How the program runs on Cena
+         3 numbered structural cards with left rule + eyebrow.
+         "One. / Two. / Three." sequence. -->
+    <section class="document-section" aria-labelledby="how">
+      <h2 class="document-section-title" id="how">How the program runs on Cena.</h2>
+      <div class="document-prose how-it-runs-intro">
+        <p>The model is simple: a provider prescribes the intervention. Cena&rsquo;s substrate is being built to receive the data back.</p>
+      </div>
+      <div class="how-it-runs-stack">
+        <div class="how-it-runs-card">
+          <p class="how-it-runs-eyebrow">One.</p>
+          <p><strong>Your program prescribes.</strong> The partner clinician completes the clinical assessment in their EHR. They author the care plan. They set the protocol parameters &mdash; the meal protocol, the check-in cadence, the re-assessment window. The partner&rsquo;s program runs according to that protocol.</p>
+        </div>
+        <div class="how-it-runs-card">
+          <p class="how-it-runs-eyebrow">Two.</p>
+          <p><strong>Cena is being built to capture and thread the halves together.</strong> The program&rsquo;s downstream surfaces &mdash; ordering, check-ins, outcome capture &mdash; will read from a synchronized care-plan view. Every order your patient places carries the protocol it&rsquo;s derived from. Every adherence check-in surfaces the pattern of what the patient is actually doing against what the protocol expected. Every outcome measurement links back to the care plan that drove the intervention.</p>
+        </div>
+        <div class="how-it-runs-card">
+          <p class="how-it-runs-eyebrow">Three.</p>
+          <p><strong>Your clinicians keep their authority.</strong> The care plan lives in your EHR. Your system controls it. Cena&rsquo;s substrate is being built to maintain a view that your program&rsquo;s downstream surfaces read from &mdash; not to replace your workflows, not to author the decisions. The clinician decides; the system captures the trail the decision left behind.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 — Reference program: the bifurcation table.
+         BIGGEST STRUCTURAL ROOM LIFT on the page.
+         Outer measure breaks out to 60rem on desktop (≥1024px).
+         Visible column eyebrows: STEP / TODAY / DESIGN INTENT.
+         Today column gets sand-400 left-rule marker (anchored to today).
+         Design-intent column floats free (forward statement).
+    -->
+    <section class="document-section reference-section" aria-labelledby="reference">
+      <p class="reference-section-eyebrow">Reference program</p>
+      <h2 class="document-section-title" id="reference">A live academic-medical-center HIV-nutrition program runs on this model today.</h2>
+      <div class="reference-intro">
+        <p class="reference-frame">
+          This is the shape of a food-as-medicine program on Cena&rsquo;s architecture. The partner runs the program; Cena handles the meal-delivery half today and is being built to thread the clinical-intelligence half together. Each step below shows what runs today alongside what the design intent extends to &mdash; so you can see the honest state of what&rsquo;s built, what&rsquo;s in-build, and what&rsquo;s planned.
+        </p>
+      </div>
+
+      <div class="bifurcation-wrap">
+        <table class="bifurcation-table-v2">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Step</th>
+              <th scope="col">Today</th>
+              <th scope="col">Design intent</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bifurcation-step-num">1</td>
+              <td class="bifurcation-step-label">Referral</td>
+              <td class="bifurcation-today">A clinician at the academic medical center refers a patient into the program through their existing workflow.</td>
+              <td class="bifurcation-design bifurcation-empty">&mdash;</td>
+            </tr>
+            <tr>
+              <td class="bifurcation-step-num">2</td>
+              <td class="bifurcation-step-label">Enrollment</td>
+              <td class="bifurcation-today">The patient consents, sets dietary preferences, and is enrolled in the program.</td>
+              <td class="bifurcation-design bifurcation-empty">&mdash;</td>
+            </tr>
+            <tr>
+              <td class="bifurcation-step-num">3</td>
+              <td class="bifurcation-step-label">Assessment</td>
+              <td class="bifurcation-today">The partner clinician runs the clinical assessment in their EHR.</td>
+              <td class="bifurcation-design">Cena is being built to surface assessment-derived protocol parameters back into the care plan automatically.</td>
+            </tr>
+            <tr>
+              <td class="bifurcation-step-num">4</td>
+              <td class="bifurcation-step-label">Care plan</td>
+              <td class="bifurcation-today">The care plan is authored by the partner clinician in their EHR.</td>
+              <td class="bifurcation-design">Cena is being built to maintain a synchronized care-plan view that the program&rsquo;s downstream surfaces &mdash; ordering, check-ins, escalation &mdash; read from.</td>
+            </tr>
+            <tr>
+              <td class="bifurcation-step-num">5</td>
+              <td class="bifurcation-step-label">Ordering</td>
+              <td class="bifurcation-today">The patient orders meals against the program&rsquo;s parameters.</td>
+              <td class="bifurcation-design bifurcation-empty">&mdash;</td>
+            </tr>
+            <tr>
+              <td class="bifurcation-step-num">6</td>
+              <td class="bifurcation-step-label">Fulfillment</td>
+              <td class="bifurcation-today">The kitchen receives the order, prepares meals against the patient&rsquo;s protocol, and delivers.</td>
+              <td class="bifurcation-design bifurcation-empty">&mdash;</td>
+            </tr>
+            <tr>
+              <td class="bifurcation-step-num">7</td>
+              <td class="bifurcation-step-label">Adherence check-ins</td>
+              <td class="bifurcation-today">Check-ins capture intake data through a focused dietary-recall surface.</td>
+              <td class="bifurcation-design">Cena is being built to surface adherence patterns back to the care team &mdash; the structured adherence layer is in build.</td>
+            </tr>
+            <tr>
+              <td class="bifurcation-step-num">8</td>
+              <td class="bifurcation-step-label">Outcome capture</td>
+              <td class="bifurcation-today">The partner clinician captures outcome measurements through the program&rsquo;s standard protocol.</td>
+              <td class="bifurcation-design">Cena is being built to ingest outcome events and link them back to the care plan and intervention trail.</td>
+            </tr>
+            <tr>
+              <td class="bifurcation-step-num">9</td>
+              <td class="bifurcation-step-label">Re-assessment</td>
+              <td class="bifurcation-today">The partner clinician re-runs the clinical assessment at protocol cadence.</td>
+              <td class="bifurcation-design">Cena is being built to surface re-assessment triggers from adherence and outcome signals &mdash; the trigger logic is in build.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="reference-closing">
+        <p><strong>What this structure proves:</strong> Cena handles the meal-delivery half today (steps 1, 2, 5, 6 run on the Cena meal-delivery substrate). Partner clinicians retain authority and capture clinical decisions in their EHR (steps 3, 4, 7, 8 run partner-side). Cena is being built to thread the two together &mdash; so the intelligence captured on the clinical side informs the program&rsquo;s delivery side, and the adherence data from the delivery side feeds back to the care team for re-assessment and protocol adjustment.</p>
+        <p>The bifurcation is honest. The meal-delivery half is built. The clinical-intelligence half is being built. The integration of the two is the substrate we are constructing.</p>
+      </div>
+    </section>
+
+    <!-- Section 5 — What clinical authority looks like -->
+    <section class="document-section" aria-labelledby="authority">
+      <h2 class="document-section-title" id="authority">What clinical authority looks like.</h2>
+      <div class="authority-stack">
+        <div class="authority-block">
+          <p><strong>Your dietitians keep their workflows.</strong> The program they run on Cena is your program. The clinicians who author the protocol, approve the recommendations, and make the calls &mdash; those stay with your team.</p>
+        </div>
+        <div class="authority-block">
+          <p><strong>Your IRB keeps its approval process.</strong> Cena&rsquo;s substrate doesn&rsquo;t displace your institutional review. Your committee retains authority on what protocols run on your program, what data flows where, what a clinician can override and when.</p>
+        </div>
+        <div class="authority-block">
+          <p><strong>Your program produces the trail your committee needs.</strong> Your program records what your committee requires: who decided what, on what basis, when. Cena&rsquo;s substrate is being built to maintain that trail automatically &mdash; so the question <em>who approved this intervention, and what was the clinical reasoning?</em> is answerable years later, not asserted in the moment.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6 — Contact -->
+    <section class="document-section" aria-labelledby="contact">
+      <h2 class="document-section-title" id="contact">Talk through what arming your committee looks like.</h2>
+      <div class="document-prose">
+        <p>
+          Whether you&rsquo;re running a pilot, scaling an existing program, or exploring the model, talk through the turnkey-program fit and the referral-and-data-back integration. 30-minute call with our clinical lead to walk the model against your institution&rsquo;s existing workflows and decision governance.
+        </p>
+      </div>
+      <a href="https://calendly.com/vanessa-cena/30min" class="cta-button">Schedule a call</a>
+    </section>
+
+  </main>
+
+  <!-- Site shell — footer -->
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <a href="about-v2.html" class="site-footer-link">About</a>
+      <a href="mailto:vanessa@cenahealth.com" class="site-footer-contact">vanessa@cenahealth.com</a>
+      <span class="site-footer-mark">Cena Health</span>
+    </div>
+  </footer>
+
+</body>
+</html>
