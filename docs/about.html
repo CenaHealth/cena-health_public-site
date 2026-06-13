@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Cena Health</title>
+
+  <!-- Canonical Haven font stack. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Code+Pro:wght@400;500&display=swap">
+
+  <style>
+    /*
+     * Cena Health public-site /about — v2 composition.
+     *
+     * Design spec: v2-design-spec.md §3.4
+     * Identity: the quiet exposition — markedly smaller, narrower, quieter than
+     *           the other three. Structural inversion: H1 alone (no eyebrow, no
+     *           body-01 lead) — the payoff is at the top; rest of the page runs
+     *           quietly below.
+     * Structural lifts vs v1:
+     *   - Outer measure 44rem (narrower than v1's 52rem and other v2 pages)
+     *   - Hero: H1 only, single body-02 sub-paragraph (no eyebrow, no body-01 lead)
+     *   - Three-people names line: body-01 sand-900 weight 400 register (visual
+     *     weight through measure-shift, not chrome)
+     *   - Shared site-shell — visual continuity with the other three pages
+     * Aaron-gate Q3 in design spec.
+     */
+
+    :root {
+      --color-sand-50:  #f8f4ec;
+      --color-sand-100: #e4ddf7;
+      --color-sand-200: #cfcac2;
+      --color-sand-300: #bbb6ad;
+      --color-sand-400: #a8a298;
+      --color-sand-500: #958e85;
+      --color-sand-600: #777069;
+      --color-sand-700: #5a544e;
+      --color-sand-800: #3f3934;
+      --color-sand-900: #25211d;
+
+      --color-teal-400: #5f9a8f;
+      --color-teal-700: #1e5149;
+      --color-teal-800: #113933;
+
+      --color-surface-page: var(--color-sand-50);
+      --color-text-normal:  var(--color-sand-900);
+      --color-text-muted:   var(--color-sand-700);
+      --color-text-faint:   var(--color-sand-500);
+      --color-border-default: var(--color-sand-300);
+
+      --font-serif: 'Lora', ui-serif, Georgia, 'Times New Roman', serif;
+      --font-sans:  'Source Sans 3', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+      --text-heading-01: 27.65px;
+      --text-heading-01-lh: 1.2;
+      --text-heading-02: 23.04px;
+      --text-heading-02-lh: 1.25;
+      --text-body-02: 16px;
+      --text-body-02-lh: 1.5;
+      --text-body-01: 19.2px;
+      --text-body-01-lh: 1.5;
+      --text-eyebrow: 12px;
+      --text-eyebrow-lh: 1.4;
+
+      --spacing: 0.25rem;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background-color: var(--color-surface-page);
+      color: var(--color-text-normal);
+      font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "ss03" 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ---------------------------------------------
+       Site shell — identical to other v2 pages
+       --------------------------------------------- */
+    .site-nav {
+      width: 100%;
+      border-bottom: 1px solid var(--color-sand-200);
+      background-color: var(--color-surface-page);
+    }
+    .site-nav-inner {
+      max-width: 60rem;
+      margin: 0 auto;
+      padding: calc(var(--spacing) * 4) calc(var(--spacing) * 5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: calc(var(--spacing) * 4);
+    }
+    @media (min-width: 768px) {
+      .site-nav-inner {
+        padding: calc(var(--spacing) * 5) calc(var(--spacing) * 8);
+      }
+    }
+    .site-nav-mark {
+      font-family: var(--font-serif);
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--color-sand-900);
+      letter-spacing: -0.005em;
+      white-space: nowrap;
+    }
+    .site-nav-links {
+      display: flex;
+      align-items: center;
+      gap: calc(var(--spacing) * 5);
+    }
+    @media (min-width: 768px) {
+      .site-nav-links { gap: calc(var(--spacing) * 7); }
+    }
+    .site-nav-link {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--color-sand-700);
+      padding: calc(var(--spacing) * 1) 0;
+      border-bottom: 2px solid transparent;
+      transition: color 120ms ease;
+      white-space: nowrap;
+    }
+    @media (min-width: 768px) {
+      .site-nav-link { font-size: 14px; }
+    }
+    .site-nav-link:hover { color: var(--color-sand-900); }
+    .site-nav-link.is-current {
+      color: var(--color-sand-900);
+      border-bottom-color: var(--color-sand-900);
+    }
+    .site-nav-link-full { display: none; }
+    .site-nav-link-short { display: inline; }
+    @media (min-width: 640px) {
+      .site-nav-link-full { display: inline; }
+      .site-nav-link-short { display: none; }
+    }
+
+    .site-footer {
+      width: 100%;
+      border-top: 1px solid var(--color-sand-200);
+      background-color: var(--color-surface-page);
+      margin-top: auto;
+    }
+    .site-footer-inner {
+      max-width: 60rem;
+      margin: 0 auto;
+      padding: calc(var(--spacing) * 6) calc(var(--spacing) * 5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: calc(var(--spacing) * 3);
+      text-align: center;
+    }
+    @media (min-width: 640px) {
+      .site-footer-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        gap: calc(var(--spacing) * 4);
+        padding: calc(var(--spacing) * 8) calc(var(--spacing) * 8);
+      }
+    }
+    .site-footer-link {
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-teal-700);
+      text-decoration: underline;
+      text-decoration-color: currentColor;
+      text-underline-offset: 0.25em;
+    }
+    .site-footer-link::after { content: " \2192"; margin-left: 0.15em; }
+    .site-footer-contact {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      color: var(--color-sand-600);
+    }
+    .site-footer-mark {
+      font-family: var(--font-serif);
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--color-sand-900);
+      letter-spacing: -0.005em;
+    }
+
+    /* ---------------------------------------------
+       Document-shell — /about outer measure 44rem (narrower than other pages)
+       Structural-character signal: the page is smaller; quiet exposition has narrower walls
+       --------------------------------------------- */
+    .document-shell {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding: calc(var(--spacing) * 12) calc(var(--spacing) * 5);
+      max-width: 44rem;
+      flex: 1 0 auto;
+    }
+    @media (min-width: 768px) {
+      .document-shell {
+        padding: calc(var(--spacing) * 16) calc(var(--spacing) * 8) calc(var(--spacing) * 16);
+      }
+    }
+
+    /* Hero — NO eyebrow above title.
+       NO body-01 lead register.
+       Just H1 + single quiet body-02 sub-paragraph. */
+    .document-masthead {
+      padding-bottom: calc(var(--spacing) * 6);
+      margin-bottom: calc(var(--spacing) * 12);
+      border-bottom: 1px solid var(--color-sand-200);
+    }
+
+    .document-title {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: var(--text-heading-01);
+      line-height: var(--text-heading-01-lh);
+      color: var(--color-sand-900);
+      margin: 0;
+      letter-spacing: -0.005em;
+    }
+    @media (min-width: 768px) {
+      .document-title {
+        font-size: 30px;
+      }
+    }
+
+    /* The about-hero sub-paragraph: deliberately body-02, NOT body-01.
+       Visitor moving from other pages feels the register-shift. */
+    .about-hero-sub {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.65;
+      color: var(--color-sand-700);
+      max-inline-size: 60ch;
+      margin: calc(var(--spacing) * 5) 0 0 0;
+    }
+
+    .document-section {
+      margin-top: calc(var(--spacing) * 12);
+    }
+    .document-section:first-of-type { margin-top: 0; }
+
+    .document-section-title {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: var(--text-heading-02);
+      line-height: var(--text-heading-02-lh);
+      color: var(--color-sand-800);
+      margin: 0 0 calc(var(--spacing) * 4) 0;
+      letter-spacing: -0.003em;
+    }
+
+    .document-prose {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.65;
+      color: var(--color-sand-700);
+      max-inline-size: 60ch;
+      margin: 0;
+    }
+    .document-prose p + p {
+      margin-top: calc(var(--spacing) * 4);
+    }
+
+    /* Three-people names line — the page's only register-shift beyond title + body.
+       Body-01 size + sand-900 + extra vertical air around it.
+       Visual weight through measure-shift, not chrome. */
+    .about-names-line {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-01);
+      line-height: 1.5;
+      color: var(--color-sand-900);
+      font-weight: 400;
+      margin: calc(var(--spacing) * 2) 0 0 0;
+      max-inline-size: none;
+    }
+
+    .three-people-section {
+      /* slightly more vertical air around the names */
+      margin-top: calc(var(--spacing) * 14);
+    }
+    .three-people-section .document-section-title {
+      margin-bottom: calc(var(--spacing) * 5);
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--color-teal-700);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Site shell — top nav. is-current on the About link. -->
+  <nav class="site-nav" aria-label="Primary">
+    <div class="site-nav-inner">
+      <a href="index.html" class="site-nav-mark">Cena Health</a>
+      <div class="site-nav-links">
+        <a href="for-payers-investors.html" class="site-nav-link">
+          <span class="site-nav-link-full">For payers + investors</span>
+          <span class="site-nav-link-short">Payers</span>
+        </a>
+        <a href="for-providers-partners.html" class="site-nav-link">
+          <span class="site-nav-link-full">For providers + partners</span>
+          <span class="site-nav-link-short">Providers</span>
+        </a>
+        <a href="about.html" class="site-nav-link is-current" aria-current="page">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="document-shell" role="main">
+
+    <!-- Section 1 — Hero
+         Structural inversion: H1 alone (no eyebrow, no body-01 lead).
+         The H1 IS the payoff. Sub-paragraph is body-02 — visitor moving from
+         other pages feels the register contract. -->
+    <header class="document-masthead">
+      <h1 class="document-title">What Cena is.</h1>
+      <p class="about-hero-sub">
+        Cena is the clinical intelligence infrastructure being built for food-as-medicine &mdash; a three-person, pre-seed company underneath the programs partner institutions already run.
+      </p>
+    </header>
+
+    <!-- Section 2 — Agents-first thesis -->
+    <section class="document-section" aria-labelledby="thesis">
+      <h2 class="document-section-title" id="thesis">The thesis.</h2>
+      <div class="document-prose">
+        <p>
+          Cena is built agents-first. Humans hold accountability and decisions; agents handle throughput. Internally, that&rsquo;s how we operate today &mdash; three people, agents as primary brainpower, work that would otherwise take a much larger team. In the program, partner clinicians hold clinical authority. Cena&rsquo;s agents are being built to do the throughput work underneath that authority: assemble clinical intelligence between visits, surface decision trails, and reduce the gap between what clinicians need to see and what gets to them in time.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 3 — Three people
+         Names line gets body-01 sand-900 weight 400 — visual weight through measure -->
+    <section class="document-section three-people-section" aria-labelledby="team">
+      <h2 class="document-section-title" id="team">Three people.</h2>
+      <p class="about-names-line">Aaron Sleeper, Chief Experience Officer. Vanessa Sena, CEO. Andrey Kartashov, CTO.</p>
+    </section>
+
+    <!-- Section 4 — Accountability model -->
+    <section class="document-section" aria-labelledby="authority">
+      <h2 class="document-section-title" id="authority">Who holds clinical authority.</h2>
+      <div class="document-prose">
+        <p>
+          Partner clinicians retain clinical authority on every program Cena supports. Cena&rsquo;s substrate doesn&rsquo;t make clinical decisions; it captures, surfaces, and trails the decisions clinicians make.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 5 — What we're building -->
+    <section class="document-section" aria-labelledby="building">
+      <h2 class="document-section-title" id="building">What we&rsquo;re building.</h2>
+      <div class="document-prose">
+        <p>
+          Cena is the substrate being built to capture every recommendation, every approval, every escalation as an append-only trail &mdash; so the question &ldquo;who decided what, and on what basis?&rdquo; is answerable years from now, not asserted in the moment. We&rsquo;re pre-seed, three people, and one live academic-medical-center pilot in.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site shell — footer.
+       NOTE: on /about, the about-link is suppressed since visitor is already here.
+       Showing only the contact + Cena mark keeps the footer present + consistent
+       in layout without redundantly pointing back to /about. -->
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span style="font-family: var(--font-sans); font-size: 13px; color: var(--color-sand-500); font-style: italic;">You&rsquo;re here.</span>
+      <a href="mailto:vanessa@cenahealth.com" class="site-footer-contact">vanessa@cenahealth.com</a>
+      <span class="site-footer-mark">Cena Health</span>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cena Health</title>
+
+  <!-- Canonical Haven font stack — Lora (display) + Source Sans 3 (body) + Source Code Pro (mono).
+       Mirrors haven-ui apps/*/index.html canon. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Code+Pro:wght@400;500&display=swap">
+
+  <style>
+    /*
+     * Cena Health public-site / (homepage) — v2 composition.
+     *
+     * Design spec: v2-design-spec.md §3.1
+     * Identity: the recognition surface — wide, generous, deliberately under-filled.
+     * Structural lifts vs v1:
+     *   - document-eyebrow above H1 (NEW USE — primitive existed, v1 didn't reach for it)
+     *   - track-selector breakout to wider 56rem on desktop (the page's biggest swing)
+     *   - track-cards carry their own eyebrows + revised typographic hierarchy
+     *   - outer measure 48rem (down from v1's 52rem) — pushes hero to foreground
+     *   - shared site-shell (nav + footer) — composition-layer for v2; codification candidate
+     *
+     * Source files this excerpt draws from (haven-ui canon):
+     *   - packages/design-system/src/styles/tokens/palette.css      (Cena Color System v2 — sand canonical)
+     *   - packages/design-system/src/styles/tokens/semantic.css     (surface + text + border tokens)
+     *   - packages/design-system/src/styles/tokens/typography.css   (Lora + Source Sans 3, heading-01/02 scale)
+     *   - packages/design-system/src/styles/tokens/spacing.css      (--spacing: 0.25rem scalar)
+     *   - packages/design-system/src/styles/tokens/components.css   (document-shell family + document-eyebrow + document-subsection-title)
+     */
+
+    /* ---------------------------------------------
+       Token excerpts — Cena Color System v2
+       --------------------------------------------- */
+    :root {
+      /* Sand family — canonical warm-neutral surface */
+      --color-sand-50:  #f8f4ec;
+      --color-sand-100: #e4ddf7;
+      --color-sand-200: #cfcac2;
+      --color-sand-300: #bbb6ad;
+      --color-sand-400: #a8a298;
+      --color-sand-500: #958e85;
+      --color-sand-600: #777069;
+      --color-sand-700: #5a544e;
+      --color-sand-800: #3f3934;
+      --color-sand-900: #25211d;
+
+      /* Teal — reserved for interactive commitment states */
+      --color-teal-400: #5f9a8f;
+      --color-teal-700: #1e5149;
+      --color-teal-800: #113933;
+
+      /* Semantic aliases — public-site surface */
+      --color-surface-page: var(--color-sand-50);
+      --color-text-normal:  var(--color-sand-900);
+      --color-text-muted:   var(--color-sand-700);
+      --color-text-faint:   var(--color-sand-500);
+      --color-border-default: var(--color-sand-300);
+
+      /* Font families — DESIGN.md §Typography */
+      --font-serif: 'Lora', ui-serif, Georgia, 'Times New Roman', serif;
+      --font-sans:  'Source Sans 3', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+      /* Type scale (minor-third 1.2) */
+      --text-heading-01: 27.65px;
+      --text-heading-01-lh: 1.2;
+      --text-heading-02: 23.04px;
+      --text-heading-02-lh: 1.25;
+      --text-body-02: 16px;
+      --text-body-02-lh: 1.5;
+      --text-body-01: 19.2px;
+      --text-body-01-lh: 1.5;
+      --text-eyebrow: 12px;
+      --text-eyebrow-lh: 1.4;
+
+      /* Spacing scalar */
+      --spacing: 0.25rem;
+    }
+
+    /* ---------------------------------------------
+       Base
+       --------------------------------------------- */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background-color: var(--color-surface-page);
+      color: var(--color-text-normal);
+      font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "ss03" 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ---------------------------------------------
+       Site shell — top nav + footer (composition-layer; codification candidate)
+       --------------------------------------------- */
+    .site-nav {
+      width: 100%;
+      border-bottom: 1px solid var(--color-sand-200);
+      background-color: var(--color-surface-page);
+    }
+    .site-nav-inner {
+      max-width: 60rem;
+      margin: 0 auto;
+      padding: calc(var(--spacing) * 4) calc(var(--spacing) * 5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: calc(var(--spacing) * 4);
+    }
+    @media (min-width: 768px) {
+      .site-nav-inner {
+        padding: calc(var(--spacing) * 5) calc(var(--spacing) * 8);
+      }
+    }
+    .site-nav-mark {
+      font-family: var(--font-serif);
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--color-sand-900);
+      letter-spacing: -0.005em;
+      white-space: nowrap;
+    }
+    .site-nav-links {
+      display: flex;
+      align-items: center;
+      gap: calc(var(--spacing) * 5);
+    }
+    @media (min-width: 768px) {
+      .site-nav-links {
+        gap: calc(var(--spacing) * 7);
+      }
+    }
+    .site-nav-link {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--color-sand-700);
+      padding: calc(var(--spacing) * 1) 0;
+      border-bottom: 2px solid transparent;
+      transition: color 120ms ease;
+      white-space: nowrap;
+    }
+    @media (min-width: 768px) {
+      .site-nav-link {
+        font-size: 14px;
+      }
+    }
+    .site-nav-link:hover {
+      color: var(--color-sand-900);
+    }
+    .site-nav-link.is-current {
+      color: var(--color-sand-900);
+      border-bottom-color: var(--color-sand-900);
+    }
+    /* Mobile compressed labels */
+    .site-nav-link-full { display: none; }
+    .site-nav-link-short { display: inline; }
+    @media (min-width: 640px) {
+      .site-nav-link-full { display: inline; }
+      .site-nav-link-short { display: none; }
+    }
+
+    .site-footer {
+      width: 100%;
+      border-top: 1px solid var(--color-sand-200);
+      background-color: var(--color-surface-page);
+      margin-top: auto;
+    }
+    .site-footer-inner {
+      max-width: 60rem;
+      margin: 0 auto;
+      padding: calc(var(--spacing) * 6) calc(var(--spacing) * 5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: calc(var(--spacing) * 3);
+      text-align: center;
+    }
+    @media (min-width: 640px) {
+      .site-footer-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        gap: calc(var(--spacing) * 4);
+        padding: calc(var(--spacing) * 8) calc(var(--spacing) * 8);
+      }
+    }
+    .site-footer-link {
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-teal-700);
+      text-decoration: underline;
+      text-decoration-color: currentColor;
+      text-underline-offset: 0.25em;
+    }
+    .site-footer-link::after {
+      content: " \2192";
+      margin-left: 0.15em;
+    }
+    .site-footer-contact {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      color: var(--color-sand-600);
+    }
+    .site-footer-mark {
+      font-family: var(--font-serif);
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--color-sand-900);
+      letter-spacing: -0.005em;
+    }
+
+    /* ---------------------------------------------
+       Document-shell composition — homepage outer measure 48rem
+       Narrower than v1's 52rem — pushes hero to foreground
+       --------------------------------------------- */
+    .document-shell {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding: calc(var(--spacing) * 12) calc(var(--spacing) * 5);
+      max-width: 48rem;
+      flex: 1 0 auto;
+    }
+    @media (min-width: 768px) {
+      .document-shell {
+        padding: calc(var(--spacing) * 20) calc(var(--spacing) * 8) calc(var(--spacing) * 16);
+      }
+    }
+
+    /* document-masthead with eyebrow + title + lead */
+    .document-masthead {
+      padding-bottom: calc(var(--spacing) * 6);
+      margin-bottom: calc(var(--spacing) * 12);
+      border-bottom: 1px solid var(--color-sand-200);
+    }
+    @media (min-width: 768px) {
+      .document-masthead {
+        margin-bottom: calc(var(--spacing) * 16);
+      }
+    }
+
+    /* document-eyebrow — NEW USE vs v1.
+       Source: components.css :12818 (PL canon: document-district eyebrow register).
+       Quiet uppercase sand-600 label opening the page above the H1. */
+    .document-eyebrow {
+      font-family: var(--font-sans);
+      font-size: var(--text-eyebrow);
+      line-height: var(--text-eyebrow-lh);
+      font-weight: 600;
+      color: var(--color-sand-600);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 0 0 calc(var(--spacing) * 4) 0;
+    }
+
+    .document-title {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: var(--text-heading-01);
+      line-height: var(--text-heading-01-lh);
+      color: var(--color-sand-900);
+      margin: 0;
+      letter-spacing: -0.005em;
+    }
+    @media (min-width: 768px) {
+      .document-title {
+        font-size: 32px;
+      }
+    }
+
+    .document-lead {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-01);
+      line-height: 1.55;
+      color: var(--color-sand-700);
+      max-inline-size: 60ch; /* tighter than v1's 68ch — homepage lead is one line */
+      margin: calc(var(--spacing) * 5) 0 0 0;
+    }
+    .document-lead a {
+      color: var(--color-teal-700);
+      text-decoration: underline;
+      text-decoration-color: currentColor;
+      text-underline-offset: 0.25em;
+    }
+
+    /* Section rhythm — homepage uses generous mt-16 between sections */
+    .document-section {
+      margin-top: calc(var(--spacing) * 16);
+    }
+    .document-section:first-of-type {
+      margin-top: 0;
+    }
+
+    .document-section-title {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: var(--text-heading-02);
+      line-height: var(--text-heading-02-lh);
+      color: var(--color-sand-800);
+      margin: 0 0 calc(var(--spacing) * 4) 0;
+      letter-spacing: -0.003em;
+    }
+
+    .document-prose {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.65;
+      color: var(--color-sand-700);
+      max-inline-size: 60ch; /* tighter measure for homepage problem section */
+      margin: 0;
+    }
+    .document-prose p + p {
+      margin-top: calc(var(--spacing) * 4);
+    }
+    .document-prose a {
+      color: var(--color-teal-700);
+      text-decoration: underline;
+      text-decoration-color: currentColor;
+      text-underline-offset: 0.25em;
+      font-weight: 500;
+    }
+
+    /* ---------------------------------------------
+       Track selector — composition-layer
+       v2 lift: cards step out of the 48rem column to a 56rem container
+       on desktop, giving the primary CTA structural prominence.
+       --------------------------------------------- */
+    .track-selector-section {
+      margin-top: calc(var(--spacing) * 16);
+    }
+    @media (min-width: 768px) {
+      .track-selector-section {
+        margin-top: calc(var(--spacing) * 20);
+        /* Breakout: extend horizontally beyond the 48rem column to 56rem */
+        margin-left: calc((48rem - 56rem) / 2);
+        margin-right: calc((48rem - 56rem) / 2);
+        max-width: 56rem;
+      }
+    }
+    /* Mobile/tablet: stay inside the document column */
+    @media (max-width: 767px) {
+      .track-selector-section {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    .track-selector-eyebrow {
+      font-family: var(--font-sans);
+      font-size: var(--text-eyebrow);
+      line-height: var(--text-eyebrow-lh);
+      font-weight: 600;
+      color: var(--color-sand-600);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 0 0 calc(var(--spacing) * 3) 0;
+    }
+
+    .track-selector-title {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: var(--text-heading-02);
+      line-height: var(--text-heading-02-lh);
+      color: var(--color-sand-800);
+      margin: 0 0 calc(var(--spacing) * 8) 0;
+      letter-spacing: -0.003em;
+    }
+
+    .track-selector {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: calc(var(--spacing) * 5);
+    }
+    @media (min-width: 768px) {
+      .track-selector {
+        grid-template-columns: 1fr 1fr;
+        gap: calc(var(--spacing) * 8);
+      }
+    }
+
+    .track-card {
+      padding: calc(var(--spacing) * 7) calc(var(--spacing) * 6);
+      border: 1px solid var(--color-sand-300);
+      background-color: var(--color-sand-100);
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 150ms ease, background-color 150ms ease;
+    }
+    .track-card:hover {
+      border-color: var(--color-sand-400);
+    }
+    @media (min-width: 768px) {
+      .track-card {
+        padding: calc(var(--spacing) * 8) calc(var(--spacing) * 7);
+      }
+    }
+
+    .track-card-eyebrow {
+      font-family: var(--font-sans);
+      font-size: 11px;
+      line-height: 1.4;
+      font-weight: 600;
+      color: var(--color-sand-600);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin: 0 0 calc(var(--spacing) * 3) 0;
+    }
+
+    .track-card-title {
+      font-family: var(--font-serif);
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.3;
+      color: var(--color-sand-900);
+      margin: 0 0 calc(var(--spacing) * 4) 0;
+      letter-spacing: -0.003em;
+    }
+
+    .track-card-description {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.55;
+      color: var(--color-sand-700);
+      margin: 0 0 calc(var(--spacing) * 5) 0;
+      flex-grow: 1;
+    }
+
+    .track-card-link {
+      font-family: var(--font-sans);
+      font-size: 14px;
+      color: var(--color-teal-700);
+      text-decoration: none;
+      font-weight: 500;
+      align-self: flex-start;
+    }
+    .track-card-link::after {
+      content: " \2192";
+      margin-left: 0.25em;
+    }
+    .track-card-link:hover {
+      text-decoration: underline;
+      text-underline-offset: 0.25em;
+    }
+
+    /* Contact section + about scent inline-link styling */
+    .contact-cta {
+      color: var(--color-teal-700);
+      text-decoration: underline;
+      text-decoration-color: currentColor;
+      text-underline-offset: 0.25em;
+      font-weight: 500;
+    }
+
+    .about-link {
+      color: var(--color-teal-700);
+      text-decoration: underline;
+      text-decoration-color: currentColor;
+      text-underline-offset: 0.25em;
+      font-weight: 500;
+    }
+    .about-link::after {
+      content: " \2192";
+      margin-left: 0.15em;
+    }
+
+    /* Accessibility */
+    :focus-visible {
+      outline: 2px solid var(--color-teal-700);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Site shell — top nav.
+       Homepage: Cena mark IS the homepage; no nav-link gets is-current treatment. -->
+  <nav class="site-nav" aria-label="Primary">
+    <div class="site-nav-inner">
+      <a href="index.html" class="site-nav-mark">Cena Health</a>
+      <div class="site-nav-links">
+        <a href="for-payers-investors.html" class="site-nav-link">
+          <span class="site-nav-link-full">For payers + investors</span>
+          <span class="site-nav-link-short">Payers</span>
+        </a>
+        <a href="for-providers-partners.html" class="site-nav-link">
+          <span class="site-nav-link-full">For providers + partners</span>
+          <span class="site-nav-link-short">Providers</span>
+        </a>
+        <a href="about.html" class="site-nav-link">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="document-shell" role="main">
+
+    <!-- Section 1 — Hero (eyebrow + H1 + lead)
+         NEW vs v1: document-eyebrow above title sets the page's quiet structural register.
+         Lead is short (one line) — homepage's job is recognition + routing, not argument. -->
+    <header class="document-masthead">
+      <p class="document-eyebrow">Cena Health &middot; Clinical Intelligence Infrastructure</p>
+      <h1 class="document-title">Clinical intelligence infrastructure for food-as-medicine.</h1>
+      <p class="document-lead">
+        Built for the programs your partners already run &mdash; <a href="#tracks">or jump to the right track</a>.
+      </p>
+    </header>
+
+    <!-- Section 2 — Problem in one paragraph
+         60ch measure (tighter than v1's 68ch); reads as compressed observational fact. -->
+    <section class="document-section" aria-labelledby="problem">
+      <h2 class="document-section-title" id="problem">What&rsquo;s lost between visits.</h2>
+      <div class="document-prose">
+        <p>
+          Between clinical visits, the patterns that would trigger intervention today instead surface in the emergency department &mdash; or not at all. For food-as-medicine programs, the gap between what the care team designed and what the patient actually experienced fragments across systems. The program runs. The evidence stays scattered.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 3 — Two-track entry
+         BIGGEST STRUCTURAL SWING: cards step out of 48rem column to 56rem on desktop.
+         Each card carries its own eyebrow above the title for visual differentiation.
+         Aaron-gate Q1 in design spec. -->
+    <section class="track-selector-section" id="tracks" aria-labelledby="tracks-title">
+      <p class="track-selector-eyebrow">Two doors</p>
+      <h2 class="track-selector-title" id="tracks-title">Two ways to read what we&rsquo;re building.</h2>
+      <div class="track-selector">
+        <div class="track-card">
+          <p class="track-card-eyebrow">For payers + investors</p>
+          <h3 class="track-card-title">The intelligence gained between visits.</h3>
+          <p class="track-card-description">
+            Patterns that would otherwise trigger unnecessary system use. Cena is being built to close that gap.
+          </p>
+          <a href="for-payers-investors.html" class="track-card-link">Read the case</a>
+        </div>
+        <div class="track-card">
+          <p class="track-card-eyebrow">For providers + partners</p>
+          <h3 class="track-card-title">The infrastructure your nutrition program runs on.</h3>
+          <p class="track-card-description">
+            Capturing the trail your committee needs to defend the program &mdash; without replacing the workflows your team already runs.
+          </p>
+          <a href="for-providers-partners.html" class="track-card-link">Read the model</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 — Quietly, Cena exists -->
+    <section class="document-section" aria-labelledby="existence">
+      <h2 class="document-section-title" id="existence">Quietly, Cena exists.</h2>
+      <div class="document-prose">
+        <p>
+          A three-person, pre-seed company underneath the programs partner institutions already run. We&rsquo;re building the clinical intelligence layer for food-as-medicine. <a href="about.html" class="about-link">About</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 5 — Contact -->
+    <section class="document-section" aria-labelledby="contact">
+      <h2 class="document-section-title" id="contact">Talk through what your program is solving.</h2>
+      <div class="document-prose">
+        <p>
+          30-minute call with Vanessa Sena, CEO.
+        </p>
+        <p>
+          <a href="https://calendly.com/vanessa-cena/30min" class="contact-cta">Schedule via Calendly</a> or <a href="mailto:vanessa@cenahealth.com" class="contact-cta">direct contact</a>.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site shell — footer -->
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <a href="about.html" class="site-footer-link">About</a>
+      <a href="mailto:vanessa@cenahealth.com" class="site-footer-contact">vanessa@cenahealth.com</a>
+      <span class="site-footer-mark">Cena Health</span>
+    </div>
+  </footer>
+
+</body>
+</html>

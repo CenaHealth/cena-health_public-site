@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For payers + investors — Cena Health</title>
+
+  <!-- Canonical Haven font stack. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Code+Pro:wght@400;500&display=swap">
+
+  <style>
+    /*
+     * Cena Health public-site /for-payers-investors — v2 composition.
+     *
+     * Design spec: v2-design-spec.md §3.2
+     * Identity: the value-frame document — denser, more substantive than homepage.
+     *           Reads as "this carries argument."
+     * Structural lifts vs v1:
+     *   - document-eyebrow above H1 + 3-paragraph deliberate hero stack with descent
+     *   - Value list with left-rule structural treatment
+     *   - Brownfield section: left-narrow 1/3 + right-wide 2/3 two-column composition
+     *   - Where-Cena-is: in-line subsection eyebrows ("PRE-SEED." / "WHAT WE'RE BUILDING." / "OUR TEAM.")
+     *   - Shared site-shell
+     */
+
+    :root {
+      --color-sand-50:  #f8f4ec;
+      --color-sand-100: #e4ddf7;
+      --color-sand-200: #cfcac2;
+      --color-sand-300: #bbb6ad;
+      --color-sand-400: #a8a298;
+      --color-sand-500: #958e85;
+      --color-sand-600: #777069;
+      --color-sand-700: #5a544e;
+      --color-sand-800: #3f3934;
+      --color-sand-900: #25211d;
+
+      --color-teal-400: #5f9a8f;
+      --color-teal-700: #1e5149;
+      --color-teal-800: #113933;
+
+      --color-surface-page: var(--color-sand-50);
+      --color-text-normal:  var(--color-sand-900);
+      --color-text-muted:   var(--color-sand-700);
+      --color-text-faint:   var(--color-sand-500);
+      --color-border-default: var(--color-sand-300);
+
+      --font-serif: 'Lora', ui-serif, Georgia, 'Times New Roman', serif;
+      --font-sans:  'Source Sans 3', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+      --text-heading-01: 27.65px;
+      --text-heading-01-lh: 1.2;
+      --text-heading-02: 23.04px;
+      --text-heading-02-lh: 1.25;
+      --text-body-02: 16px;
+      --text-body-02-lh: 1.5;
+      --text-body-01: 19.2px;
+      --text-body-01-lh: 1.5;
+      --text-eyebrow: 12px;
+      --text-eyebrow-lh: 1.4;
+
+      --spacing: 0.25rem;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background-color: var(--color-surface-page);
+      color: var(--color-text-normal);
+      font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "ss03" 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ---------------------------------------------
+       Site shell — identical to homepage-v2.html
+       --------------------------------------------- */
+    .site-nav {
+      width: 100%;
+      border-bottom: 1px solid var(--color-sand-200);
+      background-color: var(--color-surface-page);
+    }
+    .site-nav-inner {
+      max-width: 60rem;
+      margin: 0 auto;
+      padding: calc(var(--spacing) * 4) calc(var(--spacing) * 5);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: calc(var(--spacing) * 4);
+    }
+    @media (min-width: 768px) {
+      .site-nav-inner {
+        padding: calc(var(--spacing) * 5) calc(var(--spacing) * 8);
+      }
+    }
+    .site-nav-mark {
+      font-family: var(--font-serif);
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--color-sand-900);
+      letter-spacing: -0.005em;
+      white-space: nowrap;
+    }
+    .site-nav-links {
+      display: flex;
+      align-items: center;
+      gap: calc(var(--spacing) * 5);
+    }
+    @media (min-width: 768px) {
+      .site-nav-links { gap: calc(var(--spacing) * 7); }
+    }
+    .site-nav-link {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--color-sand-700);
+      padding: calc(var(--spacing) * 1) 0;
+      border-bottom: 2px solid transparent;
+      transition: color 120ms ease;
+      white-space: nowrap;
+    }
+    @media (min-width: 768px) {
+      .site-nav-link { font-size: 14px; }
+    }
+    .site-nav-link:hover { color: var(--color-sand-900); }
+    .site-nav-link.is-current {
+      color: var(--color-sand-900);
+      border-bottom-color: var(--color-sand-900);
+    }
+    .site-nav-link-full { display: none; }
+    .site-nav-link-short { display: inline; }
+    @media (min-width: 640px) {
+      .site-nav-link-full { display: inline; }
+      .site-nav-link-short { display: none; }
+    }
+
+    .site-footer {
+      width: 100%;
+      border-top: 1px solid var(--color-sand-200);
+      background-color: var(--color-surface-page);
+      margin-top: auto;
+    }
+    .site-footer-inner {
+      max-width: 60rem;
+      margin: 0 auto;
+      padding: calc(var(--spacing) * 6) calc(var(--spacing) * 5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: calc(var(--spacing) * 3);
+      text-align: center;
+    }
+    @media (min-width: 640px) {
+      .site-footer-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        gap: calc(var(--spacing) * 4);
+        padding: calc(var(--spacing) * 8) calc(var(--spacing) * 8);
+      }
+    }
+    .site-footer-link {
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-teal-700);
+      text-decoration: underline;
+      text-decoration-color: currentColor;
+      text-underline-offset: 0.25em;
+    }
+    .site-footer-link::after {
+      content: " \2192";
+      margin-left: 0.15em;
+    }
+    .site-footer-contact {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      color: var(--color-sand-600);
+    }
+    .site-footer-mark {
+      font-family: var(--font-serif);
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--color-sand-900);
+      letter-spacing: -0.005em;
+    }
+
+    /* ---------------------------------------------
+       Document-shell — P+I outer measure 52rem (denser surface)
+       --------------------------------------------- */
+    .document-shell {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding: calc(var(--spacing) * 12) calc(var(--spacing) * 5);
+      max-width: 52rem;
+      flex: 1 0 auto;
+    }
+    @media (min-width: 768px) {
+      .document-shell {
+        padding: calc(var(--spacing) * 16) calc(var(--spacing) * 8) calc(var(--spacing) * 16);
+      }
+    }
+
+    .document-masthead {
+      padding-bottom: calc(var(--spacing) * 6);
+      margin-bottom: calc(var(--spacing) * 14);
+      border-bottom: 1px solid var(--color-sand-200);
+    }
+
+    .document-eyebrow {
+      font-family: var(--font-sans);
+      font-size: var(--text-eyebrow);
+      line-height: var(--text-eyebrow-lh);
+      font-weight: 600;
+      color: var(--color-sand-600);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 0 0 calc(var(--spacing) * 4) 0;
+    }
+
+    .document-title {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: var(--text-heading-01);
+      line-height: var(--text-heading-01-lh);
+      color: var(--color-sand-900);
+      margin: 0;
+      letter-spacing: -0.005em;
+    }
+    @media (min-width: 768px) {
+      .document-title {
+        font-size: 30px;
+      }
+    }
+
+    /* Hero lead — body-01 register (the 3-paragraph deliberate stack) */
+    .hero-lead-stack {
+      margin-top: calc(var(--spacing) * 6);
+      max-inline-size: 68ch;
+    }
+    .hero-lead-stack p {
+      margin: 0;
+      font-family: var(--font-sans);
+      line-height: 1.55;
+      color: var(--color-sand-700);
+    }
+    .hero-lead-stack p:first-child {
+      font-size: var(--text-body-01);
+      color: var(--color-sand-800);
+    }
+    .hero-lead-stack p:nth-child(2) {
+      font-size: var(--text-body-02);
+      line-height: 1.65;
+      margin-top: calc(var(--spacing) * 4);
+    }
+    .hero-lead-stack p:nth-child(3) {
+      font-size: var(--text-body-02);
+      line-height: 1.5;
+      color: var(--color-sand-900);
+      font-weight: 500;
+      margin-top: calc(var(--spacing) * 5);
+    }
+
+    .document-section {
+      margin-top: calc(var(--spacing) * 14);
+    }
+    .document-section:first-of-type { margin-top: 0; }
+
+    .document-section-title {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      font-size: var(--text-heading-02);
+      line-height: var(--text-heading-02-lh);
+      color: var(--color-sand-800);
+      margin: 0 0 calc(var(--spacing) * 4) 0;
+      letter-spacing: -0.003em;
+    }
+
+    .document-prose {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.65;
+      color: var(--color-sand-700);
+      max-inline-size: 68ch;
+      margin: 0;
+    }
+    .document-prose p + p {
+      margin-top: calc(var(--spacing) * 4);
+    }
+    .document-prose strong {
+      font-weight: 600;
+      color: var(--color-sand-900);
+    }
+
+    /* ---------------------------------------------
+       Value list with left-rule structural treatment
+       --------------------------------------------- */
+    .value-list-rule {
+      list-style: none;
+      padding: 0 0 0 calc(var(--spacing) * 5);
+      margin: calc(var(--spacing) * 6) 0 0 0;
+      border-left: 2px solid var(--color-sand-300);
+      max-inline-size: 68ch;
+    }
+    .value-list-rule li {
+      margin-bottom: calc(var(--spacing) * 5);
+      padding-left: 0;
+      position: relative;
+    }
+    .value-list-rule li:last-child { margin-bottom: 0; }
+    .value-list-rule strong {
+      display: block;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      color: var(--color-sand-900);
+      font-size: var(--text-body-02);
+      margin-bottom: calc(var(--spacing) * 1.5);
+    }
+    .value-list-rule li > span {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.6;
+      color: var(--color-sand-700);
+    }
+
+    .value-synthesis {
+      margin-top: calc(var(--spacing) * 6);
+      padding-left: calc(var(--spacing) * 5);
+      border-left: 2px solid var(--color-sand-200);
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.65;
+      color: var(--color-sand-700);
+      max-inline-size: 68ch;
+    }
+
+    /* ---------------------------------------------
+       Brownfield two-column structural composition
+       Left 1/3 — THE FOUR SHAPES eyebrow + compressed list
+       Right 2/3 — substantive consolidation paragraphs
+       Vertical rule between columns on desktop
+       Aaron-gate Q2 in design spec.
+       --------------------------------------------- */
+    .brownfield-split-grid {
+      margin-top: calc(var(--spacing) * 6);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: calc(var(--spacing) * 8);
+    }
+    @media (min-width: 768px) {
+      .brownfield-split-grid {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+        gap: calc(var(--spacing) * 10);
+        position: relative;
+      }
+      .brownfield-split-grid::before {
+        content: "";
+        position: absolute;
+        left: calc(33.33% + calc(var(--spacing) * 5));
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background-color: var(--color-sand-200);
+      }
+    }
+
+    .brownfield-split-left {
+      display: flex;
+      flex-direction: column;
+    }
+    .brownfield-split-eyebrow {
+      font-family: var(--font-sans);
+      font-size: var(--text-eyebrow);
+      line-height: var(--text-eyebrow-lh);
+      font-weight: 600;
+      color: var(--color-sand-600);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 0 0 calc(var(--spacing) * 4) 0;
+    }
+    .brownfield-shapes-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .brownfield-shapes-list li {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.4;
+      color: var(--color-sand-900);
+      font-weight: 500;
+      padding: calc(var(--spacing) * 3) 0;
+      border-bottom: 1px solid var(--color-sand-200);
+    }
+    .brownfield-shapes-list li:last-child {
+      border-bottom: none;
+    }
+
+    .brownfield-split-right {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.65;
+      color: var(--color-sand-700);
+    }
+    .brownfield-split-right p {
+      margin: 0 0 calc(var(--spacing) * 4) 0;
+    }
+    .brownfield-split-right p:last-child { margin-bottom: 0; }
+    .brownfield-split-right strong {
+      font-weight: 600;
+      color: var(--color-sand-900);
+    }
+    .brownfield-recognition {
+      font-style: normal;
+      color: var(--color-sand-800);
+    }
+
+    /* ---------------------------------------------
+       Where-Cena-is — in-line subsection eyebrows
+       --------------------------------------------- */
+    .where-cena-stack {
+      display: flex;
+      flex-direction: column;
+      gap: calc(var(--spacing) * 5);
+      max-inline-size: 68ch;
+    }
+    .where-cena-block {
+      display: flex;
+      flex-direction: column;
+      gap: calc(var(--spacing) * 1);
+    }
+    .where-cena-eyebrow {
+      font-family: var(--font-sans);
+      font-size: 11px;
+      line-height: 1.4;
+      font-weight: 600;
+      color: var(--color-sand-700);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .where-cena-block p {
+      margin: 0;
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.65;
+      color: var(--color-sand-700);
+    }
+
+    /* ---------------------------------------------
+       Form scaffold — kept from v1
+       --------------------------------------------- */
+    .form-scaffold {
+      margin-top: calc(var(--spacing) * 6);
+      display: flex;
+      flex-direction: column;
+      gap: calc(var(--spacing) * 4);
+      max-width: 100%;
+    }
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: calc(var(--spacing) * 2);
+    }
+    .form-field label {
+      font-weight: 500;
+      font-size: var(--text-body-02);
+      color: var(--color-sand-900);
+    }
+    .form-field input,
+    .form-field textarea {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      line-height: 1.5;
+      color: var(--color-text-normal);
+      border: 1px solid var(--color-border-default);
+      border-radius: 4px;
+      padding: calc(var(--spacing) * 2.5) calc(var(--spacing) * 3);
+      background-color: #ffffff;
+    }
+    .form-field input:focus,
+    .form-field textarea:focus {
+      outline: none;
+      border-color: var(--color-teal-700);
+      box-shadow: 0 0 0 2px rgba(30, 81, 73, 0.1);
+    }
+    .form-submit {
+      margin-top: calc(var(--spacing) * 2);
+      padding: calc(var(--spacing) * 3) calc(var(--spacing) * 6);
+      background-color: var(--color-teal-700);
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      font-family: var(--font-sans);
+      font-size: var(--text-body-02);
+      font-weight: 500;
+      cursor: pointer;
+      align-self: flex-start;
+    }
+    .form-submit:hover { background-color: var(--color-teal-800); }
+    .form-submit:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px var(--color-surface-page), 0 0 0 4px var(--color-teal-700);
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--color-teal-700);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Site shell — top nav. is-current on the P+I link. -->
+  <nav class="site-nav" aria-label="Primary">
+    <div class="site-nav-inner">
+      <a href="index.html" class="site-nav-mark">Cena Health</a>
+      <div class="site-nav-links">
+        <a href="for-payers-investors.html" class="site-nav-link is-current" aria-current="page">
+          <span class="site-nav-link-full">For payers + investors</span>
+          <span class="site-nav-link-short">Payers</span>
+        </a>
+        <a href="for-providers-partners.html" class="site-nav-link">
+          <span class="site-nav-link-full">For providers + partners</span>
+          <span class="site-nav-link-short">Providers</span>
+        </a>
+        <a href="about.html" class="site-nav-link">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="document-shell" role="main">
+
+    <!-- Section 1 — Hero
+         Eyebrow + H1 + 3-paragraph deliberate lead-stack with typographic descent.
+         body-01 → body-02 → body-02 emphasis-weight. -->
+    <header class="document-masthead">
+      <p class="document-eyebrow">For payers + investors</p>
+      <h1 class="document-title">What healthcare loses when the gap between visits stays opaque.</h1>
+      <div class="hero-lead-stack">
+        <p>Between clinical visits, the gaps are where patterns vanish. A patient&rsquo;s medication adherence drifts. A dietary barrier emerges that the care plan didn&rsquo;t anticipate. A sign of clinical change that would normally surface at the next appointment &mdash; now six months out &mdash; instead surfaces in the emergency department, or not at all.</p>
+        <p>For programs built on food-as-medicine, this gap is expensive. Preventable utilization rises. Intervention timing narrows. The data that would prove the program&rsquo;s value &mdash; the connection between what the care team designed and what the patient actually experienced &mdash; fragments across systems.</p>
+        <p>Cena is being built to close it.</p>
+      </div>
+    </header>
+
+    <!-- Section 2 — Value list with left-rule structural treatment -->
+    <section class="document-section" aria-labelledby="value">
+      <h2 class="document-section-title" id="value">The value Cena is being built to provide.</h2>
+      <div class="document-prose">
+        <p>What we&rsquo;re building surfaces the insights that today get caught only in hindsight.</p>
+      </div>
+      <ul class="value-list-rule">
+        <li>
+          <strong>Between-visit intelligence.</strong>
+          <span>The care team sees adherence patterns, emerging barriers, and clinical changes as they happen &mdash; not months later. Actionable, real-time.</span>
+        </li>
+        <li>
+          <strong>Preventative intervention.</strong>
+          <span>Patterns that would otherwise trigger an ED visit or an urgent visit get surfaced to the care team first &mdash; so the program can intervene before the system does.</span>
+        </li>
+        <li>
+          <strong>Reduced ED and hospital utilization.</strong>
+          <span>When food-as-medicine programs run on better between-visit data, patient outcomes improve and system burden drops.</span>
+        </li>
+        <li>
+          <strong>Automatic value-based reporting.</strong>
+          <span>Cena is being built to produce the outcome documentation your VBC contracts require &mdash; capturing intervention &rarr; adherence &rarr; outcome &rarr; re-assessment &mdash; automatically from the program&rsquo;s workflow, not from spreadsheets.</span>
+        </li>
+      </ul>
+      <p class="value-synthesis">
+        The substrate is designed so the care team&rsquo;s existing program keeps running on its existing rhythm. What changes is what the care team sees, and what the program can demonstrate.
+      </p>
+    </section>
+
+    <!-- Section 3 — Brownfield two-column composition (BIGGEST SWING on this page).
+         Left: THE FOUR SHAPES eyebrow + compressed list (HONEST-TODAY recognition).
+         Right: substantive consolidation paragraphs (HONEST-FUTURE-TENSE Cena intent).
+         Vertical sand-200 rule between columns on desktop. Stacks on mobile. -->
+    <section class="document-section" aria-labelledby="brownfield">
+      <h2 class="document-section-title" id="brownfield">Cena is being built to run underneath what you&rsquo;ve built, not instead of it.</h2>
+      <div class="brownfield-split-grid">
+        <div class="brownfield-split-left">
+          <p class="brownfield-split-eyebrow">The four shapes</p>
+          <ul class="brownfield-shapes-list">
+            <li>Grant-funded clinic</li>
+            <li>Sponsored pilot</li>
+            <li>Section 1115 Medicaid demonstration waiver</li>
+            <li>Hospital-foundation community kitchen</li>
+          </ul>
+        </div>
+        <div class="brownfield-split-right">
+          <p class="brownfield-recognition">If your program is one of these, you know the gap.</p>
+          <p><strong>You&rsquo;ve already built something.</strong> You&rsquo;ve invested in the program&rsquo;s structure, trained the staff, proven the model works for your patients. The fragmentation isn&rsquo;t failure &mdash; it&rsquo;s the cost of running food-as-medicine on infrastructure built for something else.</p>
+          <p><strong>That&rsquo;s the gap Cena is being built to consolidate.</strong></p>
+          <p>When Cena is live, your program keeps running on the clinical workflows you&rsquo;ve designed. Your dietitians keep their assessment protocols. Your case managers keep their outreach cadence. Your program&rsquo;s IRB-approved intervention stays exactly what you built. What changes is that the clinical actions your team takes &mdash; assessments, care plans, adherence check-ins, outcome measurements &mdash; carry a unified trail. One system sees what your program is doing. One report reflects what your program achieved.</p>
+          <p><strong>What stays yours:</strong> clinical authority (your team retains every decision); data ownership (your program owns the patient relationship); branding and external messaging (your program is the protagonist when you talk about it). Cena is the layer underneath that captures the data your team needs to prove what you&rsquo;re solving.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 — Where Cena is in its build
+         In-line subsection eyebrows give the three paragraphs structural identity. -->
+    <section class="document-section" aria-labelledby="build">
+      <h2 class="document-section-title" id="build">Where Cena is in its build.</h2>
+      <div class="where-cena-stack">
+        <div class="where-cena-block">
+          <p class="where-cena-eyebrow">Pre-seed.</p>
+          <p>We&rsquo;re pre-seed. Three people. One live academic-medical-center HIV-nutrition program runs on this model today; we&rsquo;re building outward from there.</p>
+        </div>
+        <div class="where-cena-block">
+          <p class="where-cena-eyebrow">What we&rsquo;re building.</p>
+          <p>We&rsquo;re building toward the clinical intelligence infrastructure layer for food-as-medicine &mdash; confidently, ahead of where we&rsquo;re proven, because the category needs naming. The gap between visits is a category. The solution is a substrate. And that&rsquo;s what we&rsquo;re building.</p>
+        </div>
+        <div class="where-cena-block">
+          <p class="where-cena-eyebrow">Our team.</p>
+          <p>Vanessa Sena, CEO, and partner-institution clinicians who retain accountability for every program decision. The agents-first thesis runs the company &mdash; humans hold authority and decisions; agents handle the throughput.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5 — Contact (kept with form scaffold per v1) -->
+    <section class="document-section" aria-labelledby="contact">
+      <h2 class="document-section-title" id="contact">Talk through what your program is solving.</h2>
+      <div class="document-prose">
+        <p>Whether you&rsquo;re running a pilot, scaling an existing program, or exploring the model, talk through the value-based-contract fit and the consolidation opportunity. 30-minute call. Light form (name, role, organization, one sentence on what you&rsquo;re solving). Calendar picks the time.</p>
+      </div>
+      <form class="form-scaffold">
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+        </div>
+        <div class="form-field">
+          <label for="role">Role</label>
+          <input type="text" id="role" name="role">
+        </div>
+        <div class="form-field">
+          <label for="organization">Organization</label>
+          <input type="text" id="organization" name="organization">
+        </div>
+        <div class="form-field">
+          <label for="problem">What you&rsquo;re solving</label>
+          <textarea id="problem" name="problem" rows="3"></textarea>
+        </div>
+        <button type="submit" class="form-submit">Continue to calendar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Site shell — footer -->
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <a href="about.html" class="site-footer-link">About</a>
+      <a href="mailto:vanessa@cenahealth.com" class="site-footer-contact">vanessa@cenahealth.com</a>
+      <span class="site-footer-mark">Cena Health</span>
+    </div>
+  </footer>
+
+</body>
+</html>
